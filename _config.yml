@@ -8,7 +8,7 @@
 # Site Settings
 title                    : "Chih-Hsi Chen: About"
 description              : "又見新花發故枝，<br> 青梅如豆柳如絲。<br> 而今何事最相宜？<br> <br> 往事只成清夜夢，<br> 落花都上燕巢泥。<br> 勸君惜取少年時。"
-repository               : "Revive-dontwanttocode/Revive-dontwanttocode.github.io"
+repository               : "chihhsichen/chihhsichen.github.io"
 google_scholar_stats_use_cdn : true
 
 # Set navbar
@@ -30,7 +30,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Chih-Hsi Chen"
   avatar           : "/images/avatar_1.jpg"
-  bio              : "Master Student@Nanyang Technological University"
+  bio              : "Incoming Ph.D. Student@Nanyang Technological University"
   location         : "Singapore"
   employer         :
   pubmed           : 
