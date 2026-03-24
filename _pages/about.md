@@ -33,6 +33,11 @@ My research interest <span style="text-decoration: underline; font-weight:bold;"
 - *2024.08 - 2026.01*: Master of Science in Data Science @ College of Computing and Data Science, Nanyang Technological University, Singapore.
 - *2020.09 - 2024.06*: Bachelor of Engineering in Software Engineering, Financial Technology Track (金融科技实验班), with Minor in Finance @ Software College, Northeastern University, China.
 
+# 🛫 Experience
+- *2026.03-Now*: **Research Intern** @ Jinan-NTU Green Technology Research Institute (GreenTRI)
+- *2025.02-2025.12*: **Research Intern** @ Alibaba-NTU Global e-Sustainability CorpLab (ANGEL), supervised by Dr. Yinan Zhang and Dr. Zhiqi Shen.
+
+
 # 🔥 News
 - *2026.01.31*: Graduated from *Nanyang Technological University* with **M.Sc. in Data Science** degree.
 - *2026.01.13*: 🎉🎉 <span style="color:#DC143C; font-weight:bold;"> One paper accepted by *The ACM Web Conference (WWW 2026)*! This is my first research paper as a co-first author. :) </span>
