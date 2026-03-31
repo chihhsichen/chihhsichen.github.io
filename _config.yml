@@ -137,10 +137,9 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
-      author_profile: true
+      layout: post
+      author_profile: false
       toc: true
-      toc_sticky: true
 
 
 # Sass/SCSS

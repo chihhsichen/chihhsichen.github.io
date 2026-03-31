@@ -1,5 +1,5 @@
 ---
-layout:     single   				    
+layout:     post   				    
 title:      Game Theory with Applications to Finance and Marketing I, Lecture1 Notes(Sep. 22)				
 subtitle:   Game Theory 
 date:       2024-1-2 11:57:19				

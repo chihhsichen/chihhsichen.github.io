@@ -6,8 +6,6 @@ author_profile: true
 redirect_from:
   - /about/
   - /about.html
-toc: true
-toc_sticky: true
 ---
 
 {% if site.google_scholar_stats_use_cdn %}
