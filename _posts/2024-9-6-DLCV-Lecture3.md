@@ -1,5 +1,5 @@
 ---
-layout:     post
+layout:     single
 title:      Deep Learning for Computer Vision Lecture 3
 subtitle:   DLCV
 date:       2024-9-6 16:23:58 +0800

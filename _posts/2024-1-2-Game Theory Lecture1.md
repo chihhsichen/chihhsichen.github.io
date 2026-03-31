@@ -1,9 +1,9 @@
 ---
-layout:     post   				    # 使用的布局（不需要改）
+layout:     single   				    
 title:      Game Theory with Applications to Finance and Marketing I, Lecture1 Notes(Sep. 22)				
 subtitle:   Game Theory 
-date:       2024-1-2 11:57:19				# 时间
-author:     czx						# 作者
+date:       2024-1-2 11:57:19				
+author:     czx						
 toc: true
 math: true
 mermaid: true
