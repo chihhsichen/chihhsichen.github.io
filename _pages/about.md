@@ -34,8 +34,8 @@ My research interest <span style="text-decoration: underline; font-weight:bold;"
 - *2020.09 - 2024.06*: Bachelor of Engineering in Software Engineering, Financial Technology Track (金融科技实验班), with Minor in Finance @ Software College, Northeastern University, China.
 
 # 🛫 Experience
-- *2026.03-Now*: **Research Intern** @ Jinan-NTU Green Technology Research Institute (GreenTRI), Jinan, Shandong, China, supervised by Dr. Yinan Zhang.
-- *2025.02-2025.12*: **Research Intern** @ Alibaba-NTU Global e-Sustainability CorpLab (ANGEL), Singapore, supervised by Dr. Yinan Zhang and Dr. Zhiqi Shen.
+- *2026.03 - Now*: **Research Intern** @ Jinan-NTU Green Technology Research Institute (GreenTRI), Jinan, Shandong, China, supervised by Dr. Yinan Zhang.
+- *2025.02 - 2025.12*: **Research Intern** @ Alibaba-NTU Global e-Sustainability CorpLab (ANGEL), Singapore, supervised by Dr. Yinan Zhang and Dr. Zhiqi Shen.
 - *2023.05 - 2023.07*, Java Development Engineer @ Link-Us Tech Co., Ltd, Changsha, Hunan, China.
 
 # 🔥 News
