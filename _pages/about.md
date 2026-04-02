@@ -29,14 +29,14 @@ My research interest <span style="text-decoration: underline; font-weight:bold;"
 <span style="color:#DC143C; font-weight:bold;">I am actively seeking Ph.D. opportunities for Fall 2026 Admission. </span> :)
 
 # 📖 Educations
-- *2026.08 - 2030.??*: Doctor of Philosophy in Computing & Data Science @ College of Computing and Data Science, Nanyang Technological University, Singapore.
+- *2026.08 - 20\d{2}.\d{2}*: Doctor of Philosophy in Computing and Data Science @ College of Computing and Data Science, Nanyang Technological University, Singapore.
 - *2024.08 - 2026.01*: Master of Science in Data Science @ College of Computing and Data Science, Nanyang Technological University, Singapore.
 - *2020.09 - 2024.06*: Bachelor of Engineering in Software Engineering, Financial Technology Track (金融科技实验班), with Minor in Finance @ Software College, Northeastern University, China.
 
 # 🛫 Experience
-- *2026.03-Now*: **Research Intern** @ Jinan-NTU Green Technology Research Institute (GreenTRI)
-- *2025.02-2025.12*: **Research Intern** @ Alibaba-NTU Global e-Sustainability CorpLab (ANGEL), supervised by Dr. Yinan Zhang and Dr. Zhiqi Shen.
-
+- *2026.03-Now*: **Research Intern** @ Jinan-NTU Green Technology Research Institute (GreenTRI), Jinan, Shandong, China, supervised by Dr. Yinan Zhang.
+- *2025.02-2025.12*: **Research Intern** @ Alibaba-NTU Global e-Sustainability CorpLab (ANGEL), Singapore, supervised by Dr. Yinan Zhang and Dr. Zhiqi Shen.
+- *2023.05 - 2023.07*, Java Development Engineer @ Link-Us Tech Co., Ltd, Changsha, Hunan, China.
 
 # 🔥 News
 - *2026.01.31*: Graduated from *Nanyang Technological University* with **M.Sc. in Data Science** degree.
@@ -91,10 +91,6 @@ Zhixi Chen, Zimu Li, Yin Zhang$^\*$
 - *2022, 2023, 2024*, Northeastern University School Scholarship. 
 - *2021, 2022, 2023*, Northeastern University Outstanding Individual with Academic Strengths.
 
-# 💻 Internships
-- *2025.01 - Now*, Research Assistant @ Alibaba-NTU Global e-Sustainability CorpLab (ANGEL), Nanyang Technological University.
-- *2023.05 - 2023.07*, Java Development Engineer @ Link-Us Tech Co., Ltd.
-
-# Other Experiences
+# 📚 Other Experiences
 - *2023.01 - 2023.03*, Attended Cambridge AI+ Programme (Financial Big Data Track).
 - *2021.12 - 2022.12*, Vice-Captain of Northeastern University Software College Debate Team.
