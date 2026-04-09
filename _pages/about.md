@@ -26,19 +26,18 @@ My research interest <span style="text-decoration: underline; font-weight:bold;"
 * Recommendation Systems
 * Reinforcement Learning and its application to LLMs or Finance
 
-<span style="color:#DC143C; font-weight:bold;">I am actively seeking Ph.D. opportunities for Fall 2026 Admission. </span> :)
-
 # 📖 Educations
-- *2026.08 - 20\d{2}.\d{2}*: Doctor of Philosophy in Computing and Data Science @ College of Computing and Data Science, Nanyang Technological University, Singapore.
+- *2026.08 - 20??.??*: Doctor of Philosophy in Computing and Data Science @ College of Computing and Data Science, Nanyang Technological University, Singapore.
 - *2024.08 - 2026.01*: Master of Science in Data Science @ College of Computing and Data Science, Nanyang Technological University, Singapore.
 - *2020.09 - 2024.06*: Bachelor of Engineering in Software Engineering, Financial Technology Track (金融科技实验班), with Minor in Finance @ Software College, Northeastern University, China.
 
 # 🛫 Experience
-- *2026.03 - Now*: **Research Intern** @ Jinan-NTU Green Technology Research Institute (GreenTRI), Jinan, Shandong, China, supervised by Dr. Yinan Zhang.
+- *2026.03 - Now*: **Research Intern** @ Jinan-NTU Green Technology Research Institute (GreenTRI), Jinan, Shandong, China.
 - *2025.02 - 2025.12*: **Research Intern** @ Alibaba-NTU Global e-Sustainability CorpLab (ANGEL), Singapore, supervised by Dr. Yinan Zhang and Dr. Zhiqi Shen.
 - *2023.05 - 2023.07*, Java Development Engineer @ Link-Us Tech Co., Ltd, Changsha, Hunan, China.
 
 # 🔥 News
+- *2026.04.08*: I have already been admitted by Ph.D. programme offered by Nanyang Technological University. :)
 - *2026.01.31*: Graduated from *Nanyang Technological University* with **M.Sc. in Data Science** degree.
 - *2026.01.13*: 🎉🎉 <span style="color:#DC143C; font-weight:bold;"> One paper accepted by *The ACM Web Conference (WWW 2026)*! This is my first research paper as a co-first author. :) </span>
 - *2025.11.21*: Defended my M.Sc. project *Predictive Insights with Language Models for Item Popularity Dynamics* successfully.
