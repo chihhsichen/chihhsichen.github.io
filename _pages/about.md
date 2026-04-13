@@ -17,7 +17,10 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi there👋. I'm Zhixi Chen (Sometimes I choose Chih-Hsi Chen as my name, my Chinese name is 陈治希 or 陳治希), you can just call me *Humphrey*. I obtained my M.Sc. (Data Science) Degree in the <a href='https://www.ntu.edu.sg/computing'>College of Computing and Data Science (CCDS)</a> at <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a>, Singapore, Supervised by Dr. Yinan Zhang and Dr. Zhiqi Shen. Before that, I obtained my B.Eng. in Software Engineering degree (Financial Technology Track) with Minor in Finance in <a href="http://sc.neu.edu.cn/">Software College</a>, <a href="https://neu.edu.cn/">Northeastern University</a>, Shenyang, Liaoning, China. You can find the detailed Curriculum Vitae <a href="https://drive.google.com/file/d/1D3J6fA7g5iRJj41AiruCjbZ47DMpJSiT" style="font-weight:bold;">here</a>.
+Hi there👋. I'm Zhixi Chen (Sometimes I choose Chih-Hsi Chen as my name, my Chinese name is 陈治希 or 陳治希), you can just call me *Humphrey*, or Zhixi. 
+Currently, I am an incoming Ph.D. student in the <a href='https://www.ntu.edu.sg/computing'>College of Computing and Data Science (CCDS)</a> at <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a>, Singapore.
+Previously, I obtained my M.Sc. (Data Science) Degree in the <a href='https://www.ntu.edu.sg/computing'>College of Computing and Data Science (CCDS)</a> at <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a>, Singapore, Supervised by Dr. Yinan Zhang and Dr. Zhiqi Shen. 
+Before that, I earned my B.Eng. in Software Engineering degree (Financial Technology Track) with Minor in Finance in <a href="http://sc.neu.edu.cn/">Software College</a>, <a href="https://neu.edu.cn/">Northeastern University</a>, Shenyang, Liaoning, China.
 
 My research interest <span style="text-decoration: underline; font-weight:bold;">includes but not limited</span> to,
 * Large Language Models and its application to business and finance
@@ -37,14 +40,14 @@ My research interest <span style="text-decoration: underline; font-weight:bold;"
 - *2023.05 - 2023.07*, Java Development Engineer @ Link-Us Tech Co., Ltd, Changsha, Hunan, China.
 
 # 🔥 News
-- *2026.04.08*: I have already been admitted by Ph.D. programme offered by Nanyang Technological University. :)
+- *2026.04.08*: 🎉🎉 Received Ph.D. offer from *College of Computing and Data Science*, Nanyang Technological University, Singapore, commercing from 2026 Fall.
 - *2026.01.31*: Graduated from *Nanyang Technological University* with **M.Sc. in Data Science** degree.
 - *2026.01.13*: 🎉🎉 <span style="color:#DC143C; font-weight:bold;"> One paper accepted by *The ACM Web Conference (WWW 2026)*! This is my first research paper as a co-first author. :) </span>
 - *2025.11.21*: Defended my M.Sc. project *Predictive Insights with Language Models for Item Popularity Dynamics* successfully.
 - *2025.10.10*: I'm actively seeking for Ph.D. opportunity in *2026 Fall Intake*.
-- *2025.01.17*: As a research assistant, started the research project *Predictive Insights with Language Models for Item Popularity Dynamics* under NTU-ANGEL lab.
+- *2025.01.17*: As a research intern, started the research project *Predictive Insights with Language Models for Item Popularity Dynamics* under NTU-ANGEL lab.
 - *2024.08.12*: Started my M.Sc. in Data Science program study at Nanyang Technological University.
-- *2024.06.28*: Graduated from *Northeastern University* with **B.Eng. in Software Engineering** degree.
+- *2024.06.28*: Graduated from *Northeastern University* with **B.Eng. in Software Engineering** degree, and minor in Finance.
 
 # 📝 Publications & Research Works
 
