@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Chih-Hsi Chen: About"
+title                    : "Chih-Hsi Chen's Page"
 description              : "又見新花發故枝，<br> 青梅如豆柳如絲。<br> 而今何事最相宜？<br> <br> 往事只成清夜夢，<br> 落花都上燕巢泥。<br> 勸君惜取少年時。"
 repository               : "chihhsichen/chihhsichen.github.io"
 google_scholar_stats_use_cdn : true
@@ -16,7 +16,7 @@ navbar:
   - title: "Homepage"
     url: "/"
   - title: "About"
-    url: "/about/"
+    url: "/about"
 
 # Google Analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
@@ -31,7 +31,7 @@ author:
   name             : "Chih-Hsi Chen"
   avatar           : "/images/avatar_1.jpg"
   bio              : "Ph.D. Student@Nanyang Technological University"
-  location         : "Singapore"
+  location         : "🇸🇬"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=zmhR9joAAAAJ"

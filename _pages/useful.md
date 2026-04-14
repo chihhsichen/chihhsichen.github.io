@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Useful Links"
-permalink: /useful_links/
+permalink: /useful_links
 author_profile: true
 ---
 

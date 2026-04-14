@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Awesome Computer Science, Finance, and Math Courses"
-permalink: /courses/
+permalink: /courses
 author_profile: true
 ---
 
