@@ -29,11 +29,11 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Chih-Hsi Chen"
-  avatar           : "/images/avatar_1.jpg"
+  avatar           : "/images/avatar_handdrawn.jpg"
   bio              : "Ph.D. Student@Nanyang Technological University"
   location         : "🇸🇬"
   employer         :
-  pubmed           : 
+  pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=zmhR9joAAAAJ"
   email            : "chen1872@e.ntu.edu.sg"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
