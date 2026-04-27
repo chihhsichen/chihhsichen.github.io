@@ -30,7 +30,7 @@ My research interest <span style="text-decoration: underline; font-weight:bold;"
 * Reinforcement Learning and its application to LLMs or Finance
 
 # 📖 Educations
-- *2026.08 - 20??.??*: Doctor of Philosophy in Computing and Data Science @ College of Computing and Data Science, Nanyang Technological University, Singapore.
+- *2026.08 - 20??.??*: Doctor of Philosophy student in Computing and Data Science @ College of Computing and Data Science, Nanyang Technological University, Singapore.
 - *2024.08 - 2026.01*: Master of Science in Data Science @ College of Computing and Data Science, Nanyang Technological University, Singapore.
 - *2020.09 - 2024.06*: Bachelor of Engineering in Software Engineering, Financial Technology Track (金融科技实验班), with Minor in Finance @ Software College, Northeastern University, China.
 
@@ -59,7 +59,7 @@ My research interest <span style="text-decoration: underline; font-weight:bold;"
 </div>
 <div class='paper-box-text' markdown="1">
 
-[Following the TRAIL: Predicting and Explaining Tomorrow's Hits with a Fine-Tuned LLM](https://arxiv.org/pdf/2602.04225)
+[Following the TRAIL: Predicting and Explaining Tomorrow's Hits with a Fine-Tuned LLM](https://dl.acm.org/doi/10.1145/3774904.3792616)
 
 Yinan Zhang$^\*$, Zhixi Chen$^\*$, Jiazheng Jing, Zhiqi Shen$^\dagger$
 
@@ -76,7 +76,7 @@ Yinan Zhang$^\*$, Zhixi Chen$^\*$, Jiazheng Jing, Zhiqi Shen$^\dagger$
 </div>
 <div class='paper-box-text' markdown="1">
 
-[[Dec. 2022] SSST: Shanghai–Shenzhen Stock Tracker](https://drive.google.com/file/d/1Y4ym1qY4AOSU3lFkhAIYvTlY5P9A2DfI)
+[SSST: Shanghai–Shenzhen Stock Tracker](https://drive.google.com/file/d/1Y4ym1qY4AOSU3lFkhAIYvTlY5P9A2DfI)
 
 Zhixi Chen, Zimu Li, Yin Zhang$^\*$
 
