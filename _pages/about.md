@@ -22,7 +22,7 @@ Currently, I am an incoming Ph.D. student in the <a href='https://www.ntu.edu.sg
 Previously, I obtained my M.Sc. (Data Science) Degree in the <a href='https://www.ntu.edu.sg/computing'>College of Computing and Data Science (CCDS)</a> at <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a>, Singapore, Supervised by Dr. Yinan Zhang and Dr. Zhiqi Shen. 
 Before that, I earned my B.Eng. in Software Engineering degree (Financial Technology Track) with Minor in Finance in <a href="http://sc.neu.edu.cn/">Software College</a>, <a href="https://neu.edu.cn/">Northeastern University</a>, Shenyang, Liaoning, China.
 
-My research interest <span style="text-decoration: underline; font-weight:bold;">includes but not limited</span> to,
+My research interest <span style="text-decoration: underline; font-weight:bold; color:#DC143C">includes but not limited</span> to,
 * Large Language Models and its application to business and finance
 * Quantitative Finance with Machine Learning / Deep Learning Methods
 * Statistical Data Analysis
@@ -35,8 +35,8 @@ My research interest <span style="text-decoration: underline; font-weight:bold;"
 - *2020.09 - 2024.06*: Bachelor of Engineering in Software Engineering, Financial Technology Track (金融科技实验班), with Minor in Finance @ Software College, Northeastern University, China.
 
 # 🛫 Experience
-- *2026.03 - Now*: **Research Intern** @ Jinan-NTU Green Technology Research Institute (GreenTRI), Jinan, Shandong, China.
-- *2025.02 - 2025.12*: **Research Intern** @ Alibaba-NTU Global e-Sustainability CorpLab (ANGEL), Singapore, supervised by Dr. Yinan Zhang and Dr. Zhiqi Shen.
+- *2026.03 - Now*: **Research Intern** @ Jinan-NTU Green Technology Research Institute (GreenTRI).
+- *2025.02 - 2025.12*: **Research Intern** @ Alibaba-NTU Global e-Sustainability CorpLab (ANGEL).
 - *2023.05 - 2023.07*, Java Development Engineer @ Link-Us Tech Co., Ltd, Changsha, Hunan, China.
 
 # 🔥 News
