@@ -19,7 +19,7 @@ navbar:
     url: "/about"
 
 # Google Analytics
-google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
+google_analytics_id      :  google-site-verification=hqdKI-wF7nhB3Ntahk5K_DWQEg1LVG3sgTaOISJn9Lo
 
 # SEO Related
 google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
@@ -31,11 +31,11 @@ author:
   name             : "Chih-Hsi Chen"
   avatar           : "/images/avatar_rainbow.png"
   bio              : "Ph.D. Student@Nanyang Technological University"
-  location         : "SG / CN (Mainland)"
+  location         : "🇸🇬"
   employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=zmhR9joAAAAJ"
-  email            : "chen1872@e.ntu.edu.sg"
+  email            : "ch0015xi@e.ntu.edu.sg"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

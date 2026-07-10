@@ -39,7 +39,6 @@ My research interest <span style="text-decoration: underline; font-weight:bold; 
 # 🛫 Experience
 - *2026.03 - 2026.07*: **Research Intern** @ Jinan-NTU Green Technology Research Institute (GreenTRI).
 - *2025.02 - 2025.12*: **Research Intern** @ Alibaba-NTU Global e-Sustainability CorpLab (ANGEL).
-- *2023.05 - 2023.07*, Java Development Engineer @ Link-Us Tech Co., Ltd, Changsha, Hunan, China.
 
 # 🔥 News
 - *2026.04.08*: 🎉🎉 Received Ph.D. offer from *College of Computing and Data Science*, Nanyang Technological University, Singapore, commercing from 2026 Fall.
