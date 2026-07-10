@@ -18,14 +18,16 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 Hi there👋. I'm Zhixi Chen (Sometimes I choose Chih-Hsi Chen as my name, my Chinese name is 陈治希 or 陳治希), you can just call me *Humphrey*, or Zhixi. 
-Currently, I am an incoming Ph.D. student in the <a href='https://www.ntu.edu.sg/computing'>College of Computing and Data Science (CCDS)</a> at <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a>, Singapore.
-Previously, I obtained my M.Sc. (Data Science) Degree in the <a href='https://www.ntu.edu.sg/computing'>College of Computing and Data Science (CCDS)</a> at <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a>, Singapore, Supervised by Dr. Yinan Zhang and Dr. Zhiqi Shen. 
+
+Currently, I am an incoming Ph.D. student in the <a href='https://www.ntu.edu.sg/computing'>College of Computing and Data Science (CCDS)</a> at <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a>, Singapore, supervised by <a href="https://dr.ntu.edu.sg/entities/person/Miao-Chun-Yan"> Prof. Chunyan Miao </a>.
+Previously, I obtained my M.Sc. (Data Science) Degree in the <a href='https://www.ntu.edu.sg/computing'>College of Computing and Data Science (CCDS)</a> at <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a>, Singapore, Supervised by <a href="https://zhangynnancy.github.io"> Dr. Yinan Zhang </a> and <a href="https://dr.ntu.edu.sg/entities/person/Shen-Zhiqi"> Dr. Zhiqi Shen </a>. 
 Before that, I earned my B.Eng. in Software Engineering degree (Financial Technology Track) with Minor in Finance in <a href="http://sc.neu.edu.cn/">Software College</a>, <a href="https://neu.edu.cn/">Northeastern University</a>, Shenyang, Liaoning, China.
+
+# 👀 Research Interest
 
 My research interest <span style="text-decoration: underline; font-weight:bold; color:#DC143C">includes but not limited</span> to,
 * Large Language Models and its application to business and finance
 * Quantitative Finance with Machine Learning / Deep Learning Methods
-* Statistical Data Analysis
 * Recommendation Systems
 * Reinforcement Learning and its application to LLMs or Finance
 
@@ -35,16 +37,16 @@ My research interest <span style="text-decoration: underline; font-weight:bold; 
 - *2020.09 - 2024.06*: Bachelor of Engineering in Software Engineering, Financial Technology Track (金融科技实验班), with Minor in Finance @ Software College, Northeastern University, China.
 
 # 🛫 Experience
-- *2026.03 - Now*: **Research Intern** @ Jinan-NTU Green Technology Research Institute (GreenTRI).
+- *2026.03 - 2026.07*: **Research Intern** @ Jinan-NTU Green Technology Research Institute (GreenTRI).
 - *2025.02 - 2025.12*: **Research Intern** @ Alibaba-NTU Global e-Sustainability CorpLab (ANGEL).
 - *2023.05 - 2023.07*, Java Development Engineer @ Link-Us Tech Co., Ltd, Changsha, Hunan, China.
 
 # 🔥 News
 - *2026.04.08*: 🎉🎉 Received Ph.D. offer from *College of Computing and Data Science*, Nanyang Technological University, Singapore, commercing from 2026 Fall.
+- *2026.03.10*: As a research intern, joined the Jinan-NTU Green Technology Research Institute (GreenTRI).
 - *2026.01.31*: Graduated from *Nanyang Technological University* with **M.Sc. in Data Science** degree.
 - *2026.01.13*: 🎉🎉 <span style="color:#DC143C; font-weight:bold;"> One paper accepted by *The ACM Web Conference (WWW 2026)*! This is my first research paper as a co-first author. :) </span>
 - *2025.11.21*: Defended my M.Sc. project *Predictive Insights with Language Models for Item Popularity Dynamics* successfully.
-- *2025.10.10*: I'm actively seeking for Ph.D. opportunity in *2026 Fall Intake*.
 - *2025.01.17*: As a research intern, started the research project *Predictive Insights with Language Models for Item Popularity Dynamics* under NTU-ANGEL lab.
 - *2024.08.12*: Started my M.Sc. in Data Science program study at Nanyang Technological University.
 - *2024.06.28*: Graduated from *Northeastern University* with **B.Eng. in Software Engineering** degree, and minor in Finance.
