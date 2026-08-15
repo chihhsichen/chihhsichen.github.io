@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<h1 class="page__title">{{ page.title }}</h1>
+<p class="page__meta">
+  {% if page.date %}
+    <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+  {% endif %}
+</p>
+
+{{ content }}
+
+<footer class="page__meta">
+  {% if page.categories.size > 0 %}
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">{% for cat in page.categories %}<a href="{{ '/categories/' | relative_url }}#{{ cat | slugify }}" class="page__taxonomy-item" rel="tag">{{ cat }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}{% endfor %}</span>
+  </p>
+  {% endif %}
+  {% if page.tags.size > 0 %}
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">{% for tag in page.tags %}<a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}" class="page__taxonomy-item" rel="tag">{{ tag }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}{% endfor %}</span>
+  </p>
+  {% endif %}
+</footer>
+
+{% if page.previous or page.next %}
+<nav class="pagination">
+  {% if page.previous %}
+    <a href="{{ page.previous.url | relative_url }}" class="pagination--pager" title="{{ page.previous.title | strip_html }}">&laquo; {{ page.previous.title | truncate: 40 }}</a>
+  {% else %}
+    <a href="#" class="pagination--pager disabled">&laquo; Previous</a>
+  {% endif %}
+  {% if page.next %}
+    <a href="{{ page.next.url | relative_url }}" class="pagination--pager" title="{{ page.next.title | strip_html }}">{{ page.next.title | truncate: 40 }} &raquo;</a>
+  {% else %}
+    <a href="#" class="pagination--pager disabled">Next &raquo;</a>
+  {% endif %}
+</nav>
+{% endif %}
