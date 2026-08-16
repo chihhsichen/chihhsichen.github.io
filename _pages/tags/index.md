@@ -1,30 +1,24 @@
 ---
-layout: default
-title: "Tags"
+layout: null
 permalink: /tags/
-author_profile: true
+sitemap: false
 ---
-
-<div class="archive">
-{% assign tags = site.tags | sort %}
-{% if tags.size > 0 %}
-  <p class="page__taxonomy">
-    {% for tag in tags %}<a href="#{{ tag[0] | slugify }}" class="page__taxonomy-item">{{ tag[0] }} ({{ tag[1].size }})</a>{% endfor %}
-  </p>
-  {% for tag in tags %}
-    {% assign tag_name = tag[0] %}
-    {% assign tag_posts = tag[1] | sort: "date" | reverse %}
-    <h2 id="{{ tag_name | slugify }}" class="archive__subtitle">{{ tag_name }} <small class="page__meta">({{ tag_posts.size }})</small></h2>
-    {% for post in tag_posts %}
-    <div class="list__item">
-      <article class="archive__item">
-        <h3 class="archive__item-title"><a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a></h3>
-        <p class="page__meta">{{ post.date | date: "%B %d, %Y" }}</p>
-      </article>
-    </div>
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  <p>No tags yet.</p>
-{% endif %}
-</div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="refresh" content="0; url={{ '/categories/' | relative_url }}#tags">
+    <title>Tags moved to Categories</title>
+    <script>
+      (function () {
+        var tag = window.location.hash.replace(/^#/, '');
+        var target = '{{ '/categories/' | relative_url }}' + (tag ? '#tag-' + tag : '#tags');
+        window.location.replace(target);
+      }());
+    </script>
+  </head>
+  <body>
+    <p>Tags have moved to <a href="{{ '/categories/' | relative_url }}#tags">Categories</a>.</p>
+  </body>
+</html>

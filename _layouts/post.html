@@ -57,7 +57,7 @@ layout: default
             <div>
               <span class="post-taxonomy__label">Tags</span>
               <span class="post-taxonomy__items post-taxonomy__items--tags">
-                {% for tag in page.tags %}<a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}" target="_self">{{ tag }}</a>{% endfor %}
+                {% for tag in page.tags %}<a href="{{ '/categories/' | relative_url }}#tag-{{ tag | slugify }}" target="_self">{{ tag }}</a>{% endfor %}
               </span>
             </div>
           </div>
