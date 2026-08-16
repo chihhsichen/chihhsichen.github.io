@@ -2,41 +2,700 @@
 layout: default
 ---
 
-<h1 class="page__title">{{ page.title }}</h1>
-<p class="page__meta">
-  {% if page.date %}
-    <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
-  {% endif %}
-</p>
+{% assign post_words = content | strip_html | number_of_words %}
+{% assign reading_time = post_words | plus: 219 | divided_by: 220 %}
+{% if reading_time < 1 %}{% assign reading_time = 1 %}{% endif %}
+{% assign share_url = page.url | absolute_url | uri_escape %}
+{% assign share_title = page.title | strip_html | uri_escape %}
 
-{{ content }}
+<div class="post-page-shell" id="post-top">
+  <nav class="post-breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ '/' | relative_url }}" target="_self">Home</a>
+    <span aria-hidden="true">›</span>
+    <a href="{{ '/blog/' | relative_url }}" target="_self">Blog</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">{{ page.title }}</span>
+  </nav>
 
-<footer class="page__meta">
-  {% if page.categories.size > 0 %}
-  <p class="page__taxonomy">
-    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
-    <span itemprop="keywords">{% for cat in page.categories %}<a href="{{ '/categories/' | relative_url }}#{{ cat | slugify }}" class="page__taxonomy-item" rel="tag">{{ cat }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}{% endfor %}</span>
-  </p>
-  {% endif %}
-  {% if page.tags.size > 0 %}
-  <p class="page__taxonomy">
-    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
-    <span itemprop="keywords">{% for tag in page.tags %}<a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}" class="page__taxonomy-item" rel="tag">{{ tag }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}{% endfor %}</span>
-  </p>
-  {% endif %}
-</footer>
+  <header class="post-hero">
+    {% if page.subtitle %}<p class="post-hero__eyebrow">{{ page.subtitle }}</p>{% endif %}
+    <h1 class="post-hero__title">{{ page.title }}</h1>
+    {% if page.description %}<p class="post-hero__lead">{{ page.description }}</p>{% endif %}
 
-{% if page.previous or page.next %}
-<nav class="pagination">
-  {% if page.previous %}
-    <a href="{{ page.previous.url | relative_url }}" class="pagination--pager" title="{{ page.previous.title | strip_html }}">&laquo; {{ page.previous.title | truncate: 40 }}</a>
-  {% else %}
-    <a href="#" class="pagination--pager disabled">&laquo; Previous</a>
-  {% endif %}
-  {% if page.next %}
-    <a href="{{ page.next.url | relative_url }}" class="pagination--pager" title="{{ page.next.title | strip_html }}">{{ page.next.title | truncate: 40 }} &raquo;</a>
-  {% else %}
-    <a href="#" class="pagination--pager disabled">Next &raquo;</a>
-  {% endif %}
-</nav>
-{% endif %}
+    <div class="post-hero__meta">
+      <span><i class="fas fa-calendar-alt" aria-hidden="true"></i> Posted <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %d, %Y" }}</time></span>
+      {% if page.last_modified_at %}<span><i class="fas fa-history" aria-hidden="true"></i> Updated <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%b %d, %Y" }}</time></span>{% endif %}
+      <span><i class="fas fa-user" aria-hidden="true"></i> By {{ site.author.name }}</span>
+      <span class="post-hero__reading-time"><i class="fas fa-clock" aria-hidden="true"></i> {{ reading_time }} min read</span>
+    </div>
+  </header>
+
+  <div class="post-reading-layout">
+    <main class="post-reading-main">
+      <div class="post-content" id="post-content">
+        {{ content }}
+      </div>
+
+      <footer class="post-footer">
+        {% if page.categories.size > 0 or page.tags.size > 0 %}
+        <div class="post-taxonomy">
+          {% if page.categories.size > 0 %}
+          <div class="post-taxonomy__row">
+            <i class="fas fa-folder-open" aria-hidden="true"></i>
+            <div>
+              <span class="post-taxonomy__label">Categories</span>
+              <span class="post-taxonomy__items">
+                {% for category in page.categories %}<a href="{{ '/categories/' | relative_url }}#{{ category | slugify }}" target="_self">{{ category }}</a>{% endfor %}
+              </span>
+            </div>
+          </div>
+          {% endif %}
+
+          {% if page.tags.size > 0 %}
+          <div class="post-taxonomy__row">
+            <i class="fas fa-tags" aria-hidden="true"></i>
+            <div>
+              <span class="post-taxonomy__label">Tags</span>
+              <span class="post-taxonomy__items post-taxonomy__items--tags">
+                {% for tag in page.tags %}<a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}" target="_self">{{ tag }}</a>{% endfor %}
+              </span>
+            </div>
+          </div>
+          {% endif %}
+        </div>
+        {% endif %}
+
+        <div class="post-credit-share">
+          <p>© {{ site.time | date: "%Y" }} {{ site.author.name }}. Shared for learning and reference.</p>
+          <div class="post-share" aria-label="Share this post">
+            <span>Share</span>
+            <a href="https://twitter.com/intent/tweet?text={{ share_title }}&url={{ share_url }}" aria-label="Share on X"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url }}" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="mailto:?subject={{ share_title }}&body={{ share_url }}" aria-label="Share by email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+            <button class="post-copy-link" type="button" aria-label="Copy article link"><i class="fas fa-link" aria-hidden="true"></i><span>Copy link</span></button>
+          </div>
+        </div>
+
+        {% if site.related_posts.size > 0 %}
+        <section class="post-related" aria-labelledby="further-reading-title">
+          <h2 id="further-reading-title">Further Reading</h2>
+          <div class="post-related__grid">
+            {% for related in site.related_posts limit: 3 %}
+            <a class="post-related__card" href="{{ related.url | relative_url }}" target="_self">
+              <time datetime="{{ related.date | date_to_xmlschema }}">{{ related.date | date: "%b %d, %Y" }}</time>
+              <strong>{{ related.title }}</strong>
+              <span>{{ related.excerpt | strip_html | strip_newlines | truncatewords: 18 }}</span>
+            </a>
+            {% endfor %}
+          </div>
+        </section>
+        {% endif %}
+
+        {% if page.previous or page.next %}
+        <nav class="post-pagination" aria-label="Post navigation">
+          {% if page.previous %}
+          <a class="post-pagination__item" href="{{ page.previous.url | relative_url }}" target="_self">
+            <span>Older</span>
+            <strong><i class="fas fa-arrow-left" aria-hidden="true"></i> {{ page.previous.title }}</strong>
+          </a>
+          {% else %}
+          <span class="post-pagination__item post-pagination__item--disabled"></span>
+          {% endif %}
+
+          {% if page.next %}
+          <a class="post-pagination__item post-pagination__item--next" href="{{ page.next.url | relative_url }}" target="_self">
+            <span>Newer</span>
+            <strong>{{ page.next.title }} <i class="fas fa-arrow-right" aria-hidden="true"></i></strong>
+          </a>
+          {% else %}
+          <span class="post-pagination__item post-pagination__item--disabled"></span>
+          {% endif %}
+        </nav>
+        {% endif %}
+      </footer>
+    </main>
+
+    {% if page.toc != false %}
+    <aside class="post-toc" id="post-toc" aria-label="Table of contents">
+      <div class="post-toc__panel">
+        <p class="post-toc__title"><i class="fas fa-list-ul" aria-hidden="true"></i> On this page</p>
+        <nav class="post-toc__links" id="post-toc-links"></nav>
+        <a class="post-toc__top" href="#post-top" target="_self"><i class="fas fa-arrow-up" aria-hidden="true"></i> Back to top</a>
+      </div>
+    </aside>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  .post-page-shell {
+    --post-blue: #1f5fae;
+    --post-ink: #27313c;
+    --post-muted: #77828e;
+    --post-line: #e0e6ec;
+    --post-soft: #f7f9fb;
+    color: var(--post-ink);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  }
+
+  .post-page-shell .post-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+    margin: 0.25rem 0 2.5rem;
+    color: var(--post-muted);
+    font-size: 0.83rem;
+    white-space: nowrap;
+  }
+
+  .post-page-shell .post-breadcrumb a {
+    color: var(--post-blue);
+    text-decoration: none;
+  }
+
+  .post-page-shell .post-breadcrumb span:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .post-hero {
+    margin-bottom: 2.2rem;
+    padding-bottom: 1.45rem;
+    border-bottom: 1px solid var(--post-line);
+  }
+
+  .post-page-shell .post-hero__eyebrow {
+    margin: 0 0 0.5rem;
+    color: var(--post-blue);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+
+  .post-page-shell .post-hero__title {
+    margin: 0;
+    padding: 0;
+    color: var(--post-ink);
+    border: 0;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1.12;
+  }
+
+  .post-page-shell .post-hero__lead {
+    max-width: 780px;
+    margin: 0.8rem 0 0;
+    color: #65717d;
+    font-size: 1.05rem;
+    line-height: 1.65;
+  }
+
+  .post-hero__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem 1.2rem;
+    margin-top: 1.15rem;
+    color: var(--post-muted);
+    font-size: 0.77rem;
+  }
+
+  .post-hero__meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.38rem;
+  }
+
+  .post-hero__meta i {
+    color: #9aa5b0;
+  }
+
+  .post-hero__reading-time {
+    margin-left: auto;
+    padding: 0.36rem 0.65rem;
+    border: 1px solid var(--post-line);
+    border-radius: 999px;
+    background: var(--post-soft);
+  }
+
+  .post-reading-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 215px;
+    gap: 2.4rem;
+    align-items: start;
+  }
+
+  .post-reading-main {
+    min-width: 0;
+  }
+
+  .post-content {
+    color: #37414b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    line-height: 1.78;
+  }
+
+  .post-content > h1:first-child {
+    display: none;
+  }
+
+  .post-page-shell .post-content h2,
+  .post-page-shell .post-content h3,
+  .post-page-shell .post-content h4 {
+    scroll-margin-top: 5.5rem;
+    color: var(--post-ink);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    line-height: 1.3;
+  }
+
+  .post-page-shell .post-content h2 {
+    margin: 2.6rem 0 1rem;
+    padding-bottom: 0.55rem;
+    border-bottom: 1px solid var(--post-line);
+    font-size: 1.55rem;
+  }
+
+  .post-page-shell .post-content h3 {
+    margin: 2rem 0 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  .post-page-shell .post-content p,
+  .post-page-shell .post-content li {
+    font-size: 1rem;
+  }
+
+  .post-page-shell .post-content p {
+    margin: 0 0 1.1rem;
+  }
+
+  .post-page-shell .post-content a {
+    color: var(--post-blue);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.16em;
+  }
+
+  .post-page-shell .post-content img {
+    height: auto;
+    margin: 0.55rem auto 1.4rem;
+    border-radius: 10px;
+    box-shadow: 0 7px 24px rgba(36, 50, 64, 0.08);
+  }
+
+  .post-page-shell .post-content blockquote {
+    margin: 1.5rem 0;
+    padding: 0.9rem 1.1rem;
+    border-left: 4px solid #8db1dd;
+    border-radius: 0 8px 8px 0;
+    background: var(--post-soft);
+  }
+
+  .post-page-shell .post-content pre {
+    border-radius: 9px;
+  }
+
+  .post-toc {
+    min-width: 0;
+  }
+
+  .post-toc__panel {
+    position: sticky;
+    top: 5.25rem;
+    overflow: hidden;
+    border: 1px solid var(--post-line);
+    border-radius: 11px;
+    background: #fff;
+    box-shadow: 0 7px 22px rgba(40, 55, 70, 0.06);
+  }
+
+  .post-page-shell .post-toc__title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0.8rem 0.9rem;
+    color: var(--post-ink);
+    border-bottom: 1px solid var(--post-line);
+    background: var(--post-soft);
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .post-toc__links {
+    max-height: calc(100vh - 12rem);
+    overflow-y: auto;
+    padding: 0.45rem 0;
+  }
+
+  .post-page-shell .post-toc__link {
+    display: block;
+    padding: 0.4rem 0.85rem;
+    color: #6d7883;
+    border-left: 2px solid transparent;
+    font-size: 0.74rem;
+    line-height: 1.42;
+    text-decoration: none;
+  }
+
+  .post-page-shell .post-toc__link--h3 {
+    padding-left: 1.35rem;
+    font-size: 0.7rem;
+  }
+
+  .post-page-shell .post-toc__link:hover,
+  .post-page-shell .post-toc__link.is-active {
+    color: var(--post-blue);
+    border-left-color: var(--post-blue);
+    background: #f4f8fd;
+    text-decoration: none;
+  }
+
+  .post-page-shell .post-toc__top {
+    display: block;
+    padding: 0.65rem 0.9rem;
+    color: #7b8792;
+    border-top: 1px solid var(--post-line);
+    font-size: 0.7rem;
+    text-decoration: none;
+  }
+
+  .post-footer {
+    margin-top: 3.5rem;
+  }
+
+  .post-taxonomy {
+    display: grid;
+    gap: 0.85rem;
+    padding: 1.1rem;
+    border: 1px solid var(--post-line);
+    border-radius: 11px;
+    background: var(--post-soft);
+  }
+
+  .post-taxonomy__row {
+    display: grid;
+    grid-template-columns: 1.1rem minmax(0, 1fr);
+    align-items: start;
+    gap: 0.65rem;
+  }
+
+  .post-taxonomy__row > i {
+    padding-top: 0.3rem;
+    color: #84909c;
+  }
+
+  .post-taxonomy__label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #687480;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .post-taxonomy__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.42rem;
+  }
+
+  .post-page-shell .post-taxonomy__items a {
+    padding: 0.28rem 0.55rem;
+    color: var(--post-blue);
+    border: 1px solid #cfdbe8;
+    border-radius: 7px;
+    background: #fff;
+    font-size: 0.72rem;
+    text-decoration: none;
+  }
+
+  .post-taxonomy__items--tags a::before {
+    content: "#";
+    color: #91a0af;
+  }
+
+  .post-credit-share {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--post-line);
+  }
+
+  .post-page-shell .post-credit-share p {
+    margin: 0;
+    color: var(--post-muted);
+    font-size: 0.72rem;
+  }
+
+  .post-share {
+    display: flex;
+    align-items: center;
+    gap: 0.42rem;
+    color: var(--post-muted);
+    font-size: 0.72rem;
+    white-space: nowrap;
+  }
+
+  .post-page-shell .post-share a,
+  .post-copy-link {
+    display: inline-grid;
+    width: 1.8rem;
+    height: 1.8rem;
+    place-items: center;
+    padding: 0;
+    color: #74808c;
+    border: 1px solid var(--post-line);
+    border-radius: 50%;
+    background: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .post-copy-link span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  .post-page-shell .post-share a:hover,
+  .post-copy-link:hover,
+  .post-copy-link.is-copied {
+    color: #fff;
+    border-color: var(--post-blue);
+    background: var(--post-blue);
+  }
+
+  .post-related {
+    margin-top: 2.8rem;
+  }
+
+  .post-page-shell .post-related h2 {
+    margin: 0 0 1rem;
+    padding: 0;
+    color: var(--post-ink);
+    border: 0;
+    font-size: 1.18rem;
+  }
+
+  .post-related__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.85rem;
+  }
+
+  .post-page-shell .post-related__card {
+    display: grid;
+    align-content: start;
+    gap: 0.55rem;
+    min-width: 0;
+    padding: 1rem;
+    color: var(--post-ink);
+    border: 1px solid var(--post-line);
+    border-radius: 11px;
+    background: #fff;
+    box-shadow: 0 6px 18px rgba(39, 55, 72, 0.05);
+    text-decoration: none;
+  }
+
+  .post-page-shell .post-related__card:hover {
+    border-color: #b9cbe0;
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+
+  .post-related__card time,
+  .post-related__card span {
+    color: var(--post-muted);
+    font-size: 0.7rem;
+  }
+
+  .post-related__card strong {
+    color: var(--post-ink);
+    font-size: 0.9rem;
+    line-height: 1.35;
+  }
+
+  .post-related__card span {
+    display: -webkit-box;
+    overflow: hidden;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  .post-pagination {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 2rem;
+    overflow: hidden;
+    border: 1px solid var(--post-line);
+    border-radius: 11px;
+  }
+
+  .post-page-shell .post-pagination__item {
+    display: grid;
+    align-content: center;
+    gap: 0.45rem;
+    min-height: 5.2rem;
+    padding: 0.8rem 1rem;
+    color: var(--post-blue);
+    text-decoration: none;
+  }
+
+  .post-page-shell .post-pagination__item + .post-pagination__item {
+    border-left: 1px solid var(--post-line);
+  }
+
+  .post-page-shell .post-pagination__item:hover {
+    background: var(--post-soft);
+    text-decoration: none;
+  }
+
+  .post-pagination__item > span {
+    color: #919ca7;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .post-pagination__item strong {
+    font-size: 0.82rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .post-pagination__item--next {
+    text-align: right;
+  }
+
+  @media (max-width: 1120px) {
+    .post-reading-layout {
+      grid-template-columns: minmax(0, 1fr) 190px;
+      gap: 1.5rem;
+    }
+  }
+
+  @media (max-width: 980px) {
+    .post-reading-layout {
+      display: block;
+    }
+
+    .post-toc {
+      display: none;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .post-page-shell .post-breadcrumb {
+      margin-bottom: 1.7rem;
+    }
+
+    .post-hero__reading-time {
+      margin-left: 0;
+    }
+
+    .post-related__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .post-credit-share {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .post-pagination {
+      grid-template-columns: 1fr;
+    }
+
+    .post-page-shell .post-pagination__item + .post-pagination__item {
+      border-top: 1px solid var(--post-line);
+      border-left: 0;
+    }
+
+    .post-pagination__item--next {
+      text-align: left;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    var content = document.getElementById('post-content');
+    var toc = document.getElementById('post-toc');
+    var tocLinks = document.getElementById('post-toc-links');
+    if (!content || !toc || !tocLinks) return;
+
+    var headings = content.querySelectorAll('h2, h3');
+    if (!headings.length) {
+      toc.style.display = 'none';
+      return;
+    }
+
+    var usedIds = {};
+    Array.prototype.forEach.call(headings, function (heading, index) {
+      var baseId = heading.id || heading.textContent.toLowerCase().trim()
+        .replace(/[^a-z0-9\u4e00-\u9fff]+/g, '-')
+        .replace(/^-+|-+$/g, '') || 'section-' + (index + 1);
+      var headingId = baseId;
+      var duplicateIndex = 2;
+      while (usedIds[headingId]) {
+        headingId = baseId + '-' + duplicateIndex;
+        duplicateIndex += 1;
+      }
+      usedIds[headingId] = true;
+      heading.id = headingId;
+
+      var link = document.createElement('a');
+      link.className = 'post-toc__link post-toc__link--' + heading.tagName.toLowerCase();
+      link.href = '#' + headingId;
+      link.target = '_self';
+      link.textContent = heading.textContent;
+      link.setAttribute('data-heading-id', headingId);
+      tocLinks.appendChild(link);
+    });
+
+    if ('IntersectionObserver' in window) {
+      var links = tocLinks.querySelectorAll('.post-toc__link');
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          Array.prototype.forEach.call(links, function (link) {
+            link.classList.toggle('is-active', link.getAttribute('data-heading-id') === entry.target.id);
+          });
+        });
+      }, { rootMargin: '-20% 0px -68% 0px', threshold: 0 });
+
+      Array.prototype.forEach.call(headings, function (heading) {
+        observer.observe(heading);
+      });
+    }
+
+    var copyButton = document.querySelector('.post-copy-link');
+    if (copyButton) {
+      copyButton.addEventListener('click', function () {
+        var url = window.location.href.split('#')[0];
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(url).then(function () {
+            copyButton.classList.add('is-copied');
+            copyButton.setAttribute('aria-label', 'Link copied');
+            window.setTimeout(function () {
+              copyButton.classList.remove('is-copied');
+              copyButton.setAttribute('aria-label', 'Copy article link');
+            }, 1600);
+          });
+        } else {
+          window.prompt('Copy this link:', url);
+        }
+      });
+    }
+  }());
+</script>
