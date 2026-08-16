@@ -135,7 +135,7 @@ layout: default
     --post-line: #e0e6ec;
     --post-soft: #f7f9fb;
     color: var(--post-ink);
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
   }
 
   .post-page-shell .post-breadcrumb {
@@ -234,7 +234,7 @@ layout: default
 
   .post-content {
     color: #37414b;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Charter, "Bitstream Charter", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
     font-size: 1rem;
     line-height: 1.78;
   }
@@ -248,7 +248,7 @@ layout: default
   .post-page-shell .post-content h4 {
     scroll-margin-top: 5.5rem;
     color: var(--post-ink);
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.3;
   }
 
@@ -300,11 +300,14 @@ layout: default
 
   .post-toc {
     min-width: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5.25rem;
+    align-self: start;
+    z-index: 3;
   }
 
   .post-toc__panel {
-    position: sticky;
-    top: 5.25rem;
     overflow: hidden;
     border: 1px solid var(--post-line);
     border-radius: 11px;
