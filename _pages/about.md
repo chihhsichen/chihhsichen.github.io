@@ -21,7 +21,7 @@ Hi there👋. I'm Zhixi Chen (Sometimes I choose Chih-Hsi Chen as my name, my Ch
 
 Currently, I am a first-year Ph.D. student in the <a href='https://www.ntu.edu.sg/computing'>College of Computing and Data Science (CCDS)</a> at <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a>, Singapore, supervised by <a href="https://dr.ntu.edu.sg/entities/person/Miao-Chun-Yan"> Prof. Chunyan Miao </a>.
 Previously, I obtained my M.Sc. (Data Science) Degree in the <a href='https://www.ntu.edu.sg/computing'>College of Computing and Data Science (CCDS)</a> at <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a>, Singapore, Supervised by <a href="https://zhangynnancy.github.io"> Dr. Yinan Zhang </a> and <a href="https://dr.ntu.edu.sg/entities/person/Shen-Zhiqi"> Dr. Zhiqi Shen </a>. 
-Before that, I earned my B.Eng. in Software Engineering degree (Financial Technology Track) with Minor in Finance in <a href="http://sc.neu.edu.cn/">Software College</a>, <a href="https://neu.edu.cn/">Northeastern University</a>, Shenyang, Liaoning, China, working closely with <a href="http://faculty.neu.edu.cn/zhangyin/"> Yin Zhang </a>.
+Before that, I earned my B.Eng. in Software Engineering degree (Financial Technology Track) with Minor in Finance in <a href="http://sc.neu.edu.cn/">Software College</a>, <a href="https://neu.edu.cn/">Northeastern University</a>, Shenyang, Liaoning, China, working closely with <a href="http://faculty.neu.edu.cn/zhangyin/"> Assoc. Prof. Yin Zhang </a>.
 
 # 👀 Research Interest
 
@@ -90,7 +90,7 @@ Zhixi Chen, Zimu Li, Yin Zhang$^\*$
 # 🎖 Honors and Awards
 - *2022.11*, National Second Prize and Provincial First Prize, 2022 China Undergraduate Mathematical Contest in Modeling (CUMCM).
 - *2022.04*, Honorable Mention Prize, 2022 Mathematical Contest in Modeling (MCM).
-- *2022, 2023, 2024*, Northeastern University School Scholarship. 
+- *2022, 2023, 2024*, Northeastern University School Scholarship.
 - *2021, 2022, 2023*, Northeastern University Outstanding Individual with Academic Strengths.
 
 # 📚 Other Experiences
