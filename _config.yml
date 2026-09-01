@@ -31,8 +31,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Zhixi Chen"
   avatar           : "/images/avatar_rainbow.png"
-  bio              : "Ph.D. Student@College of Computing and Data Science, Nanyang Technological University"
-  location         : "WeBank-NTU, 🇸🇬"
+  bio              : "Ph.D. Student @ College of Computing and Data Science, Nanyang Technological University"
+  location         : "NTU-WeBank, 🇸🇬"
   employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=zmhR9joAAAAJ"

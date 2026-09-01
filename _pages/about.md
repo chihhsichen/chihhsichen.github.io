@@ -21,12 +21,12 @@ Hi there👋. I'm Zhixi Chen (Sometimes I choose Chih-Hsi Chen as my name, my Ch
 
 Currently, I am a first-year Ph.D. student in the <a href='https://www.ntu.edu.sg/computing'>College of Computing and Data Science (CCDS)</a> at <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a>, Singapore, supervised by <a href="https://dr.ntu.edu.sg/entities/person/Miao-Chun-Yan"> Prof. Chunyan Miao </a>.
 Previously, I obtained my M.Sc. (Data Science) Degree in the <a href='https://www.ntu.edu.sg/computing'>College of Computing and Data Science (CCDS)</a> at <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a>, Singapore, Supervised by <a href="https://zhangynnancy.github.io"> Dr. Yinan Zhang </a> and <a href="https://dr.ntu.edu.sg/entities/person/Shen-Zhiqi"> Dr. Zhiqi Shen </a>. 
-Before that, I earned my B.Eng. in Software Engineering degree (Financial Technology Track) with Minor in Finance in <a href="http://sc.neu.edu.cn/">Software College</a>, <a href="https://neu.edu.cn/">Northeastern University</a>, Shenyang, Liaoning, China.
+Before that, I earned my B.Eng. in Software Engineering degree (Financial Technology Track) with Minor in Finance in <a href="http://sc.neu.edu.cn/">Software College</a>, <a href="https://neu.edu.cn/">Northeastern University</a>, Shenyang, Liaoning, China, working closely with <a href="http://faculty.neu.edu.cn/zhangyin/"> Yin Zhang </a>.
 
 # 👀 Research Interest
 
 My research interest <span style="text-decoration: underline; font-weight:bold; color:#DC143C">includes but not limited</span> to,
-* Recommendation Systems
+* Representation Learning for Recommendation Systems
 * Reinforcement Learning and its application to LLMs
 * Natural Language Processing and its application
 
