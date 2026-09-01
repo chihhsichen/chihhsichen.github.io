@@ -40,13 +40,14 @@ My research interest <span style="text-decoration: underline; font-weight:bold; 
 - *2025.02 - 2025.12*: **Research Intern** @ Alibaba-NTU Global e-Sustainability CorpLab (ANGEL).
 
 # 🔥 News
+- *2026.08.10*: Started my Ph.D. programme at the College of Computing and Data Science, Nanyang Technological University, Singapore.
 - *2026.04.08*: 🎉🎉 Received Ph.D. offer from *College of Computing and Data Science*, Nanyang Technological University, Singapore, commercing from 2026 Fall.
 - *2026.03.10*: As a research intern, joined the Jinan-NTU Green Technology Research Institute (GreenTRI).
 - *2026.01.31*: Graduated from *Nanyang Technological University* with **M.Sc. in Data Science** degree.
 - *2026.01.13*: 🎉🎉 <span style="color:#DC143C; font-weight:bold;"> One paper accepted by *The ACM Web Conference (WWW 2026)*! This is my first research paper as a co-first author. :) </span>
 - *2025.11.21*: Defended my M.Sc. project *Predictive Insights with Language Models for Item Popularity Dynamics* successfully.
 - *2025.01.17*: As a research intern, started the research project *Predictive Insights with Language Models for Item Popularity Dynamics* under NTU-ANGEL lab.
-- *2024.08.12*: Started my M.Sc. in Data Science program study at Nanyang Technological University.
+- *2024.08.12*: Started my M.Sc. in Data Science at Nanyang Technological University.
 - *2024.06.28*: Graduated from *Northeastern University* with **B.Eng. in Software Engineering** degree, and minor in Finance.
 
 # 📝 Publications & Research Works
