@@ -34,31 +34,34 @@ layout: default
   <div class="research-reading-list">
     {% for reading in readings %}
     <article class="research-reading-card{% if reading.featured %} research-reading-card--featured{% endif %}">
-      <div class="research-reading-card__meta">
-        {% if reading.featured %}<span class="research-featured"><i class="fas fa-star" aria-hidden="true"></i> Featured</span>{% endif %}
-        {% if reading.source %}<span><i class="fas fa-globe" aria-hidden="true"></i> {{ reading.source }}</span>{% endif %}
-        {% if reading.author %}<span><i class="fas fa-user" aria-hidden="true"></i> {{ reading.author }}</span>{% endif %}
-        {% if reading.published %}<time datetime="{{ reading.published }}"><i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ reading.published | date: "%b %d, %Y" }}</time>{% endif %}
-      </div>
+      <span class="research-reading-card__index" aria-hidden="true">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+      <div class="research-reading-card__body">
+        <div class="research-reading-card__meta">
+          {% if reading.featured %}<span class="research-featured"><i class="fas fa-star" aria-hidden="true"></i> Featured</span>{% endif %}
+          {% if reading.source %}<span><i class="fas fa-globe" aria-hidden="true"></i> {{ reading.source }}</span>{% endif %}
+          {% if reading.author %}<span><i class="fas fa-user" aria-hidden="true"></i> {{ reading.author }}</span>{% endif %}
+          {% if reading.published %}<time datetime="{{ reading.published }}"><i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ reading.published | date: "%b %d, %Y" }}</time>{% endif %}
+        </div>
 
-      <h2><a href="{{ reading.url }}" target="_blank" rel="noopener noreferrer">{{ reading.title }}</a></h2>
+        <h2><a href="{{ reading.url }}" target="_blank" rel="noopener noreferrer">{{ reading.title }}</a></h2>
 
-      {% if reading.summary %}<p class="research-reading-card__summary">{{ reading.summary }}</p>{% endif %}
+        {% if reading.summary %}<p class="research-reading-card__summary">{{ reading.summary }}</p>{% endif %}
 
-      {% if reading.note %}
-      <div class="research-reading-card__note">
-        <i class="fas fa-bookmark" aria-hidden="true"></i>
-        <p><strong>Why I saved this</strong>{{ reading.note }}</p>
-      </div>
-      {% endif %}
-
-      <div class="research-reading-card__footer">
-        {% if reading.tags.size > 0 %}
-        <div class="research-tags" aria-label="Article topics">
-          {% for tag in reading.tags %}<span>{{ tag }}</span>{% endfor %}
+        {% if reading.note %}
+        <div class="research-reading-card__note">
+          <i class="fas fa-bookmark" aria-hidden="true"></i>
+          <p><strong>Why I saved this</strong>{{ reading.note }}</p>
         </div>
         {% endif %}
-        <a class="research-read-link" href="{{ reading.url }}" target="_blank" rel="noopener noreferrer">Read original <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+
+        <div class="research-reading-card__footer">
+          {% if reading.tags.size > 0 %}
+          <div class="research-tags" aria-label="Article topics">
+            {% for tag in reading.tags %}<span>{{ tag }}</span>{% endfor %}
+          </div>
+          {% endif %}
+          <a class="research-read-link" href="{{ reading.url }}" target="_blank" rel="noopener noreferrer">Read original <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+        </div>
       </div>
     </article>
     {% endfor %}
