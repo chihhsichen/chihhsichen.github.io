@@ -141,6 +141,18 @@ defaults:
       layout: post
       author_profile: true
       toc: true
+  - scope:
+      path: ""
+      type: research_notes
+    values:
+      layout: research-note
+      author_profile: true
+
+# Research note detail pages
+collections:
+  research_notes:
+    output: true
+    permalink: /research/notes/:name/
 
 
 # Sass/SCSS

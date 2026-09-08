@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% assign topic = site.data.research_topics | where: "id", page.topic_id | first %}
-{% assign readings = site.data.research_readings[page.topic_id] %}
+{% assign readings = site.research_notes | where: "topic", page.topic_id | sort: "saved_at" | reverse %}
 {% assign reading_count = readings | size %}
 
 <div class="research-page research-topic-page">
@@ -40,17 +40,17 @@ layout: default
           {% if reading.featured %}<span class="research-featured"><i class="fas fa-star" aria-hidden="true"></i> Featured</span>{% endif %}
           {% if reading.source %}<span><i class="fas fa-globe" aria-hidden="true"></i> {{ reading.source }}</span>{% endif %}
           {% if reading.author %}<span><i class="fas fa-user" aria-hidden="true"></i> {{ reading.author }}</span>{% endif %}
-          {% if reading.published %}<time datetime="{{ reading.published }}"><i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ reading.published | date: "%b %d, %Y" }}</time>{% endif %}
+          {% if reading.source_date %}<time datetime="{{ reading.source_date }}"><i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ reading.source_date | date: "%b %d, %Y" }}</time>{% endif %}
         </div>
 
-        <h2><a href="{{ reading.url }}" target="_blank" rel="noopener noreferrer">{{ reading.title }}</a></h2>
+        <h2><a href="{{ reading.url | relative_url }}" target="_self">{{ reading.title }}</a></h2>
 
         {% if reading.summary %}<p class="research-reading-card__summary">{{ reading.summary }}</p>{% endif %}
 
-        {% if reading.note %}
+        {% if reading.takeaway %}
         <div class="research-reading-card__note">
           <i class="fas fa-bookmark" aria-hidden="true"></i>
-          <p><strong>Why I saved this</strong>{{ reading.note }}</p>
+          <p><strong>Why I saved this</strong>{{ reading.takeaway }}</p>
         </div>
         {% endif %}
 
@@ -60,7 +60,10 @@ layout: default
             {% for tag in reading.tags %}<span>{{ tag }}</span>{% endfor %}
           </div>
           {% endif %}
-          <a class="research-read-link" href="{{ reading.url }}" target="_blank" rel="noopener noreferrer">Read original <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+          <div class="research-reading-card__actions">
+            {% if reading.source_url %}<a class="research-source-link" href="{{ reading.source_url }}" target="_blank" rel="noopener noreferrer">Original <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>{% endif %}
+            <a class="research-read-link" href="{{ reading.url | relative_url }}" target="_self">Open notes <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
         </div>
       </div>
     </article>

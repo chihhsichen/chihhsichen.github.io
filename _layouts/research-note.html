@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+{% assign topic = site.data.research_topics | where: "id", page.topic | first %}
+
+<article class="research-page research-note-page research-note--{{ page.topic }}">
+  <nav class="research-breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ '/' | relative_url }}" target="_self">Home</a>
+    <span aria-hidden="true">›</span>
+    <a href="{{ '/research/' | relative_url }}" target="_self">Research</a>
+    <span aria-hidden="true">›</span>
+    <a href="{{ topic.url | relative_url }}" target="_self">{{ topic.title }}</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">Notes</span>
+  </nav>
+
+  <header class="research-note-hero">
+    <p class="research-eyebrow">{{ topic.title }} · Reading notes</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}<p class="research-note-hero__summary">{{ page.summary }}</p>{% endif %}
+
+    <div class="research-note-meta">
+      {% if page.source %}<span><i class="fas fa-globe" aria-hidden="true"></i> {{ page.source }}</span>{% endif %}
+      {% if page.author %}<span><i class="fas fa-user" aria-hidden="true"></i> {{ page.author }}</span>{% endif %}
+      {% if page.source_date %}<time datetime="{{ page.source_date }}"><i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ page.source_date | date: "%b %d, %Y" }}</time>{% endif %}
+      {% if page.saved_at %}<time datetime="{{ page.saved_at }}"><i class="fas fa-bookmark" aria-hidden="true"></i> Saved {{ page.saved_at | date: "%b %d, %Y" }}</time>{% endif %}
+    </div>
+
+    {% if page.tags.size > 0 %}
+    <div class="research-tags" aria-label="Note topics">
+      {% for tag in page.tags %}<span>{{ tag }}</span>{% endfor %}
+    </div>
+    {% endif %}
+  </header>
+
+  {% if page.source_url %}
+  <aside class="research-note-source">
+    <div>
+      <span>Source material</span>
+      <strong>{% if page.source %}{{ page.source }}{% else %}Original article{% endif %}</strong>
+    </div>
+    <a href="{{ page.source_url }}" target="_blank" rel="noopener noreferrer">Visit original <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+  </aside>
+  {% endif %}
+
+  <div class="research-note-content">
+    {{ content }}
+  </div>
+
+  <footer class="research-note-footer">
+    <a href="{{ topic.url | relative_url }}" target="_self"><i class="fas fa-arrow-left" aria-hidden="true"></i> Back to {{ topic.title }}</a>
+    {% if page.source_url %}<a href="{{ page.source_url }}" target="_blank" rel="noopener noreferrer">Read the original <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>{% endif %}
+  </footer>
+</article>

@@ -23,7 +23,7 @@ author_profile: true
 
   <div class="research-area-grid">
     {% for topic in site.data.research_topics %}
-      {% assign topic_readings = site.data.research_readings[topic.id] %}
+      {% assign topic_readings = site.research_notes | where: "topic", topic.id %}
       {% assign topic_count = topic_readings | size %}
     <a class="research-area-card" href="{{ topic.url | relative_url }}" target="_self">
       <span class="research-area-card__orb" aria-hidden="true"></span>
