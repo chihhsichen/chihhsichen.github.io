@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+{% assign topic = site.data.research_topics | where: "id", page.topic_id | first %}
+{% assign readings = site.data.research_readings[page.topic_id] %}
+{% assign reading_count = readings | size %}
+
+<div class="research-page research-topic-page">
+  <nav class="research-breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ '/' | relative_url }}" target="_self">Home</a>
+    <span aria-hidden="true">›</span>
+    <a href="{{ '/research/' | relative_url }}" target="_self">Research</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">{{ topic.title }}</span>
+  </nav>
+
+  <header class="research-topic-hero">
+    <a class="research-back-link" href="{{ '/research/' | relative_url }}" target="_self"><i class="fas fa-arrow-left" aria-hidden="true"></i> All research areas</a>
+    <p class="research-eyebrow">{{ topic.eyebrow }}</p>
+    <div class="research-topic-hero__title-row">
+      <div>
+        <h1>{{ topic.title }}</h1>
+        <p>{{ topic.description }}</p>
+      </div>
+      <div class="research-count" aria-label="{{ reading_count }} saved readings">
+        <strong>{{ reading_count }}</strong>
+        <span>saved readings</span>
+      </div>
+    </div>
+  </header>
+
+  {% if reading_count > 0 %}
+  <div class="research-reading-list">
+    {% for reading in readings %}
+    <article class="research-reading-card{% if reading.featured %} research-reading-card--featured{% endif %}">
+      <div class="research-reading-card__meta">
+        {% if reading.featured %}<span class="research-featured"><i class="fas fa-star" aria-hidden="true"></i> Featured</span>{% endif %}
+        {% if reading.source %}<span><i class="fas fa-globe" aria-hidden="true"></i> {{ reading.source }}</span>{% endif %}
+        {% if reading.author %}<span><i class="fas fa-user" aria-hidden="true"></i> {{ reading.author }}</span>{% endif %}
+        {% if reading.published %}<time datetime="{{ reading.published }}"><i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ reading.published | date: "%b %d, %Y" }}</time>{% endif %}
+      </div>
+
+      <h2><a href="{{ reading.url }}" target="_blank" rel="noopener noreferrer">{{ reading.title }}</a></h2>
+
+      {% if reading.summary %}<p class="research-reading-card__summary">{{ reading.summary }}</p>{% endif %}
+
+      {% if reading.note %}
+      <div class="research-reading-card__note">
+        <i class="fas fa-bookmark" aria-hidden="true"></i>
+        <p><strong>Why I saved this</strong>{{ reading.note }}</p>
+      </div>
+      {% endif %}
+
+      <div class="research-reading-card__footer">
+        {% if reading.tags.size > 0 %}
+        <div class="research-tags" aria-label="Article topics">
+          {% for tag in reading.tags %}<span>{{ tag }}</span>{% endfor %}
+        </div>
+        {% endif %}
+        <a class="research-read-link" href="{{ reading.url }}" target="_blank" rel="noopener noreferrer">Read original <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="research-empty">
+    <span class="research-empty__icon"><i class="fas fa-bookmark" aria-hidden="true"></i></span>
+    <h2>Reading list coming soon</h2>
+    <p>Articles saved for this research area will appear here as cards with the author, source, summary, personal note, and topic tags.</p>
+  </div>
+  {% endif %}
+</div>
+
+{{ content }}

@@ -1,0 +1,32 @@
+- id: recommender-systems
+  number: "01"
+  title: "Recommender Systems"
+  eyebrow: "Personalization & discovery"
+  description: "Representation learning, user modeling, and methods for building useful recommendation systems."
+  url: "/research/recommender-systems/"
+  tags:
+    - Representation Learning
+    - User Modeling
+    - Sequential Recommendation
+
+- id: reinforcement-learning-llms
+  number: "02"
+  title: "Reinforcement Learning & LLMs"
+  eyebrow: "Reasoning & alignment"
+  description: "Reinforcement learning and its applications to the training, reasoning, and alignment of large language models."
+  url: "/research/reinforcement-learning-llms/"
+  tags:
+    - Reinforcement Learning
+    - LLM Alignment
+    - Reasoning
+
+- id: natural-language-processing
+  number: "03"
+  title: "Natural Language Processing"
+  eyebrow: "Language & intelligence"
+  description: "Methods, systems, and ideas for understanding and generating natural language."
+  url: "/research/natural-language-processing/"
+  tags:
+    - Language Models
+    - Text Understanding
+    - Generation
