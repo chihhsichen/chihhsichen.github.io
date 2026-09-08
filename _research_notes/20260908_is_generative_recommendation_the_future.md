@@ -12,7 +12,7 @@ tags:
 featured: false
 ---
 
-## Original Writing
+## 生成式推荐是未来还是伪范式？
 
 100% 不看好生成式替代当前搜广推的召回-粗排-精排架构。
 
