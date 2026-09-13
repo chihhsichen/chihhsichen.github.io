@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-13T05:11:38.223Z",
+  "updatedAt": "2026-09-13T05:12:36.252Z",
   "courses": [
     {
       "id": "course-1789265866232-3e45b794ed2958",
       "name": "多模態人工智慧 Multimodal Artificial Intelligence",
       "code": "CSIE5412",
-      "provider": "NTU",
+      "provider": "National Taiwan University",
       "instructor": "羅紹元",
       "term": "2026 Fall",
       "status": "Planned",
@@ -35,7 +35,7 @@
       ],
       "assessment": "",
       "readings": "P.-Y. Chen and S. Liu, “Introduction to Foundation Models,” Springer, 2025.",
-      "updatedAt": "2026-09-13T03:17:33.463Z"
+      "updatedAt": "2026-09-13T05:12:30.908Z"
     },
     {
       "id": "course-1789269402649-42b87c5159417",
