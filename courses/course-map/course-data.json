@@ -1,5 +1,146 @@
 {
   "version": 1,
-  "updatedAt": "",
-  "courses": []
+  "updatedAt": "2026-09-13T05:11:38.223Z",
+  "courses": [
+    {
+      "id": "course-1789265866232-3e45b794ed2958",
+      "name": "多模態人工智慧 Multimodal Artificial Intelligence",
+      "code": "CSIE5412",
+      "provider": "NTU",
+      "instructor": "羅紹元",
+      "term": "2026 Fall",
+      "status": "Planned",
+      "url": "https://cool.ntu.edu.tw/courses/67233",
+      "branch": "multimodal",
+      "slot": "Y1-C",
+      "prerequisites": [],
+      "nodes": "MM2, MM3",
+      "overview": "本課程將深入探討多模態人工智慧的前瞻技術，以多模態大型語言模型為主軸，了解最新的研究進展。透過文獻分析、實作練習與專題設計，學生將認識關鍵技術的發展脈絡與實務，建立研究與應用的能力。",
+      "syllabus": "",
+      "scheduleRows": [
+        {
+          "date": "9/10",
+          "description": "Deep Learning Basics",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "9/17",
+          "description": "Self-Supervised Learning",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        }
+      ],
+      "assessment": "",
+      "readings": "P.-Y. Chen and S. Liu, “Introduction to Foundation Models,” Springer, 2025.",
+      "updatedAt": "2026-09-13T03:17:33.463Z"
+    },
+    {
+      "id": "course-1789269402649-42b87c5159417",
+      "name": "深度學習於電腦視覺",
+      "code": "COMME5052",
+      "provider": "NTU",
+      "instructor": "王鈺強",
+      "term": "2024 Fall",
+      "status": "Taking",
+      "url": "https://cool.ntu.edu.tw/courses/41702",
+      "branch": "multimodal",
+      "slot": "Y1-C",
+      "prerequisites": [],
+      "nodes": "MM1",
+      "overview": "​This course will expose students to cutting-edge research — starting from fundamentals of deep learning to its recent advances in various vision applications. You will be expected to master key concepts, such as neural network architectures and their designs, training techniques, and performance optimization strategies. As a major part of this course, final projects are offered to foster critical thinking and problem-solving skills, preparing you to contribute to cutting-edge research or tackle real-world challenges in the real-world problems. Active participation, completion of hands-on projects, and engagement in theoretical discussions will be crucial to your success in this course.",
+      "syllabus": "Please check the schedule section.",
+      "scheduleRows": [
+        {
+          "date": "09/03",
+          "description": "Course Logistics & Registration; Intro to Neural Nets",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "09/10",
+          "description": "Convolutional Neural Networks & Image Segmentation",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "09/24",
+          "description": "Generative Models (I) - AE, VAE & GAN",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "10/08",
+          "description": "Generative Models (II) - Diffusion Model",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "10/15",
+          "description": "Recurrent Neural Networks & Transformer",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "10/22",
+          "description": "Vision & Language Models",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "10/29",
+          "description": "Unlearning, Debiasing, and Interoperability",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "11/05",
+          "description": "Multi-Modal Learning",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "11/12",
+          "description": "Parameter-Efficient Finetuning; Efficient Deep Learning",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "11/19",
+          "description": "3D Vision",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "11/26",
+          "description": "Transfer & Adversarial Learning",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "12/03",
+          "description": "Federated Learning",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        }
+      ],
+      "assessment": "N/A",
+      "readings": "N/A",
+      "updatedAt": "2026-09-13T03:18:33.620Z"
+    }
+  ]
 }
