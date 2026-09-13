@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-13T05:12:36.252Z",
+  "updatedAt": "2026-09-13T05:24:30.064Z",
   "courses": [
     {
       "id": "course-1789265866232-3e45b794ed2958",
@@ -141,6 +141,62 @@
       "assessment": "N/A",
       "readings": "N/A",
       "updatedAt": "2026-09-13T03:18:33.620Z"
+    },
+    {
+      "id": "course-1789277053822-1045a39e2e83e",
+      "name": "機器學習中的數學原理",
+      "code": "COMME5051",
+      "provider": "National Taiwan University",
+      "instructor": "王奕翔",
+      "term": "2021 Fall",
+      "status": "Planned",
+      "url": "https://cool.ntu.edu.tw/courses/9214",
+      "branch": "math",
+      "slot": "Y1-A",
+      "prerequisites": [],
+      "nodes": "M1, M2, M3, M4, M5, M6",
+      "overview": "Objectives of this course:\n    1. Introduce main concepts in ML with mathematical rigor.\n    2. Introduce theoretical frameworks for analyzing learning algorithms.",
+      "syllabus": "Prerequisites: Calculus, Probability, Linear Algebra, Machine learning (preferable), Convex optimization (preferable), Real analysis (preferable).",
+      "scheduleRows": [
+        {
+          "date": "",
+          "description": "Introduction\n    Recap of statistical decision theory;\n    Fundamental issues of learning from data;\n    Empirical risk minimization;",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "",
+          "description": "Generalization\n    Uniform convergence;\n    Model complexity;\n    Algorithmic stability;",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "",
+          "description": "Optimization\n    Gradient decent\n    Stochastic gradient descent\n    Online to batch",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "",
+          "description": "Model selection\n    Regularization\n    Cross validation",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "",
+          "description": "Learning methods\n    Linear least-square regression\n    Kernel methods\n    Neural networks",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        }
+      ],
+      "assessment": "",
+      "readings": "1. Mehryar Mohri, Afshin Rostamizadeh, and Ameet Talwalkar, Foundations of Machine Learning, MIT Press, Second Edition, 2018.\n2. Shai Shalev-Shwartz and Shai Ben-David, Understanding Machine Learning: From Theory to Algorithms, Cambridge University Press, 2014.\n3. Moritz Hardt and Benjamin Recht, Patterns, Predictions, and Actions: A story about Machine Learning, https://mlstory.org , 2021.",
+      "updatedAt": "2026-09-13T05:24:13.823Z"
     }
   ]
 }
