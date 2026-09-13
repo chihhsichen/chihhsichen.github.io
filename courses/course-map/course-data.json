@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-13T05:24:30.064Z",
+  "updatedAt": "2026-09-13T05:24:44.668Z",
   "courses": [
     {
       "id": "course-1789265866232-3e45b794ed2958",
@@ -159,35 +159,35 @@
       "syllabus": "Prerequisites: Calculus, Probability, Linear Algebra, Machine learning (preferable), Convex optimization (preferable), Real analysis (preferable).",
       "scheduleRows": [
         {
-          "date": "",
+          "date": "1",
           "description": "Introduction\n    Recap of statistical decision theory;\n    Fundamental issues of learning from data;\n    Empirical risk minimization;",
           "materials": "",
           "events": "",
           "deadlines": ""
         },
         {
-          "date": "",
+          "date": "2",
           "description": "Generalization\n    Uniform convergence;\n    Model complexity;\n    Algorithmic stability;",
           "materials": "",
           "events": "",
           "deadlines": ""
         },
         {
-          "date": "",
+          "date": "3",
           "description": "Optimization\n    Gradient decent\n    Stochastic gradient descent\n    Online to batch",
           "materials": "",
           "events": "",
           "deadlines": ""
         },
         {
-          "date": "",
+          "date": "4",
           "description": "Model selection\n    Regularization\n    Cross validation",
           "materials": "",
           "events": "",
           "deadlines": ""
         },
         {
-          "date": "",
+          "date": "5",
           "description": "Learning methods\n    Linear least-square regression\n    Kernel methods\n    Neural networks",
           "materials": "",
           "events": "",
@@ -196,7 +196,7 @@
       ],
       "assessment": "",
       "readings": "1. Mehryar Mohri, Afshin Rostamizadeh, and Ameet Talwalkar, Foundations of Machine Learning, MIT Press, Second Edition, 2018.\n2. Shai Shalev-Shwartz and Shai Ben-David, Understanding Machine Learning: From Theory to Algorithms, Cambridge University Press, 2014.\n3. Moritz Hardt and Benjamin Recht, Patterns, Predictions, and Actions: A story about Machine Learning, https://mlstory.org , 2021.",
-      "updatedAt": "2026-09-13T05:24:13.823Z"
+      "updatedAt": "2026-09-13T05:24:41.625Z"
     }
   ]
 }
