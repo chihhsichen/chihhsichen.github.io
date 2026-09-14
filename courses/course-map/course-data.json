@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-13T05:24:44.668Z",
+  "updatedAt": "2026-09-14T09:17:33.149Z",
   "courses": [
     {
       "id": "course-1789265866232-3e45b794ed2958",
@@ -13,6 +13,7 @@
       "url": "https://cool.ntu.edu.tw/courses/67233",
       "branch": "multimodal",
       "slot": "Y1-C",
+      "tags": [],
       "prerequisites": [],
       "nodes": "MM2, MM3",
       "overview": "本課程將深入探討多模態人工智慧的前瞻技術，以多模態大型語言模型為主軸，了解最新的研究進展。透過文獻分析、實作練習與專題設計，學生將認識關鍵技術的發展脈絡與實務，建立研究與應用的能力。",
@@ -48,6 +49,7 @@
       "url": "https://cool.ntu.edu.tw/courses/41702",
       "branch": "multimodal",
       "slot": "Y1-C",
+      "tags": [],
       "prerequisites": [],
       "nodes": "MM1",
       "overview": "​This course will expose students to cutting-edge research — starting from fundamentals of deep learning to its recent advances in various vision applications. You will be expected to master key concepts, such as neural network architectures and their designs, training techniques, and performance optimization strategies. As a major part of this course, final projects are offered to foster critical thinking and problem-solving skills, preparing you to contribute to cutting-edge research or tackle real-world challenges in the real-world problems. Active participation, completion of hands-on projects, and engagement in theoretical discussions will be crucial to your success in this course.",
@@ -153,6 +155,7 @@
       "url": "https://cool.ntu.edu.tw/courses/9214",
       "branch": "math",
       "slot": "Y1-A",
+      "tags": [],
       "prerequisites": [],
       "nodes": "M1, M2, M3, M4, M5, M6",
       "overview": "Objectives of this course:\n    1. Introduce main concepts in ML with mathematical rigor.\n    2. Introduce theoretical frameworks for analyzing learning algorithms.",
@@ -197,6 +200,143 @@
       "assessment": "",
       "readings": "1. Mehryar Mohri, Afshin Rostamizadeh, and Ameet Talwalkar, Foundations of Machine Learning, MIT Press, Second Edition, 2018.\n2. Shai Shalev-Shwartz and Shai Ben-David, Understanding Machine Learning: From Theory to Algorithms, Cambridge University Press, 2014.\n3. Moritz Hardt and Benjamin Recht, Patterns, Predictions, and Actions: A story about Machine Learning, https://mlstory.org , 2021.",
       "updatedAt": "2026-09-13T05:24:41.625Z"
+    },
+    {
+      "id": "course-1789377443286-d8bff90c7a532",
+      "name": "預測、學習、與賽局 Prediction, Learning, and Games",
+      "code": "CSIE5002",
+      "provider": "NTU",
+      "instructor": "李彥寰",
+      "term": "2020 Spring",
+      "status": "Planned",
+      "url": "https://cool.ntu.edu.tw/courses/752",
+      "branch": "ml",
+      "slot": "",
+      "tags": [
+        "Statistical Machine Learning",
+        "Online Learning"
+      ],
+      "prerequisites": [],
+      "nodes": "M10, ML1, ML3, ML6",
+      "overview": "The probably approximately correct (PAC) theory has been the standard framework of machine learning for decades, but its underlying “i.i.d. data” assumption results in a significant theory-practice gap. This course introduces online learning theory, whose probability-free nature naturally avoids the aforementioned theory-practice gap. Tentative topics include:\n\n- PAC learning theory\n- Individual sequence prediction.\n- Learning with expert advice and the aggregating algorithm.\n- Advanced decision theoretic online learning.\n\nThe exact contents of this course may change with respect to the latest advances in learning theory.",
+      "syllabus": "",
+      "scheduleRows": [
+        {
+          "date": "Week 1",
+          "description": "Introduction to the course",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Week 2",
+          "description": "Introduction to statistical learning",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Week 3",
+          "description": "Lecture 2 continued",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Week 4",
+          "description": "Complexity measures in statistical learning",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Week 5",
+          "description": "Project report instructions & Lecture 3 continued",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Week 6",
+          "description": "Lecture 3 continued; PAC-Bayes & model selection",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Week 7",
+          "description": "PAC Bayes and model selection continued, Multiplicative weight update 1",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Week 8",
+          "description": "Performance guarantee for SRM & multiplicative weight update continued",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Week 9",
+          "description": "Multiplicative weight update 1 & 2.",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Week 10",
+          "description": "MWU continued, learning with expert advice",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Week 11",
+          "description": "Learning with expert advice continued; Aggregation on a continuum",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Week 12",
+          "description": "Aggregation on a continuum",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Week 13",
+          "description": "Aggregation on a continuum continued",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Week 14",
+          "description": "Decision theoretic online learning",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Week 15",
+          "description": "DTOL; second-order bounds and adaptive regret",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Week 16",
+          "description": "Second-order bounds & approachability",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        }
+      ],
+      "assessment": "",
+      "readings": "Books\n\nN. Cesa-Bianchi and G. Lugosi. Prediction, Learning, and Games (Links to an external site.). 2006\nS. Shalev-Shwartz. Online Learning and Online Convex Optimization (Links to an external site.). 2011.\nS. Bubeck. Introduction to Online Optimization (Links to an external site.). 2011.\nV. V. V'yugin. Lecture Notes on Machine Learning and Prediction (Links to an external site.). 2012.\nS. Hart and A. Mas-Colell. Simple Adaptive Strategies (Links to an external site.). 2013.\nA. Rakhlin and K. Sridharan. Statistical Learning and Sequential Prediction (Links to an external site.). 2014.\nE. Hazan. Introduction to Online Convex Optimization (Links to an external site.). 2015.\nA. Slivkins. Introduction to Multi-Armed Bandits (Links to an external site.). 2019.\nT. Lattimore and C. Szepesvári. Bandit Algorithms (Links to an external site.). 2020.\n\nRelated courses\n\nCS 294-128 Algorithms and uncertainty (Links to an external site.) by N. Bansal @ UC Berkeley\nCS 281B/STAT 241B Statistical learning theory (Links to an external site.) by P. Bartlett @ UC Berkeley\nOnline Lipschitz selection (Links to an external site.) by S. Bubeck @ MSR\nCSE 522 Algorithms and uncertainty (Links to an external site.) by N. Devanur and A. Karliin @ UW\nCOS 511 Theoretical machine learning by E. Hazan @ Princeton\nStat 928 Statistical learning theory (Links to an external site.) by S. Kakade @ UW\nCS 683 Learning, games, and electronic marketsLinks to an external site. by R. Kleinberg @ Cornell\nMachine learning theory by W. Koolen @ University of Amsterdam\nCSCI 699 Introduction to online learning (Links to an external site.) by H. Luo @ USC\nAdvanced Topics in Algorithmic Game Theory and Machine Learning (Links to an external site.) by Y. Mansour @ Tel Aviv University\nEC500 Introduction to online learningLinks to an external site. by F. Orabona @ BU\n6.883 Online methods in machine learning (Links to an external site.) by S. Rakhlin @ MIT\n18.657 Mathematics of machine learning (Links to an external site.) by P. Rigollet @ MIT\nAdvanced topics in machine learning (Links to an external site.) by Y. Seldin @ University of Copenhagen\n67638 Advanced course in machine learning (Links to an external site.) by S. Shalev-Shwartz @ Hebrew University of Jerusalem\nCMSC 858G Advanced topics in theory of computing: Bandits, experts, and gamesLinks to an external site. by A. Slivkins @ UMD\nCS6783 Machine learning theory (Links to an external site.) by K. Sridharan @ Cornell\nSTATS710 Sequential decision making with mHealth applications (Links to an external site.) by A. Tewari @ U-M",
+      "updatedAt": "2026-09-14T09:17:23.286Z"
     }
   ]
 }
