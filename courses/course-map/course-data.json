@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T09:17:33.149Z",
+  "updatedAt": "2026-09-14T14:20:06.302Z",
   "courses": [
     {
       "id": "course-1789265866232-3e45b794ed2958",
       "name": "多模態人工智慧 Multimodal Artificial Intelligence",
       "code": "CSIE5412",
-      "provider": "National Taiwan University",
+      "provider": "NTU",
       "instructor": "羅紹元",
       "term": "2026 Fall",
       "status": "Planned",
@@ -17,7 +17,7 @@
       "prerequisites": [],
       "nodes": "MM2, MM3",
       "overview": "本課程將深入探討多模態人工智慧的前瞻技術，以多模態大型語言模型為主軸，了解最新的研究進展。透過文獻分析、實作練習與專題設計，學生將認識關鍵技術的發展脈絡與實務，建立研究與應用的能力。",
-      "syllabus": "",
+      "syllabus": "本課程的目標在於讓修課同學：\n● 掌握多模態人工智慧的前瞻技術\n● 培養多模態人工智慧的實作基礎\n● 建立分析學術文獻的思維\n● 運用所學發展創新研究",
       "scheduleRows": [
         {
           "date": "9/10",
@@ -32,11 +32,109 @@
           "materials": "",
           "events": "",
           "deadlines": ""
+        },
+        {
+          "date": "9/24",
+          "description": "Transformers",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "10/01",
+          "description": "Pre-trained Transformers",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "10/08",
+          "description": "Generative Pre-trained Transformers",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "10/15",
+          "description": "Vision-Language Models",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "10/22",
+          "description": "Multimodal Large Language Models",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "10/29",
+          "description": "Large Reasoning Models",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "11/05",
+          "description": "Multimodal Large Reasoning Models",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "11/12",
+          "description": "Thinking with Images",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "11/19",
+          "description": "Latent Reasoning",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "11/26",
+          "description": "Final Project Proposal",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "12/03",
+          "description": "Vision-Language-Action Models",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "12/10",
+          "description": "World Models",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "12/17",
+          "description": "World Action Models",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "12/24",
+          "description": "Final Project Presentation",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
         }
       ],
-      "assessment": "",
+      "assessment": "N/A",
       "readings": "P.-Y. Chen and S. Liu, “Introduction to Foundation Models,” Springer, 2025.",
-      "updatedAt": "2026-09-13T05:12:30.908Z"
+      "updatedAt": "2026-09-14T14:19:54.979Z"
     },
     {
       "id": "course-1789269402649-42b87c5159417",
