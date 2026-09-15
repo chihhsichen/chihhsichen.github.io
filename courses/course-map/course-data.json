@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T06:31:07.575Z",
+  "updatedAt": "2026-09-15T15:20:17.026Z",
   "courses": [
     {
       "id": "course-1789265866232-3e45b794ed2958",
@@ -438,6 +438,32 @@
       "assessment": "",
       "readings": "Books\n\nN. Cesa-Bianchi and G. Lugosi. Prediction, Learning, and Games (Links to an external site.). 2006\nS. Shalev-Shwartz. Online Learning and Online Convex Optimization (Links to an external site.). 2011.\nS. Bubeck. Introduction to Online Optimization (Links to an external site.). 2011.\nV. V. V'yugin. Lecture Notes on Machine Learning and Prediction (Links to an external site.). 2012.\nS. Hart and A. Mas-Colell. Simple Adaptive Strategies (Links to an external site.). 2013.\nA. Rakhlin and K. Sridharan. Statistical Learning and Sequential Prediction (Links to an external site.). 2014.\nE. Hazan. Introduction to Online Convex Optimization (Links to an external site.). 2015.\nA. Slivkins. Introduction to Multi-Armed Bandits (Links to an external site.). 2019.\nT. Lattimore and C. Szepesvári. Bandit Algorithms (Links to an external site.). 2020.\n\nRelated courses\n\nCS 294-128 Algorithms and uncertainty (Links to an external site.) by N. Bansal @ UC Berkeley\nCS 281B/STAT 241B Statistical learning theory (Links to an external site.) by P. Bartlett @ UC Berkeley\nOnline Lipschitz selection (Links to an external site.) by S. Bubeck @ MSR\nCSE 522 Algorithms and uncertainty (Links to an external site.) by N. Devanur and A. Karliin @ UW\nCOS 511 Theoretical machine learning by E. Hazan @ Princeton\nStat 928 Statistical learning theory (Links to an external site.) by S. Kakade @ UW\nCS 683 Learning, games, and electronic marketsLinks to an external site. by R. Kleinberg @ Cornell\nMachine learning theory by W. Koolen @ University of Amsterdam\nCSCI 699 Introduction to online learning (Links to an external site.) by H. Luo @ USC\nAdvanced Topics in Algorithmic Game Theory and Machine Learning (Links to an external site.) by Y. Mansour @ Tel Aviv University\nEC500 Introduction to online learningLinks to an external site. by F. Orabona @ BU\n6.883 Online methods in machine learning (Links to an external site.) by S. Rakhlin @ MIT\n18.657 Mathematics of machine learning (Links to an external site.) by P. Rigollet @ MIT\nAdvanced topics in machine learning (Links to an external site.) by Y. Seldin @ University of Copenhagen\n67638 Advanced course in machine learning (Links to an external site.) by S. Shalev-Shwartz @ Hebrew University of Jerusalem\nCMSC 858G Advanced topics in theory of computing: Bandits, experts, and gamesLinks to an external site. by A. Slivkins @ UMD\nCS6783 Machine learning theory (Links to an external site.) by K. Sridharan @ Cornell\nSTATS710 Sequential decision making with mHealth applications (Links to an external site.) by A. Tewari @ U-M",
       "updatedAt": "2026-09-14T09:17:23.286Z"
+    },
+    {
+      "id": "course-1789485608471-16a4187228d438",
+      "name": "CS 330 Deep Multi-Task and Meta Learning",
+      "code": "CS 330",
+      "provider": "Stanford",
+      "instructor": "Prof. Chelsea Finn",
+      "term": "2023 Fall",
+      "status": "Considering",
+      "url": "https://cs330.stanford.edu/",
+      "branch": "llm",
+      "slot": "",
+      "tags": [
+        "Multi-Task Learning",
+        "Meta Learning",
+        "Self-Supervised Learning",
+        "Transfer Learning"
+      ],
+      "prerequisites": [],
+      "nodes": "L4",
+      "overview": "While deep learning has achieved remarkable success in many problems such as image classification, natural language processing, and speech recognition, these models are, to a large degree, specialized for the single task they are trained for. This course will cover the setting where there are multiple tasks to be solved, and study how the structure arising from multiple tasks can be leveraged to learn more efficiently or effectively. This includes:\n\nself-supervised pre-training for downstream few-shot learning and transfer learning\nmeta-learning methods that aim to learn efficient learning algorithms that can learn new tasks quickly\ncurriculum and lifelong learning, where the problem requires learning a sequence of tasks, leveraging their shared structure to enable knowledge transfer\nThis is a graduate-level course. By the end of the course, students will be able to understand and implement the state-of-the-art multi-task learning and meta-learning algorithms and be ready to conduct research on these topics.",
+      "syllabus": "YouTube Videos: https://www.youtube.com/playlist?list=PLoROMvodv4rNjRoawgt72BBNwL2V7doGI",
+      "scheduleRows": [],
+      "assessment": "N/A",
+      "readings": "See slides.",
+      "updatedAt": "2026-09-15T15:20:08.472Z"
     }
   ]
 }
