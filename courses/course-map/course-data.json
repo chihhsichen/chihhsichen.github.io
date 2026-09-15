@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T14:20:06.302Z",
+  "updatedAt": "2026-09-15T06:31:07.575Z",
   "courses": [
     {
       "id": "course-1789265866232-3e45b794ed2958",
@@ -13,7 +13,10 @@
       "url": "https://cool.ntu.edu.tw/courses/67233",
       "branch": "multimodal",
       "slot": "Y1-C",
-      "tags": [],
+      "tags": [
+        "Multimodality",
+        "LLM"
+      ],
       "prerequisites": [],
       "nodes": "MM2, MM3",
       "overview": "本課程將深入探討多模態人工智慧的前瞻技術，以多模態大型語言模型為主軸，了解最新的研究進展。透過文獻分析、實作練習與專題設計，學生將認識關鍵技術的發展脈絡與實務，建立研究與應用的能力。",
@@ -134,7 +137,7 @@
       ],
       "assessment": "N/A",
       "readings": "P.-Y. Chen and S. Liu, “Introduction to Foundation Models,” Springer, 2025.",
-      "updatedAt": "2026-09-14T14:19:54.979Z"
+      "updatedAt": "2026-09-15T06:30:59.009Z"
     },
     {
       "id": "course-1789269402649-42b87c5159417",
