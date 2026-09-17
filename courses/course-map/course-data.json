@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T15:20:17.026Z",
+  "updatedAt": "2026-09-17T08:42:48.776Z",
   "courses": [
     {
       "id": "course-1789265866232-3e45b794ed2958",
@@ -25,15 +25,15 @@
         {
           "date": "9/10",
           "description": "Deep Learning Basics",
-          "materials": "",
+          "materials": "Recording: https://cool.ntu.edu.tw/courses/67233#:~:text=2026.09.10_14%3A20_projector\nSlides: https://cool.ntu.edu.tw/courses/67233#:~:text=%E9%99%84%E4%BB%B6-,mai26_w1_intro.pdf,-%E5%A4%96%E9%83%A8%20URL",
           "events": "",
           "deadlines": ""
         },
         {
           "date": "9/17",
           "description": "Self-Supervised Learning",
-          "materials": "",
-          "events": "",
+          "materials": "Slides: https://cool.ntu.edu.tw/courses/67233#:~:text=%E9%99%84%E4%BB%B6-,mai26_w2_ssl.pdf,-%E5%A4%96%E9%83%A8%20URL",
+          "events": "How to be a good reviewer? https://cool.ntu.edu.tw/courses/67233#:~:text=How%20to%20be,%E5%88%B0%E5%A4%96%E9%83%A8%E7%B6%B2%E7%AB%99%E3%80%82",
           "deadlines": ""
         },
         {
@@ -137,7 +137,7 @@
       ],
       "assessment": "N/A",
       "readings": "P.-Y. Chen and S. Liu, “Introduction to Foundation Models,” Springer, 2025.",
-      "updatedAt": "2026-09-15T06:30:59.009Z"
+      "updatedAt": "2026-09-17T08:42:40.710Z"
     },
     {
       "id": "course-1789269402649-42b87c5159417",
