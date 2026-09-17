@@ -31,7 +31,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Zhixi Chen"
   avatar           : "/images/avatar_rainbow.png"
-  bio              : "Ph.D. Student @ College of Computing and Data Science, Nanyang Technological University"
+  bio              : "Ph.D. Student @ College of Computing and Data Science, Nanyang Technological University <br> ch0015xi [at] e.ntu.edu.sg"
   location         : "NTU-WeBank Lab"
   employer         :
   pubmed           :
@@ -48,7 +48,7 @@ author:
   github           : "chihhsichen" # e.g., "github username"
   google_plus      :
   keybase          :
-  instagram        : "spectrum1024"
+  instagram        :
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : # e.g., "linkedin username"
