@@ -26,9 +26,11 @@ For this lecture, the core is illustrating us how to read a research paper rathe
 ## How to Read a Paper?
 
 一般来讲，go through 一篇 paper 的大致方向或做法可以是
+
 $$
 \boxed{\text{Authors} \rightarrow \text{Abstract} \rightarrow \text{Introduction} \rightarrow \text{Related Work} \rightarrow \text{Method Details} }
 $$
+
 Make sure that **DO NOT** check all technical details at the very begging of reading a paper.
 
 ## Authors
@@ -53,6 +55,7 @@ $$
 \text{Findings}
 }
 $$
+
 Let's see the paper.
 
 
@@ -72,11 +75,14 @@ Motivation, 或者讲成*铺陈*，主要是想表达在这个 paper 中，面�
 Contribution 的部分主要是**<u>讲 paper 的贡献是什么</u>**，重点是要和 Motivation 呼应上。这篇 paper 的contribution主要就是三个：
 
 > 1. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously.
->    简单讲就是 propose 了一个 learning framework 用来解 Motivation 中间讲的很难 train 的问题
+>    
+> 简单讲就是 propose 了一个 learning framework 用来解 Motivation 中间讲的很难 train 的问题
 > 2. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions.
->    这里在1的基础上更加细节，讲的是 paper 是怎么做的 $\rightarrow$ 方式就是重新构建 layer 来 learn residual functions 而不是直接 learn 整个 function
+>    
+> 这里在1的基础上更加细节，讲的是 paper 是怎么做的 $\rightarrow$ 方式就是重新构建 layer 来 learn residual functions 而不是直接 learn 整个 function
 > 3. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. 
->    最后一个 contribution 就是实验结果了，实验结果很好，用了什么方法。你可以发现 easier to optimize 这里又和 Motivation 呼应上了
+>    
+> 最后一个 contribution 就是实验结果了，实验结果很好，用了什么方法。你可以发现 easier to optimize 这里又和 Motivation 呼应上了
 
 ### Findings
 
