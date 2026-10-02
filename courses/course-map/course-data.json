@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T08:44:52.933Z",
+  "updatedAt": "2026-10-02T09:18:06.276Z",
   "courses": [
     {
       "id": "course-1789265866232-3e45b794ed2958",
@@ -464,6 +464,51 @@
       "assessment": "N/A",
       "readings": "See slides.",
       "updatedAt": "2026-09-15T15:20:08.472Z"
+    },
+    {
+      "id": "course-1790932594626-160631c248871",
+      "name": "Advanced Large Language Model Agents",
+      "code": "CS 294/194-280",
+      "provider": "UC Berkerley",
+      "instructor": "Dawn Song",
+      "term": "2025 Spring",
+      "status": "Considering",
+      "url": "https://rdi.berkeley.edu/adv-llm-agents/sp25",
+      "branch": "llm",
+      "slot": "",
+      "tags": [
+        "LLM",
+        "Agent"
+      ],
+      "prerequisites": [],
+      "nodes": "L5, L6",
+      "overview": "Large language model (LLM) agents have been an important frontier in AI, however, they still fall short critical skills, such as complex reasoning and planning, for solving hard problems and enabling end-to-end applications in real-world scenarios. Building on our previous course, this course dives deeper into advanced topics in LLM agents, focusing on reasoning, AI for mathematics, code generation, and program verification. We begin by introducing advanced inference and post-training techniques for building LLM agents that can search and plan. Then, we focus on two application domains: mathematics and programming. We study how LLMs can be used to prove mathematical theorems, as well as generate and reason about computer programs. Specifically, we will cover the following topics:\n\nInference-time techniques for reasoning\nPost-training methods for reasoning\nSearch and planning\nAgentic workflow, tool use, and functional calling\nLLMs for code generation and verification\nLLMs for mathematics: data curation, continual pretraining, and finetuning\nLLM agents for theorem proving and autoformalization",
+      "syllabus": "Please see course website.",
+      "scheduleRows": [],
+      "assessment": "N/A",
+      "readings": "Please see Syllabus",
+      "updatedAt": "2026-10-02T09:16:34.626Z"
+    },
+    {
+      "id": "course-1790932676532-8c272405f8a938",
+      "name": "Understanding Large Language Models: Foundations and Safety",
+      "code": "CS 294/194-267",
+      "provider": "UC Berkeley",
+      "instructor": "Dawn Song",
+      "term": "2024 Spring",
+      "status": "Considering",
+      "url": "https://rdi.berkeley.edu/understanding_llms/s24",
+      "branch": "llm",
+      "slot": "",
+      "tags": [],
+      "prerequisites": [],
+      "nodes": "L2, L3, L4, L7",
+      "overview": "Generative AI and Large Language Models (LLMs) including ChatGPT have ushered the world into a new era with rich new capabilities for wide-ranging application domains. At the same time, there is little understanding of how these new capabilities emerge, their limitations and potential risks. In this class, we will introduce foundations of LLMs, study methods for better understanding LLMs, discuss scaling laws and emergence, and explore the risks and challenges with these technologies and how we can build towards safe and beneficial AI. In particular, this class will cover a wide-ranging topics including:\n\nFoundations of LLMs\nInterpretability\nScaling laws\nAdversarial robustness\nAI alignment and governance\nTrojans and unlearning\nPrivacy and watermarking\nAgency and emergence\nReasoning and mathematics\nEvaluation and benchmarking",
+      "syllabus": "Please see course website.",
+      "scheduleRows": [],
+      "assessment": "N/A",
+      "readings": "Please see Syllabus.",
+      "updatedAt": "2026-10-02T09:17:56.532Z"
     }
   ]
 }
