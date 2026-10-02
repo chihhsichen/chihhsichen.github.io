@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-02T09:40:41.675Z",
+  "updatedAt": "2026-10-02T09:49:48.994Z",
   "courses": [
     {
       "id": "course-1789265866232-3e45b794ed2958",
@@ -655,6 +655,52 @@
       "assessment": "Grading\n15% will come from tutorial participation (with 2 permitted absences)\n85% will come from quizzes (with 2 drops out of 7 quizzes)\n0% will come from assignments (except for their use as partial credit when cited in a quiz)\nAttendance is mandatory on quiz and tutorial sessions. There will be no rescheduling or make-up opportunities except for those covered by accommodations.",
       "readings": "",
       "updatedAt": "2026-10-02T09:40:32.612Z"
+    },
+    {
+      "id": "course-1790934417934-cd236de676a01",
+      "name": "Natural Language Processing",
+      "code": "CMSC 723",
+      "provider": "UMD",
+      "instructor": "Mohit Iyyer",
+      "term": "2026 Fall",
+      "status": "Planned",
+      "url": "https://www.cs.umd.edu/~miyyer/cmsc723/index.html",
+      "branch": "llm",
+      "slot": "Y1-C",
+      "tags": [
+        "NLP"
+      ],
+      "prerequisites": [],
+      "nodes": "L1, L2, L4",
+      "overview": "Natural Language Processing (NLP) is the engineering art and science of how to teach computers to understand human language. NLP is a type of artificial intelligence technology, and it's now ubiquitous -- NLP lets us talk to our phones, use the web to answer questions, map out discussions in books and social media, and even translate between human languages. Since language is rich, ambiguous, and very difficult for computers to understand, these systems can sometimes seem like magic -- but these are engineering problems we can tackle with data, math, and insights from linguistics.\n\nThis course will broadly deal with deep learning methods for natural language processing, with a specific focus on large language models. Most of the semester will focus on neural language models and transfer learning, both of which have significantly pushed forward the state of the art. It is intended for graduate students in computer science and linguistics who are (1) interested in learning about cutting-edge research progress in NLP and (2) familiar with machine learning fundamentals. We will cover modeling architectures, training objectives, and downstream tasks (e.g., text classification, question answering, and text generation). Coursework includes reading recent research papers, programming assignments, and a final project. While this is an in-person class, all lectures will be livestreamed on YouTube, and video links will be posted on the course schedule.",
+      "syllabus": "Schedule\nMake sure to reload this page to ensure you're seeing the latest version. Readings should be done before watching the corresponding lecture videos. See this page for materials (videos / slides / reading) from the Spring 2024 offering.\n\nWeek 1 (9/3): introduction, language modeling\nCourse introduction // [video] // [notes]\nNo associated readings!\nHW 0 released here, due 9/17\nFinal projects:\norganize into groups of 3-5 by 9/17\nproposal due 10/6 on Gradescope, use this Overleaf template\n\n\nWeek 2 (9/7-10): language models, neural networks\nLanguage modeling // [video] // [notes]\n[reading] Jurafsky & Martin, 3.1-3.5 (language modeling)\n[reading] Jurafsky & Martin, 7 (neural language models)\n[S2024 video]\n\nNeural language models // [video] // [notes]\n[reading] Neural language models (Bengio 2003)\n[S2024 video]\n\nWeek 3 (9/15-17): Neural language models, backpropagation\nForward propagation // [video] // [notes]\nsame readings as last class\n\nBackpropagation // [video] // [notes]\n[optional reading] Andrej Karpathy's coding-based backpropagation post\n[optional reading] Pascanu et al., ICML 2013 (vanishing gradients in RNNs)\n[S2024 video]\nSee F2020 video timestamped here for derivation of gradient through linear layer\n\nWeek 4 (9/22-24): Transformer language models\nAttention mechanisms & self-attention // [video] // [notes]\n[reading] Bahdanau et al., ICLR 2015 (paper that introduced attention)\n[optional reading] An easy-to-read blog post on attention\n[S2024 video]\n\nTransformer language models // [video] // [notes]\n[reading] Vaswani et al., NeurIPS 2017 (paper that introduced Transformers)\n[reading] An easy-to-read blog post on Transformer language models\n[S2024 video]\n\nWeek 5 (9/29-10/1): Training stages, tokenization\nPretraining vs. finetuning // [video] // [notes]\n[reading] Instruction tuning (Wei et al., 2022, FLAN)\n[reading] Nathan Lambert's slides on post-training\n[S2024 video]\n\nTokenization // [video] // [notes]\n[reading] Neural Machine Translation... with Subword Units (Sennrich et al., ACL 2016)\n[reading] Catherine Arnett's blogpost on tokenizers\n[optional reading] Byte Latent Transformer: Patches Scale Better Than Tokens (Pagnoni et al., 2025)\n[S2024 video]\n\nWeek 6 (10/6): Position encoding & efficient attention\nPosition encoding // [video] // [notes]\n[reading] Rotary position embeddings (RoPE, Su et al., 2021)\n[reading] Ring attention (Liu et al., 2023)\n[reading] Flash attention (Dao et al., 2022)\n[S2024 video]\n\nNo class 10/8 (Mohit traveling)\n\nWeek 7 (10/15): Scaling laws\nNo class 10/13 (Fall break)\n\nScaling laws of LLMs // [video] // [slides]\n[reading] Scaling Laws for Neural Language Models (Kaplan et al., 2020)\n[reading] Training Compute-Optimal Large Language Models (Hoffmann et al., 2022)\n[S2024 video]\n\nWeek 8 (10/20-22): In-class midterm, instruction tuning\n10/20: In-class midterm\n\nInstruction tuning / PEFT // [video] // [notes]\n[reading] Instruction tuning (Wei et al., 2022, FLAN)\n[reading] LoRA: Low-Rank Adaptation of Large Language Models (Hu et al., 2021)\n[optionalreading] Power of Scale for Prompt Tuning (Lester et al., EMNLP 2021)\n\nWeek 9 (10/27-29): Post-training, RLHF\nExam 1 recap + RL intro // [video] // [notes]\n[reading] Reinforcement learning from human feedback (Ouyang et al., 2022, RLHF)\n[optional reading] Constitutional AI (Bai et al., 2022)\n[optional reading] Effects of RLHF on generalization and diversity (Kirk et al., ICLR 2024)\n[S2024 video]\n\nReward models // [video] // [notes]\n[reading] Reinforcement learning from human feedback (Ouyang et al., 2022, RLHF)\n[optional reading] Constitutional AI (Bai et al., 2022)\n[optional reading] Effects of RLHF on generalization and diversity (Kirk et al., ICLR 2024)\n[S2024 video]\n\nWeek 10 (11/3-5): RL for LLMs continued\nREINFORCE training // [video] // [notes]\n\nPPO // [video] // [notes]\n[reading] DeepSeekMath (Shao et al., 2024, GRPO)\n\nWeek 11 (11/3-5): Reasoning models\nGRPO and thinking // [video] // [notes]\n\nReasoning models (cont'd) // [video] // [notes]\n[reading] s1: Simple test time scaling (Muennighoff et al., 2025)\n[reading] DeepSeek-R1 Thoughtology (Marjanovic et al., 2025)\n\nWeek 12 (11/17-19): LLM evaluation / RAG\nBenchmarking LLMs // [video] // [notes]\n[reading] MMLU (Hendrycks et al., ICLR 2021)\n[reading] Judging LLM as a Judge (MTBench, Zheng et al., NeuRIPS 2023)\n\nRAG and tool use // [video] // [notes]\n[reading] Retrieval-Augmented Generation (RAG, Lewis et al., NeurIPS 2020)\n[reading] Toolformer (Schick et al., 2023)\n\nWeek 13 (11/24): LLM agents\nLLM agents // [video] // [notes]\n[reading] OpenHands technical report (Wang et al.,2025)\n[reading] OSWorld (Xie et al., 2024)\n[optional reading] How do AI agents do human work? (Wang et al.,2025)\n\nWeek 14 (12/1-3): LLM security & memorization\nLLM security // [video] // [notes]\n[reading] Misalignment from reward hacking (MacDiarmid et al., 2025)\n[codebase] \"God-mode\" jailbreak prompts for LLMs\n[reading] Defending against universal jailbreaks (Sharma et al., 2025)\n\nMemorization & factuality // [video] // [notes]\n[reading] How much do language models memorize? (Morris et al., 2025)\n[reading] FactScore (Min et al., EMNLP 2023)\n\nWeek 15 (12/8): Exam review\nExam review // [video] // [notes]",
+      "scheduleRows": [],
+      "assessment": "",
+      "readings": "",
+      "updatedAt": "2026-10-02T09:46:57.934Z"
+    },
+    {
+      "id": "course-1790934577549-651b82a53877c",
+      "name": "Natural Language Understanding",
+      "code": "CS224U",
+      "provider": "Stanford",
+      "instructor": "Christopher Potts",
+      "term": "2023 Fall",
+      "status": "Considering",
+      "url": "https://web.stanford.edu/class/cs224u/index.html",
+      "branch": "llm",
+      "slot": "",
+      "tags": [
+        "NLP"
+      ],
+      "prerequisites": [],
+      "nodes": "",
+      "overview": "",
+      "syllabus": "",
+      "scheduleRows": [],
+      "assessment": "",
+      "readings": "",
+      "updatedAt": "2026-10-02T09:49:37.550Z"
     }
   ]
 }
