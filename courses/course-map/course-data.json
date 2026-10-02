@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-02T09:29:09.161Z",
+  "updatedAt": "2026-10-02T09:40:41.675Z",
   "courses": [
     {
       "id": "course-1789265866232-3e45b794ed2958",
@@ -609,6 +609,52 @@
       "assessment": "",
       "readings": "Reinforcement Learning: An Introduction, Sutton and Barto",
       "updatedAt": "2026-10-02T09:29:00.249Z"
+    },
+    {
+      "id": "course-1790933644854-f297103a8247",
+      "name": "Principles of Deep Representation Learning",
+      "code": "DATA8014",
+      "provider": "HKU",
+      "instructor": "Yi Ma",
+      "term": "2025 Fall",
+      "status": "Considering",
+      "url": "https://ma-lab-berkeley.github.io/deep-representation-learning-book/community.html",
+      "branch": "ml",
+      "slot": "",
+      "tags": [
+        "Representation Learning"
+      ],
+      "prerequisites": [],
+      "nodes": "ML2",
+      "overview": "In the current era of deep learning and especially \"generative artificial intelligence\", there is significant investment in training very large generative models. Thus far, such models have been \"black boxes\" that are difficult to understand in the sense that they have opaque internal mechanisms, leading to difficulties in interpretability, reliability, and control. Naturally, this lack of understanding has led to both hype and fear.\n\nThis book is an attempt to \"open the black box\" and understand the mechanisms of large deep networks, through the perspective of representation learning, which is a major factor — arguably the single most important one — in the empirical power of deep learning models. A brief outline of this book is as follows. Chapter 1 will summarize the threads that underlie the whole text. Chapters 2, 3, 4, 5, and 6 will explain the design principles of modern neural network architectures through optimization and information theory, reducing the process of architecture development (long having been described as a sort of \"alchemy\") to undergraduate-level linear algebra and calculus exercises once the underlying principles are introduced. Chapters 7 and 8 will discuss applications of these principles to solve problems in more paradigmatic ways, obtaining new methods and models which are efficient, interpretable, and controllable by design, and yet no less — sometimes even more — powerful than the black-box models they resemble. Chapter 9 will discuss potential future directions for deep learning, the role of representation learning, as well as some open problems.\n\nThis book is intended for older undergraduate students, or initial graduate students, who have some background in linear algebra, probability, and machine learning. This book should be suitable as a first course in deep learning for mathematically-minded students, but it may help to have some initial surface-level knowledge of deep learning to better appreciate the perspectives and techniques discussed in the book.\n\nDue to the timeliness of the book, and the prevalence that deep learning already has and may continue to have in the future, we have decided to make the book completely open-source. We will update it regularly to improve the presentation of the material and reflect advances in the field, and welcome contributions from subject matter experts about relevant topics that we may have missed. The source code is available on GitHub. If you feel that something is missing or can be improved, you can let us know or contribute it yourself. We will work to keep a similar standard of quality for new contributions, and recognize contributions in the contributors page.",
+      "syllabus": "",
+      "scheduleRows": [],
+      "assessment": "N/A",
+      "readings": "Please see: https://ma-lab-berkeley.github.io/deep-representation-learning-book/index.html",
+      "updatedAt": "2026-10-02T09:34:04.854Z"
+    },
+    {
+      "id": "course-1790934032612-e47bd4f7a7bd28",
+      "name": "Deep Learning Alchemy",
+      "code": "CS 312",
+      "provider": "Stanford",
+      "instructor": "Tatsunori Hashimoto",
+      "term": "2026 Fall",
+      "status": "Planned",
+      "url": "https://deep-learning-alchemy.github.io/",
+      "branch": "llm",
+      "slot": "Y1-C",
+      "tags": [
+        "Deep Learning Techniques"
+      ],
+      "prerequisites": [],
+      "nodes": "L1, L2, L3, L4, L5, L6",
+      "overview": "What is this course about?\nDeep learning is now the foundation of all of machine learning and AI, making it more important than ever for students to obtain mastery of the empirical phenomena and experimental skills involved in deep neural networks. How can students acquire the skills necessary to invent the next generation of architectures or develop new broad theories of how deep learning works? This course takes the stance that knowledge or math abilities alone are not enough, and there is no substitute to getting your hands dirty and running many, many experiments. To this end, we will work through computationally tractable domains and take students through the process of obtaining mastery in this domain through efficient experimentation and experiment outcome prediction. The class will alternate between assignments (where students run experiments to understand deep learning phenomena), quizzes (where students are tested for their ability to predict held-out experiment outcomes), lectures, and tutorials.\n\nPrerequisites\nNote: This is a 5-unit class. It will require running a lot of experiments and taking seven difficult quizzes, and we don't intend to apply inflated grading curves. Please make a well-informed decision if you have the appropriate background and time to take this class.\n\nMachine learning: This class is a non-standard introduction to deep learning. Since we want to spend more time teaching experiment design and deep learning intuition, we will spend little time explaining precise details that other deep learning classes cover (e.g. backpropagation rules, efficient implementations, etc.). Therefore, it will be helpful to have familiarity with deep learning prior to enrolling (via courses such as CS 221, CS 229, CS 230, CS 124, CS 224N). Nonetheless, all the assignments are self-contained and we are particularly excited for this course to be a first introduction for students with no deep learning background (though it will require more work at the start of the course).\nMath: Students should be familiar with college calculus and linear algebra (e.g. MATH 51, CME 100) and basic probability/statistics (e.g. CS 109 or equivalent).\nProgramming: All class assignments and quizzes will be in Python. Since we will provide scaffolding and support AI usage for assignments, it is not critical to be skilled at implementation. However, quizzes will assume understanding of the provided codebase and any short implementation diffs.\n\nStructure\nThe goal of this class is to develop human intuition for the variety of strange deep learning phenomena that exist in the real world. Our two core beliefs are:\n\nAlchemy is learned by hand: Deep learning has many mysteries and surprises that are not well understood by the best researchers, let alone deep learning classes. As such, many classes teach mental models that are not supported by an empiricist's experience (e.g. classic bias-variance tradeoff disagrees with the current scaling era). This class will teach students how to design clean experiments that enable them to build intuition for themselves.\nPrediction is understanding: To build a scientific understanding is to be able to predict the outcome of an experiment before running it. Therefore, this class assesses human understanding via quizzes where students have to predict experiment outcomes.\nIn this class, students will alternate between running experiments to understand a given unit (e.g. architecture stability) and taking quizzes testing their understanding. Course staff will support student learning with lectures on each unit and tutorials for interactive discussion.",
+      "syllabus": "",
+      "scheduleRows": [],
+      "assessment": "Grading\n15% will come from tutorial participation (with 2 permitted absences)\n85% will come from quizzes (with 2 drops out of 7 quizzes)\n0% will come from assignments (except for their use as partial credit when cited in a quiz)\nAttendance is mandatory on quiz and tutorial sessions. There will be no rescheduling or make-up opportunities except for those covered by accommodations.",
+      "readings": "",
+      "updatedAt": "2026-10-02T09:40:32.612Z"
     }
   ]
 }
