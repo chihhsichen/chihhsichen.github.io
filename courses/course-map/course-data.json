@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-04T07:43:37.743Z",
+  "updatedAt": "2026-10-04T07:47:54.137Z",
   "courses": [
     {
       "id": "course-1789265866232-3e45b794ed2958",
@@ -722,10 +722,243 @@
       "nodes": "MM2, MM3, MM4",
       "overview": "Artificial Intelligence (AI) holds great promise to enhance digital productivity, physical interactions, overall well-being, and the human experience. To enable the true impact of AI, these systems will need to be grounded in many real-world data modalities, from language-only systems to holistically integrating vision, audio, sensors, medical data, music, art, smell, taste, and more. This course introduces the principles of multimodal AI that can process many modalities at once, such as connecting language and images, music and art, sensing and actuation, and more. We will cover AI methods to (1) represent and fuse heterogeneous and interconnected data sources, (2) align data across different views, (3) reason over multiple steps with many modalities, (4) generate new multimodal content, (5) transfer knowledge from high-resource to low-resource data, and (6) quantify the principles of multimodal AI for safe, ethical, and human-aligned deployment.\n\nContent will be delivered via 2 1.5-hour lectures weekly. Through lectures, homework assignments, readings, and a significant research component, this course will develop critical thinking skills and intuitions when applying AI to new data modalities and their combinations, knowledge of recent technical achievements in AI, and a deeper understanding of the AI research process. Students will complete hands-on intermediate assignments on applying AI to their data modalities and tasks of interest, culminating in a novel research project. The course projects will be done in teams, with a research topic on AI for new data modalities and/or multimodal AI, and pre-approved by the instructors.\n\nWe thank Kimi AI for generously sponsoring API credits to support student final projects.",
       "syllabus": "Artificial Intelligence (AI) holds great promise to enhance digital productivity, physical interactions, overall well-being, and the human experience. To enable the true impact of AI, these systems will need to be grounded in many real-world data modalities, from language-only systems to holistically integrating vision, audio, sensors, medical data, music, art, human senses, and more. This course introduces the principles of multimodal AI that can process many modalities at once, such as connecting language and images, music and art, sensing and actuation. We will cover AI methods to (1) represent and fuse heterogeneous and interconnected data sources, (2) align data across different views, (3) reason over multiple modalities, (4) generate new multimodal content, (5) transfer knowledge from high to low-resource data, and (6) quantify the principles of multimodal AI for safe, ethical, and human-aligned deployment.\n\nContent will be delivered via 2 1.5-hour lectures weekly. Through lectures, homework assignments, readings, and a significant research component, this course will develop critical thinking skills and intuitions when applying AI to new data modalities and their combinations, knowledge of recent technical achievements in AI, and a deeper understanding of the AI research process. Students will complete hands-on intermediate assignments on applying AI to their data modalities and tasks of interest, culminating in a novel research project.\n\nThe common computational principles that this class seeks to teach include:\nUnderstanding information in multimodal data - when information is redundant, unique, and synergistic across data sources.\nApplications of multimodal sensing in health, cities, climate, environment, and science\nHow to fuse multiple data sources.\nHow to align different data sources into common representation spaces.\nHow to model multimodal data using machine learning methods.\nHow to visualize and understand multimodal data, and guidelines for data collection and selection.\nApplying generative AI with multimodal data, including text, audio, and video generation.\nHuman-AI interaction using multiple mediums and communicative modalities.\nUnderstanding the ethics of multimodal sensing and interaction.\n\nCanvas Students are asked to submit their project assignments through the website Canvas. This platform will be used for grading and to handle any request for re-grading.\n\tLink TBD\n \nWebsite The main public course website is available online: https://mit-mi.github.io/mmai-course/spring2026/",
-      "scheduleRows": [],
+      "scheduleRows": [
+        {
+          "date": "2/3",
+          "description": "Week 1.1 **Course introduction**\n\n- Multimodal core challenges\n- Course syllabus",
+          "videoLinks": "[Course introduction](https://youtu.be/Xm2crsD5ngA?si=tC351Sp1iXomB7p-)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec1.1%20-%20introduction.pdf)\n\n**Readings**\n\n- [Foundations and Trends in Multimodal Machine Learning: Principles, Challenges, and Open Questions](https://arxiv.org/abs/2209.03430)\n- [Multimodal Machine Learning: A Survey and Taxonomy](https://arxiv.org/abs/1705.09406)\n- [Representation Learning: A Review and New Perspectives](https://arxiv.org/abs/1206.5538)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2/5",
+          "description": "Week 1.2 **Multimodal datasets**\n\n- Research tasks and datasets\n- Intro to AI research",
+          "videoLinks": "[Multimodal datasets](https://youtu.be/zlTCAER4z9A?si=NwmrRx9Xrcx3el7t)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec1.2%20-%20data.pdf)\n\n**Readings**\n\n- [Machine learning: Trends, Perspectives, and Prospects](https://www.science.org/doi/abs/10.1126/science.aaa8415)\n- [Representation Learning: A Review and New Perspectives](https://arxiv.org/abs/1206.5538)\n- [Foundations and Trends in Multimodal Machine Learning: Principles, Challenges, and Open Questions](https://arxiv.org/abs/2209.03430)\n- [Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges](https://arxiv.org/abs/2104.13478)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2/10",
+          "description": "Week 2.1 **AI tutorial**\n\n- Data processing and visualization\n- Pytorch and AI modeling",
+          "videoLinks": "",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec2.1%20-%20AI%20tutorial.pdf)\n\n**Readings**\n\n- [A Recipe for Training Neural Networks](https://karpathy.github.io/2019/04/25/recipe/)\n- [Fine-tuning a Code LLM on Custom Code on a single GPU](https://colab.research.google.com/drive/1EDsjYRrAiujUew0GRJ_hyVoNMsSDnlnx?usp=sharing)\n- [MAS.S60 Pytorch Introduction](https://colab.research.google.com/drive/1SoTu6gvYcLNDqPwNPTWmsSYF-l-UfHPx?usp=sharing)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2/12",
+          "description": "Week 2.2 **Data and heterogeneity**\n\n- Dimensions of heterogeneity\n- Common model architectures",
+          "videoLinks": "[Data and heterogeneity](https://youtu.be/CH2_US07OdA?si=HJWc6IYG3s_VcywV)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec2.2%20-%20heterogeneity.pdf)\n\n**Readings**\n\n- [Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges](https://arxiv.org/abs/2104.13478)\n- [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)\n- [Attention Is All You Need](https://arxiv.org/abs/1706.03762)\n- [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)\n- [Deep Sets](https://arxiv.org/abs/1703.06114)\n- [Graph Attention Networks](https://arxiv.org/abs/1710.10903)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2/17",
+          "description": "Week 3.1 **No class, shifted President's day**",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2/19",
+          "description": "Week 3.2 **Multimodal fusion**\n\n- Early and late fusion\n- Explainable fusion",
+          "videoLinks": "",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec3.2%20-%20fusion.pdf)\n\n**Readings**\n\n- [Ten Myths of Multimodal Interaction](https://dl.acm.org/doi/pdf/10.1145/319382.319398)\n- [Multimodal interaction: A review](https://www.sciencedirect.com/science/article/pii/S0167865513002584)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2/24",
+          "description": "Week 4.1 **More multimodal fusion**\n\n- Higher-order interactions\n- Multimodal fusion models",
+          "videoLinks": "[More multimodal fusion](https://youtu.be/0SOieOIe4HI?si=6BQZMH0OWOeLDaaR)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec4.1%20-%20more%20fusion.pdf)\n\n**Readings**\n\n- [Quantifying & Modeling Multimodal Interactions: An Information Decomposition Framework](https://arxiv.org/abs/2302.12247)\n- [Does my multimodal model learn cross-modal interactions? It’s harder to tell than you might think!](https://aclanthology.org/2020.emnlp-main.62/)\n- [Kosmos-2: Grounding Multimodal Large Language Models to the World](https://arxiv.org/abs/2306.14824)\n- [Chameleon: Mixed-modal early-fusion foundation models](https://arxiv.org/abs/2405.09818)\n- [MM1: Methods, Analysis and Insights from Multimodal LLM Pre-training](https://link.springer.com/chapter/10.1007/978-3-031-73397-0_18)\n- [MoMa: Efficient Early-Fusion Pre-training with Mixture of Modality-Aware Experts](https://arxiv.org/pdf/2407.21770)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2/26",
+          "description": "Week 4.2 **Multimodal alignment**\n\n- Multimodal grounding\n- Aligned representations",
+          "videoLinks": "[Multimodal alignment](https://youtu.be/u-H43tRgYJg?si=AYQizgQHpf1Smlk1)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec4.2%20-%20alignment.pdf)\n\n**Readings**\n\n- [What Makes for Good Views for Contrastive Learning?](https://arxiv.org/abs/2005.10243)\n- [Characterization and classification of semantic image-text relations](https://link.springer.com/article/10.1007/s13735-019-00187-6)\n- [When and why vision-language models behave like bags-of-words, and what to do about it?](https://arxiv.org/abs/2210.01936)\n- [The Platonic Representation Hypothesis](https://arxiv.org/pdf/2405.07987)\n- [Understanding the Emergence of Multimodal Representation Alignment](https://arxiv.org/pdf/2502.16282)\n- [Does equivariance matter at scale?](https://arxiv.org/abs/2410.23179)\n- [Learning Transferable Visual Models From Natural Language Supervision?](https://arxiv.org/pdf/2103.00020)\n- [Emerging Properties in Self-Supervised Vision Transformers](https://arxiv.org/pdf/2104.14294)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "3/3",
+          "description": "Week 5.1 **Large multimodal models**\n\n- Multimodal transformers\n- Pre-training & fine-tuning",
+          "videoLinks": "[Large multimodal models](https://youtu.be/H9nvkyTsrnI?si=tjASlXudKbRcUefh)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec5.1%20-%20large%20multimodal%20models.pdf)\n\n**Readings**\n\n- [Training Compute-Optimal Large Language Models](https://arxiv.org/abs/2203.15556)\n- [Super-NaturalInstructions: Generalization via Declarative Instructions on 1600+ NLP Tasks](https://arxiv.org/abs/2204.07705)\n- [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)\n- [A Visual Guide to Mixture of Experts (MoE)](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts)\n- [A Visual Guide to Quantization](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization)\n- [Improved Baselines with Visual Instruction Tuning](https://arxiv.org/abs/2310.03744)\n- [Gated Linear Attention Transformers with Hardware-Efficient Training](https://arxiv.org/abs/2312.06635%20)\n- [Unintended Impacts of LLM Alignment on Global Representation](https://arxiv.org/abs/2402.15018%20)\n- [A Visual Guide to Quantization](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization)\n- [Scaling Instruction-Finetuned Language Models](https://arxiv.org/abs/2106.09685%20)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "3/5",
+          "description": "Week 5.2 **Multimodal LLMs tutorial**\n\n- Fine-tuning\n- Instruction tuning",
+          "videoLinks": "",
+          "materials": "[slides](https://colab.research.google.com/drive/1fgUtzrorkGT8FdIY77Y_V4vQRULPAC5d)\n\n**Readings**\n\n- [Multimodal Transformer for Unaligned Multimodal Language Sequences](https://arxiv.org/abs/1906.00295)\n- [Masked Autoencoders Are Scalable Vision Learners](https://arxiv.org/abs/2111.06377)\n- [Scaling Laws for Native Multimodal Models Scaling Laws for Native Multimodal Models](https://arxiv.org/abs/2504.07951)\n- [Transfer between Modalities with MetaQueries](https://arxiv.org/abs/2504.06256)\n- [LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention](https://arxiv.org/pdf/2303.16199)\n- [Cobra: Extending Mamba to Multi-Modal Large Language Model for Efficient Inference](https://arxiv.org/pdf/2403.14520)\n- [ModaVerse: Efficiently Transforming Modalities with LLMs](https://arxiv.org/abs/2401.06395)\n- [Spider: Any-to-Many Multimodal LLM](https://arxiv.org/pdf/2411.09439)\n- [SPHINX-X: Scaling Data and Parameters for a Family of Multi-modal Large Language Models](https://arxiv.org/pdf/2402.05935)\n- [How Far Are We to GPT-4V? Closing the Gap to Commercial Multimodal Models with Open-Source Suites](https://arxiv.org/pdf/2404.16821)\n- [NExT-GPT: Any-to-Any Multimodal LLM](https://arxiv.org/pdf/2309.05519)\n- [Learning to rebalance multi-modal optimization by adaptively masking subnetworks](https://arxiv.org/pdf/2404.08347)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "3/10",
+          "description": "Week 6.1 **Multimodal generation**\n\n- Translation, summarization, creation\n- Model evaluation and ethics",
+          "videoLinks": "[Multimodal generation](https://youtu.be/KlHIR7lT-mo?si=su5lIX08m-BvMcA1)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec6.1%20-%20generative%20AI.pdf)\n\n**Readings**\n\n- [Compositional Generative Modeling: A Single Model is Not All You Need](https://arxiv.org/pdf/2402.01103)\n- [Movie Gen: A Cast of Media Foundation Models](https://arxiv.org/abs/2410.13720)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "3/12",
+          "description": "Week 6.2 **Modern generative AI**\n\n- VAEs, diffusion, flow models\n- Controllable generation",
+          "videoLinks": "[Modern generative AI](https://youtu.be/LGBQ0c_4HBA?si=y2ilL_6QdadmambK)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec6.2%20-%20more%20generative%20AI.pdf)\n\n**Readings**\n\n- [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748)\n- [Flow Matching in Latent Space](https://arxiv.org/abs/2307.08698)\n- [Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://arxiv.org/abs/2403.03206)\n- [Large Language Diffusion Models](https://arxiv.org/pdf/2502.09992)\n- [Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747)\n- [Flow Matching Guide and Code](https://arxiv.org/abs/2412.06264)\n- [FlowMotion: Target-Predictive Conditional Flow Matching for Jitter-Reduced Text-to-Motion Generation](https://arxiv.org/abs/2504.01338)\n- [MusFlow: Multimodal Music Generation via Conditional Flow Matching](https://arxiv.org/abs/2504.13535)\n- [Unraveling the Connections Between Flow Matching and Diffusion Probabilistic Models](https://arxiv.org/abs/2311.07625)\n- [Exploring Diffusion and Flow Matching Under Generator Matching](https://arxiv.org/abs/2412.11024)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "3/17",
+          "description": "Week 7.1 **Midterm review**\n\n- Multimodal fusion & alignment\n- Multimodal foundation models",
+          "videoLinks": "",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec7.1%20-%20midterm%20review.pdf)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "3/19",
+          "description": "Week 7.2 **In-class midterm**",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "3/24",
+          "description": "Week 8.1 **Spring Break – No lectures**",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "3/26",
+          "description": "Week 8.2 **Spring Break – No lectures**",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "3/31",
+          "description": "Week 9.1 **Multimodal reasoning**\n\n- Reinforcement learning\n- Multi-step reasoning",
+          "videoLinks": "[Multimodal reasoning](https://youtu.be/Vhe_bX8mV2s?si=V65452DBEHXaEWbW)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec9.1%20-%20reasoning.pdf)\n\n**Readings**\n\n- [Deep reinforcement learning from human preferences](https://arxiv.org/abs/1706.03741)\n- [Deepseek-r1: Incentivizing reasoning capability in LLMs via reinforcement learning](https://arxiv.org/abs/2501.12948)\n- [Faulty reward functions in the wild](https://openai.com/index/faulty-reward-functions/)\n- [Direct preference optimization: Your language model is secretly a reward model](https://arxiv.org/abs/2305.18290)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "4/2",
+          "description": "Week 9.2 **Explainable reasoning**\n\n- Explainable AI\n- LLMs for explainability",
+          "videoLinks": "",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec9.2%20-%20explainable.pdf)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "4/7",
+          "description": "Week 10.1 **Multimodal interaction**\n\n- Interactive agents\n- Interactive reasoning",
+          "videoLinks": "[Multimodal interaction](https://youtu.be/Sk_TYpA6DWA?si=xI7BVwWyEQb31Wg8)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec10.1%20-%20interaction.pdf)\n\n**Readings**\n\n- [VisualWebArena: Evaluating Multimodal Agents on Realistic Visual Web Tasks](https://arxiv.org/abs/2401.13649)\n- [OS-ATLAS: A Foundation Action Model for Generalist GUI Agents](https://arxiv.org/abs/2410.23218)\n- [Mind2Web: Towards a Generalist Agent for the Web](https://arxiv.org/abs/2306.06070)\n- [Tree Search for Language Model Agents](https://arxiv.org/abs/2407.01476)\n- [A Survey of Reinforcement Learning from Human Feedback](https://arxiv.org/abs/2312.14925)\n- [MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents](https://arxiv.org/abs/2506.15841)\n- [OpenVLA: An Open-Source Vision-Language-Action Model](https://arxiv.org/abs/2406.09246)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "4/9",
+          "description": "Week 10.2 **Cross-modal transfer**\n\n- Modality transfer and co-learning\n- Self-training and multitask learning",
+          "videoLinks": "[Cross-modal transfer](https://youtu.be/IDaMEG_zY6A?si=nfHVm8rBMwi5zljP)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec10.2%20-%20crossmodal.pdf)\n\n**Readings**\n\n- [High-Modality Multimodal Transformer: Quantifying Modality & Interaction Heterogeneity for High-Modality Representation Learning](https://arxiv.org/abs/2203.01311)\n- [MAPoRL2: Multi-Agent Post-Co-Training for Collaborative Large Language Models with Reinforcement Learning](https://arxiv.org/abs/2502.18439)\n- [LLaVA-Med: Training a Large Language-and-Vision Assistant for Biomedicine in One Day](https://arxiv.org/abs/2303.00915v3)\n- [DreamLLM: Synergistic Multimodal Comprehension and Creation](https://arxiv.org/abs/2309.11499)\n- [PaLM-E: An Embodied Multimodal Language Model](https://arxiv.org/abs/2303.03378)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "4/14",
+          "description": "Week 11.1 **Multimodal & manufacturing**\n\n- Multisensor fusion\n- Applications in manufacturing",
+          "videoLinks": "",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec11.1%20-%20manufacturing.pdf)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "4/16",
+          "description": "Week 11.2 **Multimodal & design**\n\n- Multimodal agents\n- Applications in design",
+          "videoLinks": "",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec11.2%20-%20design.pdf)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "4/21",
+          "description": "Week 12.1 **Prescriptive modeling**\n\n- Optimization & prediction\n- Causal & counterfactual",
+          "videoLinks": "",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec12.1%20-%20prescriptive.pdf)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "4/23",
+          "description": "Week 12.2 **Agents tutorial**\n\n- Multimodal agent pipelines\n- Agent evaluation",
+          "videoLinks": "",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec12.2%20-%20agents.pdf)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "4/28",
+          "description": "Week 13.1 **Multimodal & cities**\n\n- Spatial and temporal fusion\n- Applications in cities",
+          "videoLinks": "",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec13.1%20-%20cities.pdf)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "4/30",
+          "description": "Week 13.2 **Multimodal & transportation**\n\n- Autonomous vehicles\n- Applications in transportation",
+          "videoLinks": "",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec13.2%20-%20transportation.pdf)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "5/5",
+          "description": "Week 14.1 **Self-evolving AI**\n\n- Continual learning\n- Self-evolution and optimization",
+          "videoLinks": "[Self-evolving AI](https://youtu.be/FhcHTSjvuKk?si=gJGiKJrwO3FYakcE)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec14.1%20-%20advanced%20topics.pdf)\n\n**Readings**\n\n- [Blog Post on Self-Evolving AI](https://quao627.github.io/blog/self-evolving-agents/)\n- [AlphaEvolve: A Coding Agent for Scientific and Algorithmic Discovery](https://arxiv.org/abs/2506.13131)\n- [CORAL: Towards Autonomous Multi-agent Evolution for Open-ended Discovery](https://arxiv.org/abs/2604.01658)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "5/7",
+          "description": "Week 14.2 **AI for new senses**\n\n- Touch, smell, taste\n- Human-AI interaction",
+          "videoLinks": "[AI for new senses](https://youtu.be/UJra8aMCHXg?si=c_jwf59wZGplm9zA)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec14.2%20-%20human.pdf)\n\n**Readings**\n\n- [Interactive Sketchpad: A Multimodal Tutoring System for Collaborative, Visual Problem-Solving](https://arxiv.org/abs/2503.16434)\n- [AromaGen: Interactive Generation of Rich Olfactory Experiences with Multimodal Language Models](https://arxiv.org/abs/2604.01650)\n- [Smellnet: A Large-scale Dataset for Real-world Smell Recognition](https://arxiv.org/abs/2506.00239)\n- [Opentouch: Bringing Full-hand Touch to Real-world Interaction](https://arxiv.org/abs/2512.16842)\n- [Stereo-Smell via Electrical Trigeminal Stimulation](https://dl.acm.org/doi/abs/10.1145/3411764.3445300)\n- [ArtPrompt: ASCII Art-based Jailbreak Attacks against Aligned LLMs](https://arxiv.org/abs/2402.11753)\n- [Guidelines for Human-AI Interaction](https://dl.acm.org/doi/abs/10.1145/3290605.3300233)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "5/12",
+          "description": "Week 15.1 **Project presentations**",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        }
+      ],
       "assessment": "Grades\nThe grading breakdown is as follows:\n35% for 5 homework assignments, roughly 2 weeks for each.\n15% for 5 reading assignments covering state-of-the-art research in multimodal AI.\n15% for an in-class midterm exam.\n35% for the course project, split between proposal, midterm, and final report/presentations.\n\nHomework assignments (35% for 5 assignments):\nThere are a total of 5 homework assignments planned this semester. Each homework assignment will take around 2 weeks and consists of conceptual, implementation, and experimental exercises.\n\nReading assignments (15% for 5 assignments):\nThere are a total of 5 reading assignments planned this semester. Each reading assignment will be released together with the homework, are due in 2 weeks, and consists of 2 main parts:\nAssigned reading paper: Reading the assigned papers and summarizing the main take-away points of each paper.\nResearch question probes: Answer several question probes related to the reading papers and your datasets or research.\n\nMidterm exam (15%):\nThe midterm exam will be in the week before spring break. It will consist of multiple choice, short answer, and longer answer questions.\n\nCourse project (35%):\nThe course project will be done in groups of 2-4 students and is meant to introduce students to the research process. The project will span the entire semester with several key checkpoints, for which intermediate grades will be assigned as follows:\nProposal report and presentation 5%\nMidterm report and presentation 10%\nFinal report and presentation 20%\nProject preference form\nThis form is designed to help students with the team-matching process, for the course research project.\nProposal and literature review\nThe proposal report should present the initial research ideas for the course project. Students are expected to explore a new data modality or task understudied in AI and new research ideas to process this new data modality or task. The proposal should summarize these new data modalities, new research ideas, and a robust evaluation plan.\nAn important part of this proposal report will be a detailed literature review, including recent papers and models related to the data modality, research tasks, and new research ideas.\nMidterm report\nThe goal of the midterm report is to summarize the current research progress. Students should have already started exploring new research ideas. The midterm report should summarize these initial results and discuss them. This report should also present the updated list of research ideas that the team plans to explore.\nFinal report\nThe final report should follow a similar structure to a research paper. It should motivate the problem and research ideas. It should present the novel approaches, describe the experiment, and discuss the results.\nFinal presentation\nThe final project assignment will also include either an in-person poster or oral presentation, to be confirmed. The poster presentations may be open to the general MIT population.\n\nNotes about absences and late submissions\nIn general, submitting assignments on time lets the instructional team provide feedback in a more timely and efficient manner. Timely submissions are particularly important for assignments with discussions and peer feedback.  Also, it is expected that students will attend the lectures in person (or via Zoom when the course is required to be performed remotely). Live attendance is an essential component of this course, given that it is centered around live discussions. Given the live nature of the discussions, course sessions will not be recorded.\n\nMedical-related absences If for a medical reason, you require some extra time for an assignment or may not be able to attend the lecture in person, please contact instructors as soon as possible and we will help define a new plan that aligns with your constraints. \nAbsence requests\nStudents should contact instructors as promptly as possible regarding course absences, with a preference before the course lecture itself.\nIf you plan to be absent for more than one class, please contact the instructors as promptly as possible.",
       "readings": "",
-      "updatedAt": "2026-10-02T10:12:06.299Z"
+      "updatedAt": "2026-10-04T07:47:54.137Z"
     },
     {
       "id": "course-stanford-cs329a-autumn-2025",
