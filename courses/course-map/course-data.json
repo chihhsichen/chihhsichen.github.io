@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-02T09:49:48.994Z",
+  "updatedAt": "2026-10-04T09:30:09.051Z",
   "courses": [
     {
       "id": "course-1789265866232-3e45b794ed2958",
@@ -17,10 +17,12 @@
         "Multimodality",
         "LLM"
       ],
-      "prerequisites": [],
+      "prerequisites": [
+        "course-1789485608471-16a4187228d438"
+      ],
       "nodes": "MM2, MM3",
       "overview": "本課程將深入探討多模態人工智慧的前瞻技術，以多模態大型語言模型為主軸，了解最新的研究進展。透過文獻分析、實作練習與專題設計，學生將認識關鍵技術的發展脈絡與實務，建立研究與應用的能力。",
-      "syllabus": "本課程的目標在於讓修課同學：\n● 掌握多模態人工智慧的前瞻技術\n● 培養多模態人工智慧的實作基礎\n● 建立分析學術文獻的思維\n● 運用所學發展創新研究",
+      "syllabus": "本課程的目標在於讓修課同學：\n* 掌握多模態人工智慧的前瞻技術\n* 培養多模態人工智慧的實作基礎\n* 建立分析學術文獻的思維\n* 運用所學發展創新研究",
       "scheduleRows": [
         {
           "date": "9/10",
@@ -137,7 +139,7 @@
       ],
       "assessment": "N/A",
       "readings": "P.-Y. Chen and S. Liu, “Introduction to Foundation Models,” Springer, 2025.",
-      "updatedAt": "2026-09-17T08:44:47.993Z"
+      "updatedAt": "2026-10-04T02:15:45.814Z"
     },
     {
       "id": "course-1789269402649-42b87c5159417",
@@ -460,10 +462,211 @@
       "nodes": "L4",
       "overview": "While deep learning has achieved remarkable success in many problems such as image classification, natural language processing, and speech recognition, these models are, to a large degree, specialized for the single task they are trained for. This course will cover the setting where there are multiple tasks to be solved, and study how the structure arising from multiple tasks can be leveraged to learn more efficiently or effectively. This includes:\n\nself-supervised pre-training for downstream few-shot learning and transfer learning\nmeta-learning methods that aim to learn efficient learning algorithms that can learn new tasks quickly\ncurriculum and lifelong learning, where the problem requires learning a sequence of tasks, leveraging their shared structure to enable knowledge transfer\nThis is a graduate-level course. By the end of the course, students will be able to understand and implement the state-of-the-art multi-task learning and meta-learning algorithms and be ready to conduct research on these topics.",
       "syllabus": "YouTube Videos: https://www.youtube.com/playlist?list=PLoROMvodv4rNjRoawgt72BBNwL2V7doGI",
-      "scheduleRows": [],
+      "scheduleRows": [
+        {
+          "date": "Wed, Sep 27",
+          "description": "Week 1\n\n*Lecture* **Course introduction & start of multi-task learning**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_intro_2023.pdf)\n\n**Homework 0**\n\n[PDF](https://cs330.stanford.edu/materials/CS330_Homework0.pdf) · [code](https://cs330.stanford.edu/materials/hw0_starter_code.zip) · [template](https://cs330.stanford.edu/materials/hw0_template.tex)",
+          "events": "Homework 0 out",
+          "deadlines": ""
+        },
+        {
+          "date": "Thur, Sep 28",
+          "description": "Week 1\n\n*TA session* PyTorch tutorial",
+          "videoLinks": "",
+          "materials": "**Notes and Optional Reading**\n\n- Tutorial is 3:00 – 4:20pm at Gates B3. See Canvas for Zoom link. [[Colab notebook](https://colab.research.google.com/drive/1SKOZEOk48eH72ZPftl6AnknR6kJFVTeh?usp=sharing)]",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon, Oct 2",
+          "description": "Week 2\n\n*Lecture* **Multi-task learning**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_multitask_transfer_2023.pdf)\n\n**Notes and Optional Reading**\n\n- [P1: Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics.](https://arxiv.org/abs/1705.07115) Kendall et al. (2018)\n- [P2: Universal Language Model Fine-tuning for Text Classification.](https://arxiv.org/abs/1801.06146) Howard et al. (2018)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Wed, Oct 4",
+          "description": "Week 2\n\n*Lecture* **Transfer learning & fine-tuning**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_finetune_transfer_meta_learning_problem_setup_2023.pdf)\n\n**Homework 1**\n\n[PDF](https://cs330.stanford.edu/materials/CS330_Homework_1.pdf) · [code](https://cs330.stanford.edu/materials/hw1_starter_code.zip) · [template](https://cs330.stanford.edu/materials/hw1_template.zip)\n\n**Notes and Optional Reading**\n\n- [Fine-Tuning can Distort Pretrained Features and Underperform Out-of-Distribution](https://arxiv.org/abs/2202.10054) (Kumar et al., 2022)",
+          "events": "Homework 1 out",
+          "deadlines": "Due **Homework 0**"
+        },
+        {
+          "date": "Mon, Oct 9",
+          "description": "Week 3\n\n*Lecture* **Black-box meta-learning & in-context learning**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_metalearning_bbox_2023.pdf)\n\n**Notes and Optional Reading**\n\n- [One-shot Learning with Memory-Augmented Neural Networks](https://arxiv.org/abs/1605.06065) (Santoro et al., 2016)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Wed, Oct 11",
+          "description": "Week 3\n\n*Lecture* **Optimization-based meta-learning**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_optbased_metalearning_2023.pdf)\n\n**Homework 2**\n\n[PDF](https://cs330.stanford.edu/materials/CS330_Homework_2.pdf) · [code](https://cs330.stanford.edu/materials/hw2_starter_code.zip) · [template](https://cs330.stanford.edu/materials/hw2_template.zip)\n\n**Notes and Optional Reading**\n\n- [Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks](https://arxiv.org/abs/1703.03400) (Finn et al., 2017)",
+          "events": "Homework 2 out",
+          "deadlines": "Due **Project survey**"
+        },
+        {
+          "date": "Thur, Oct 12",
+          "description": "Week 3\n\n*TA session* **MAML**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_maml_review.pdf)\n\n**Notes and Optional Reading**\n\n- Tutorial is 4:30 – 5:20pm at Gates B1. See Canvas for Zoom link.",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon, Oct 16",
+          "description": "Week 4\n\n*Lecture* **Few-shot learning via metric learning**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_nonparametric_2023.pdf)\n\n**Notes and Optional Reading**\n\n- [Matching Networks for One Shot Learning](https://arxiv.org/abs/1606.04080) (Vinyals et al., 2017)\n- [Prototypical Networks for Few-shot Learning](https://arxiv.org/abs/1703.05175) (Snell et al., 2017)",
+          "events": "",
+          "deadlines": "Due **Homework 1**"
+        },
+        {
+          "date": "Wed, Oct 18",
+          "description": "Week 4\n\n*Lecture* **Unsupervised pre-training for few-shot learning (contrastive)**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_contrastive_2023.pdf)\n\n**Notes and Optional Reading**\n\n- [Representation Learning with Contrastive Predictive Coding](https://arxiv.org/abs/1807.03748) (van den Oord et al., 2019)\n- [A Simple Framework for Contrastive Learning of Visual Representations](https://arxiv.org/abs/2002.05709) (Chen et al., 2020)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon, Oct 23",
+          "description": "Week 5\n\n*Lecture* **Unsupervised pre-training for few-shot learning (generative)**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_pretraining_reconstruction_2023.pdf)\n\n**Notes and Optional Reading**\n\n- [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) (Devlin et al., 2019)",
+          "events": "",
+          "deadlines": "Due **Project proposal**"
+        },
+        {
+          "date": "Wed, Oct 25",
+          "description": "Week 5\n\n*Lecture* **Advanced meta-learning topics (task construction)**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_advanced_meta_memorization_2023.pdf)\n\n**Homework 3**\n\n[PDF](https://cs330.stanford.edu/materials/CS330_Homework_3.pdf) · [code](https://cs330.stanford.edu/materials/hw3_starter_code.zip) · [template](https://cs330.stanford.edu/materials/hw3_template.zip)\n\n**Notes and Optional Reading**\n\n- [Meta-Learning without Memorization](https://arxiv.org/abs/1912.03820) (Yin et al., 2020)",
+          "events": "Homework 3 out",
+          "deadlines": "Due **Homework 2**"
+        },
+        {
+          "date": "Mon, Oct 30",
+          "description": "Week 6\n\n*Lecture* **Variational inference**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_variational_inference_2023.pdf)\n\n**Notes and Optional Reading**\n\n- [Tutorial on Variational Autoencoders](https://arxiv.org/abs/1606.05908) (Doersch, 2021)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Wed, Nov 1",
+          "description": "Week 6\n\n*Lecture* **Bayesian meta-learning**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_bayesian_meta_learning_2023.pdf)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Thur, Nov 2",
+          "description": "Week 6\n\n*TA session* **Bayesian Meta Learning**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/CS330%20Bayesian%20Meta-Learning.pdf)\n\n**Notes and Optional Reading**\n\n- Tutorial is 4:30 – 5:20pm at Gates B1. See Canvas for Zoom link.",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon, Nov 6",
+          "description": "Week 7\n\n*Lecture* **Advanced meta-learning topics (large-scale meta-optimization)**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/CS330-large-scale-meta-optimization.pdf)\n\n**Homework 4**\n\n[PDF](https://cs330.stanford.edu/materials/hw4.pdf) · [template/code](https://cs330.stanford.edu/materials/hw4.zip)\n\n**Notes and Optional Reading**\n\n- [Unbiased Gradient Estimation in Unrolled Computation Graphs with Persistent Evolution Strategies](https://arxiv.org/abs/1912.03820) (Vicol et al., 2021)",
+          "events": "Homework 4 out (optional)",
+          "deadlines": "Due **Homework 3**"
+        },
+        {
+          "date": "Wed, Nov 8",
+          "description": "Week 7\n\n*Guest Lecture* [James Harrison](https://scholar.google.com/citations?hl=en&user=-tEiRFcAAAAJ&view_op=list_works&sortby=pubdate)",
+          "videoLinks": "",
+          "materials": "",
+          "events": "Learned Optimizers",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon, Nov 13",
+          "description": "Week 8\n\n*Lecture* **Lifelong learning**",
+          "videoLinks": "[Lifelong learning](https://www.youtube.com/watch?v=tQjDijHgblg&list=PLoROMvodv4rNjRoawgt72BBNwL2V7doGI&index=15)",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Wed, Nov 15",
+          "description": "Week 8\n\n*Lecture* No Lecture",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": "Due **Project milestone**\nDue **Homework 4 (optional)**"
+        },
+        {
+          "date": "Mon, Nov 20",
+          "description": "Week 9\n\nThanksgiving break",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Wed, Nov 22",
+          "description": "Week 9\n\nThanksgiving break",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon, Nov 27",
+          "description": "Week 10\n\n*Guest lecture* [Jason Wei](https://www.jasonwei.net/)",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Wed, Nov 29",
+          "description": "Week 10\n\n*Lecture* **Domain Adaptation and Domain Generalization**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_domain_adaptation_generalization_2023.pdf)\n\n**Notes and Optional Reading**\n\n- [Domain-Adversarial Training of Neural Networks](https://arxiv.org/abs/1505.07818) (Ganin et al., 2016)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon, Dec 4",
+          "description": "Week 11\n\n*Lecture* **Frontiers & Open Challenges**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_openchallenges_2023.pdf)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Wed, Dec 6",
+          "description": "Week 11\n\n*Presentations* Project poster session",
+          "videoLinks": "",
+          "materials": "**Notes and Optional Reading**\n\n- The poster session will be held at Packard Atrium, from 3:00 – 6:00 pm.",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon, Dec 11",
+          "description": "Week 12\n\nNo class",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": "Due **Final project report**"
+        }
+      ],
       "assessment": "N/A",
       "readings": "See slides.",
-      "updatedAt": "2026-09-15T15:20:08.472Z"
+      "updatedAt": "2026-10-04T08:57:16.050Z"
     },
     {
       "id": "course-1790932594626-160631c248871",
@@ -701,6 +904,718 @@
       "assessment": "",
       "readings": "",
       "updatedAt": "2026-10-02T09:49:37.550Z"
+    },
+    {
+      "id": "course-1790935926298-d358fefffd30a8",
+      "name": "Modeling: MultiModal AI",
+      "code": "6.S985",
+      "provider": "MIT",
+      "instructor": "Paul Liang",
+      "term": "2026 Spring",
+      "status": "Considering",
+      "url": "https://mit-mi.github.io/mmai-course/spring2026/",
+      "branch": "multimodal",
+      "slot": "",
+      "tags": [
+        "Multimodal AI"
+      ],
+      "prerequisites": [],
+      "nodes": "MM2, MM3, MM4",
+      "overview": "Artificial Intelligence (AI) holds great promise to enhance digital productivity, physical interactions, overall well-being, and the human experience. To enable the true impact of AI, these systems will need to be grounded in many real-world data modalities, from language-only systems to holistically integrating vision, audio, sensors, medical data, music, art, smell, taste, and more. This course introduces the principles of multimodal AI that can process many modalities at once, such as connecting language and images, music and art, sensing and actuation, and more. We will cover AI methods to (1) represent and fuse heterogeneous and interconnected data sources, (2) align data across different views, (3) reason over multiple steps with many modalities, (4) generate new multimodal content, (5) transfer knowledge from high-resource to low-resource data, and (6) quantify the principles of multimodal AI for safe, ethical, and human-aligned deployment.\n\nContent will be delivered via 2 1.5-hour lectures weekly. Through lectures, homework assignments, readings, and a significant research component, this course will develop critical thinking skills and intuitions when applying AI to new data modalities and their combinations, knowledge of recent technical achievements in AI, and a deeper understanding of the AI research process. Students will complete hands-on intermediate assignments on applying AI to their data modalities and tasks of interest, culminating in a novel research project. The course projects will be done in teams, with a research topic on AI for new data modalities and/or multimodal AI, and pre-approved by the instructors.\n\nWe thank Kimi AI for generously sponsoring API credits to support student final projects.",
+      "syllabus": "Artificial Intelligence (AI) holds great promise to enhance digital productivity, physical interactions, overall well-being, and the human experience. To enable the true impact of AI, these systems will need to be grounded in many real-world data modalities, from language-only systems to holistically integrating vision, audio, sensors, medical data, music, art, human senses, and more. This course introduces the principles of multimodal AI that can process many modalities at once, such as connecting language and images, music and art, sensing and actuation. We will cover AI methods to (1) represent and fuse heterogeneous and interconnected data sources, (2) align data across different views, (3) reason over multiple modalities, (4) generate new multimodal content, (5) transfer knowledge from high to low-resource data, and (6) quantify the principles of multimodal AI for safe, ethical, and human-aligned deployment.\n\nContent will be delivered via 2 1.5-hour lectures weekly. Through lectures, homework assignments, readings, and a significant research component, this course will develop critical thinking skills and intuitions when applying AI to new data modalities and their combinations, knowledge of recent technical achievements in AI, and a deeper understanding of the AI research process. Students will complete hands-on intermediate assignments on applying AI to their data modalities and tasks of interest, culminating in a novel research project.\n\nThe common computational principles that this class seeks to teach include:\nUnderstanding information in multimodal data - when information is redundant, unique, and synergistic across data sources.\nApplications of multimodal sensing in health, cities, climate, environment, and science\nHow to fuse multiple data sources.\nHow to align different data sources into common representation spaces.\nHow to model multimodal data using machine learning methods.\nHow to visualize and understand multimodal data, and guidelines for data collection and selection.\nApplying generative AI with multimodal data, including text, audio, and video generation.\nHuman-AI interaction using multiple mediums and communicative modalities.\nUnderstanding the ethics of multimodal sensing and interaction.\n\nCanvas Students are asked to submit their project assignments through the website Canvas. This platform will be used for grading and to handle any request for re-grading.\n\tLink TBD\n \nWebsite The main public course website is available online: https://mit-mi.github.io/mmai-course/spring2026/",
+      "scheduleRows": [
+        {
+          "date": "2/3",
+          "description": "Week 1.1 **Course introduction**\n\n- Multimodal core challenges\n- Course syllabus",
+          "videoLinks": "[Course introduction](https://youtu.be/Xm2crsD5ngA?si=tC351Sp1iXomB7p-)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec1.1%20-%20introduction.pdf)\n\n**Readings**\n\n- [Foundations and Trends in Multimodal Machine Learning: Principles, Challenges, and Open Questions](https://arxiv.org/abs/2209.03430)\n- [Multimodal Machine Learning: A Survey and Taxonomy](https://arxiv.org/abs/1705.09406)\n- [Representation Learning: A Review and New Perspectives](https://arxiv.org/abs/1206.5538)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2/5",
+          "description": "Week 1.2 **Multimodal datasets**\n\n- Research tasks and datasets\n- Intro to AI research",
+          "videoLinks": "[Multimodal datasets](https://youtu.be/zlTCAER4z9A?si=NwmrRx9Xrcx3el7t)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec1.2%20-%20data.pdf)\n\n**Readings**\n\n- [Machine learning: Trends, Perspectives, and Prospects](https://www.science.org/doi/abs/10.1126/science.aaa8415)\n- [Representation Learning: A Review and New Perspectives](https://arxiv.org/abs/1206.5538)\n- [Foundations and Trends in Multimodal Machine Learning: Principles, Challenges, and Open Questions](https://arxiv.org/abs/2209.03430)\n- [Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges](https://arxiv.org/abs/2104.13478)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2/10",
+          "description": "Week 2.1 **AI tutorial**\n\n- Data processing and visualization\n- Pytorch and AI modeling",
+          "videoLinks": "",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec2.1%20-%20AI%20tutorial.pdf)\n\n**Readings**\n\n- [A Recipe for Training Neural Networks](https://karpathy.github.io/2019/04/25/recipe/)\n- [Fine-tuning a Code LLM on Custom Code on a single GPU](https://colab.research.google.com/drive/1EDsjYRrAiujUew0GRJ_hyVoNMsSDnlnx?usp=sharing)\n- [MAS.S60 Pytorch Introduction](https://colab.research.google.com/drive/1SoTu6gvYcLNDqPwNPTWmsSYF-l-UfHPx?usp=sharing)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2/12",
+          "description": "Week 2.2 **Data and heterogeneity**\n\n- Dimensions of heterogeneity\n- Common model architectures",
+          "videoLinks": "[Data and heterogeneity](https://youtu.be/CH2_US07OdA?si=HJWc6IYG3s_VcywV)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec2.2%20-%20heterogeneity.pdf)\n\n**Readings**\n\n- [Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges](https://arxiv.org/abs/2104.13478)\n- [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)\n- [Attention Is All You Need](https://arxiv.org/abs/1706.03762)\n- [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)\n- [Deep Sets](https://arxiv.org/abs/1703.06114)\n- [Graph Attention Networks](https://arxiv.org/abs/1710.10903)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2/17",
+          "description": "Week 3.1 **No class, shifted President's day**",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2/19",
+          "description": "Week 3.2 **Multimodal fusion**\n\n- Early and late fusion\n- Explainable fusion",
+          "videoLinks": "",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec3.2%20-%20fusion.pdf)\n\n**Readings**\n\n- [Ten Myths of Multimodal Interaction](https://dl.acm.org/doi/pdf/10.1145/319382.319398)\n- [Multimodal interaction: A review](https://www.sciencedirect.com/science/article/pii/S0167865513002584)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2/24",
+          "description": "Week 4.1 **More multimodal fusion**\n\n- Higher-order interactions\n- Multimodal fusion models",
+          "videoLinks": "[More multimodal fusion](https://youtu.be/0SOieOIe4HI?si=6BQZMH0OWOeLDaaR)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec4.1%20-%20more%20fusion.pdf)\n\n**Readings**\n\n- [Quantifying & Modeling Multimodal Interactions: An Information Decomposition Framework](https://arxiv.org/abs/2302.12247)\n- [Does my multimodal model learn cross-modal interactions? It’s harder to tell than you might think!](https://aclanthology.org/2020.emnlp-main.62/)\n- [Kosmos-2: Grounding Multimodal Large Language Models to the World](https://arxiv.org/abs/2306.14824)\n- [Chameleon: Mixed-modal early-fusion foundation models](https://arxiv.org/abs/2405.09818)\n- [MM1: Methods, Analysis and Insights from Multimodal LLM Pre-training](https://link.springer.com/chapter/10.1007/978-3-031-73397-0_18)\n- [MoMa: Efficient Early-Fusion Pre-training with Mixture of Modality-Aware Experts](https://arxiv.org/pdf/2407.21770)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2/26",
+          "description": "Week 4.2 **Multimodal alignment**\n\n- Multimodal grounding\n- Aligned representations",
+          "videoLinks": "[Multimodal alignment](https://youtu.be/u-H43tRgYJg?si=AYQizgQHpf1Smlk1)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec4.2%20-%20alignment.pdf)\n\n**Readings**\n\n- [What Makes for Good Views for Contrastive Learning?](https://arxiv.org/abs/2005.10243)\n- [Characterization and classification of semantic image-text relations](https://link.springer.com/article/10.1007/s13735-019-00187-6)\n- [When and why vision-language models behave like bags-of-words, and what to do about it?](https://arxiv.org/abs/2210.01936)\n- [The Platonic Representation Hypothesis](https://arxiv.org/pdf/2405.07987)\n- [Understanding the Emergence of Multimodal Representation Alignment](https://arxiv.org/pdf/2502.16282)\n- [Does equivariance matter at scale?](https://arxiv.org/abs/2410.23179)\n- [Learning Transferable Visual Models From Natural Language Supervision?](https://arxiv.org/pdf/2103.00020)\n- [Emerging Properties in Self-Supervised Vision Transformers](https://arxiv.org/pdf/2104.14294)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "3/3",
+          "description": "Week 5.1 **Large multimodal models**\n\n- Multimodal transformers\n- Pre-training & fine-tuning",
+          "videoLinks": "[Large multimodal models](https://youtu.be/H9nvkyTsrnI?si=tjASlXudKbRcUefh)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec5.1%20-%20large%20multimodal%20models.pdf)\n\n**Readings**\n\n- [Training Compute-Optimal Large Language Models](https://arxiv.org/abs/2203.15556)\n- [Super-NaturalInstructions: Generalization via Declarative Instructions on 1600+ NLP Tasks](https://arxiv.org/abs/2204.07705)\n- [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)\n- [A Visual Guide to Mixture of Experts (MoE)](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts)\n- [A Visual Guide to Quantization](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization)\n- [Improved Baselines with Visual Instruction Tuning](https://arxiv.org/abs/2310.03744)\n- [Gated Linear Attention Transformers with Hardware-Efficient Training](https://arxiv.org/abs/2312.06635%20)\n- [Unintended Impacts of LLM Alignment on Global Representation](https://arxiv.org/abs/2402.15018%20)\n- [A Visual Guide to Quantization](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization)\n- [Scaling Instruction-Finetuned Language Models](https://arxiv.org/abs/2106.09685%20)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "3/5",
+          "description": "Week 5.2 **Multimodal LLMs tutorial**\n\n- Fine-tuning\n- Instruction tuning",
+          "videoLinks": "",
+          "materials": "[slides](https://colab.research.google.com/drive/1fgUtzrorkGT8FdIY77Y_V4vQRULPAC5d)\n\n**Readings**\n\n- [Multimodal Transformer for Unaligned Multimodal Language Sequences](https://arxiv.org/abs/1906.00295)\n- [Masked Autoencoders Are Scalable Vision Learners](https://arxiv.org/abs/2111.06377)\n- [Scaling Laws for Native Multimodal Models Scaling Laws for Native Multimodal Models](https://arxiv.org/abs/2504.07951)\n- [Transfer between Modalities with MetaQueries](https://arxiv.org/abs/2504.06256)\n- [LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention](https://arxiv.org/pdf/2303.16199)\n- [Cobra: Extending Mamba to Multi-Modal Large Language Model for Efficient Inference](https://arxiv.org/pdf/2403.14520)\n- [ModaVerse: Efficiently Transforming Modalities with LLMs](https://arxiv.org/abs/2401.06395)\n- [Spider: Any-to-Many Multimodal LLM](https://arxiv.org/pdf/2411.09439)\n- [SPHINX-X: Scaling Data and Parameters for a Family of Multi-modal Large Language Models](https://arxiv.org/pdf/2402.05935)\n- [How Far Are We to GPT-4V? Closing the Gap to Commercial Multimodal Models with Open-Source Suites](https://arxiv.org/pdf/2404.16821)\n- [NExT-GPT: Any-to-Any Multimodal LLM](https://arxiv.org/pdf/2309.05519)\n- [Learning to rebalance multi-modal optimization by adaptively masking subnetworks](https://arxiv.org/pdf/2404.08347)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "3/10",
+          "description": "Week 6.1 **Multimodal generation**\n\n- Translation, summarization, creation\n- Model evaluation and ethics",
+          "videoLinks": "[Multimodal generation](https://youtu.be/KlHIR7lT-mo?si=su5lIX08m-BvMcA1)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec6.1%20-%20generative%20AI.pdf)\n\n**Readings**\n\n- [Compositional Generative Modeling: A Single Model is Not All You Need](https://arxiv.org/pdf/2402.01103)\n- [Movie Gen: A Cast of Media Foundation Models](https://arxiv.org/abs/2410.13720)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "3/12",
+          "description": "Week 6.2 **Modern generative AI**\n\n- VAEs, diffusion, flow models\n- Controllable generation",
+          "videoLinks": "[Modern generative AI](https://youtu.be/LGBQ0c_4HBA?si=y2ilL_6QdadmambK)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec6.2%20-%20more%20generative%20AI.pdf)\n\n**Readings**\n\n- [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748)\n- [Flow Matching in Latent Space](https://arxiv.org/abs/2307.08698)\n- [Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://arxiv.org/abs/2403.03206)\n- [Large Language Diffusion Models](https://arxiv.org/pdf/2502.09992)\n- [Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747)\n- [Flow Matching Guide and Code](https://arxiv.org/abs/2412.06264)\n- [FlowMotion: Target-Predictive Conditional Flow Matching for Jitter-Reduced Text-to-Motion Generation](https://arxiv.org/abs/2504.01338)\n- [MusFlow: Multimodal Music Generation via Conditional Flow Matching](https://arxiv.org/abs/2504.13535)\n- [Unraveling the Connections Between Flow Matching and Diffusion Probabilistic Models](https://arxiv.org/abs/2311.07625)\n- [Exploring Diffusion and Flow Matching Under Generator Matching](https://arxiv.org/abs/2412.11024)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "3/17",
+          "description": "Week 7.1 **Midterm review**\n\n- Multimodal fusion & alignment\n- Multimodal foundation models",
+          "videoLinks": "",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec7.1%20-%20midterm%20review.pdf)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "3/19",
+          "description": "Week 7.2 **In-class midterm**",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "3/24",
+          "description": "Week 8.1 **Spring Break – No lectures**",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "3/26",
+          "description": "Week 8.2 **Spring Break – No lectures**",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "3/31",
+          "description": "Week 9.1 **Multimodal reasoning**\n\n- Reinforcement learning\n- Multi-step reasoning",
+          "videoLinks": "[Multimodal reasoning](https://youtu.be/Vhe_bX8mV2s?si=V65452DBEHXaEWbW)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec9.1%20-%20reasoning.pdf)\n\n**Readings**\n\n- [Deep reinforcement learning from human preferences](https://arxiv.org/abs/1706.03741)\n- [Deepseek-r1: Incentivizing reasoning capability in LLMs via reinforcement learning](https://arxiv.org/abs/2501.12948)\n- [Faulty reward functions in the wild](https://openai.com/index/faulty-reward-functions/)\n- [Direct preference optimization: Your language model is secretly a reward model](https://arxiv.org/abs/2305.18290)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "4/2",
+          "description": "Week 9.2 **Explainable reasoning**\n\n- Explainable AI\n- LLMs for explainability",
+          "videoLinks": "",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec9.2%20-%20explainable.pdf)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "4/7",
+          "description": "Week 10.1 **Multimodal interaction**\n\n- Interactive agents\n- Interactive reasoning",
+          "videoLinks": "[Multimodal interaction](https://youtu.be/Sk_TYpA6DWA?si=xI7BVwWyEQb31Wg8)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec10.1%20-%20interaction.pdf)\n\n**Readings**\n\n- [VisualWebArena: Evaluating Multimodal Agents on Realistic Visual Web Tasks](https://arxiv.org/abs/2401.13649)\n- [OS-ATLAS: A Foundation Action Model for Generalist GUI Agents](https://arxiv.org/abs/2410.23218)\n- [Mind2Web: Towards a Generalist Agent for the Web](https://arxiv.org/abs/2306.06070)\n- [Tree Search for Language Model Agents](https://arxiv.org/abs/2407.01476)\n- [A Survey of Reinforcement Learning from Human Feedback](https://arxiv.org/abs/2312.14925)\n- [MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents](https://arxiv.org/abs/2506.15841)\n- [OpenVLA: An Open-Source Vision-Language-Action Model](https://arxiv.org/abs/2406.09246)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "4/9",
+          "description": "Week 10.2 **Cross-modal transfer**\n\n- Modality transfer and co-learning\n- Self-training and multitask learning",
+          "videoLinks": "[Cross-modal transfer](https://youtu.be/IDaMEG_zY6A?si=nfHVm8rBMwi5zljP)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec10.2%20-%20crossmodal.pdf)\n\n**Readings**\n\n- [High-Modality Multimodal Transformer: Quantifying Modality & Interaction Heterogeneity for High-Modality Representation Learning](https://arxiv.org/abs/2203.01311)\n- [MAPoRL2: Multi-Agent Post-Co-Training for Collaborative Large Language Models with Reinforcement Learning](https://arxiv.org/abs/2502.18439)\n- [LLaVA-Med: Training a Large Language-and-Vision Assistant for Biomedicine in One Day](https://arxiv.org/abs/2303.00915v3)\n- [DreamLLM: Synergistic Multimodal Comprehension and Creation](https://arxiv.org/abs/2309.11499)\n- [PaLM-E: An Embodied Multimodal Language Model](https://arxiv.org/abs/2303.03378)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "4/14",
+          "description": "Week 11.1 **Multimodal & manufacturing**\n\n- Multisensor fusion\n- Applications in manufacturing",
+          "videoLinks": "",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec11.1%20-%20manufacturing.pdf)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "4/16",
+          "description": "Week 11.2 **Multimodal & design**\n\n- Multimodal agents\n- Applications in design",
+          "videoLinks": "",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec11.2%20-%20design.pdf)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "4/21",
+          "description": "Week 12.1 **Prescriptive modeling**\n\n- Optimization & prediction\n- Causal & counterfactual",
+          "videoLinks": "",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec12.1%20-%20prescriptive.pdf)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "4/23",
+          "description": "Week 12.2 **Agents tutorial**\n\n- Multimodal agent pipelines\n- Agent evaluation",
+          "videoLinks": "",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec12.2%20-%20agents.pdf)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "4/28",
+          "description": "Week 13.1 **Multimodal & cities**\n\n- Spatial and temporal fusion\n- Applications in cities",
+          "videoLinks": "",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec13.1%20-%20cities.pdf)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "4/30",
+          "description": "Week 13.2 **Multimodal & transportation**\n\n- Autonomous vehicles\n- Applications in transportation",
+          "videoLinks": "",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec13.2%20-%20transportation.pdf)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "5/5",
+          "description": "Week 14.1 **Self-evolving AI**\n\n- Continual learning\n- Self-evolution and optimization",
+          "videoLinks": "[Self-evolving AI](https://youtu.be/FhcHTSjvuKk?si=gJGiKJrwO3FYakcE)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec14.1%20-%20advanced%20topics.pdf)\n\n**Readings**\n\n- [Blog Post on Self-Evolving AI](https://quao627.github.io/blog/self-evolving-agents/)\n- [AlphaEvolve: A Coding Agent for Scientific and Algorithmic Discovery](https://arxiv.org/abs/2506.13131)\n- [CORAL: Towards Autonomous Multi-agent Evolution for Open-ended Discovery](https://arxiv.org/abs/2604.01658)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "5/7",
+          "description": "Week 14.2 **AI for new senses**\n\n- Touch, smell, taste\n- Human-AI interaction",
+          "videoLinks": "[AI for new senses](https://youtu.be/UJra8aMCHXg?si=c_jwf59wZGplm9zA)",
+          "materials": "[slides](https://mit-mi.github.io/mmai-course/spring2026/schedule/lec14.2%20-%20human.pdf)\n\n**Readings**\n\n- [Interactive Sketchpad: A Multimodal Tutoring System for Collaborative, Visual Problem-Solving](https://arxiv.org/abs/2503.16434)\n- [AromaGen: Interactive Generation of Rich Olfactory Experiences with Multimodal Language Models](https://arxiv.org/abs/2604.01650)\n- [Smellnet: A Large-scale Dataset for Real-world Smell Recognition](https://arxiv.org/abs/2506.00239)\n- [Opentouch: Bringing Full-hand Touch to Real-world Interaction](https://arxiv.org/abs/2512.16842)\n- [Stereo-Smell via Electrical Trigeminal Stimulation](https://dl.acm.org/doi/abs/10.1145/3411764.3445300)\n- [ArtPrompt: ASCII Art-based Jailbreak Attacks against Aligned LLMs](https://arxiv.org/abs/2402.11753)\n- [Guidelines for Human-AI Interaction](https://dl.acm.org/doi/abs/10.1145/3290605.3300233)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "5/12",
+          "description": "Week 15.1 **Project presentations**",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        }
+      ],
+      "assessment": "Grades\nThe grading breakdown is as follows:\n35% for 5 homework assignments, roughly 2 weeks for each.\n15% for 5 reading assignments covering state-of-the-art research in multimodal AI.\n15% for an in-class midterm exam.\n35% for the course project, split between proposal, midterm, and final report/presentations.\n\nHomework assignments (35% for 5 assignments):\nThere are a total of 5 homework assignments planned this semester. Each homework assignment will take around 2 weeks and consists of conceptual, implementation, and experimental exercises.\n\nReading assignments (15% for 5 assignments):\nThere are a total of 5 reading assignments planned this semester. Each reading assignment will be released together with the homework, are due in 2 weeks, and consists of 2 main parts:\nAssigned reading paper: Reading the assigned papers and summarizing the main take-away points of each paper.\nResearch question probes: Answer several question probes related to the reading papers and your datasets or research.\n\nMidterm exam (15%):\nThe midterm exam will be in the week before spring break. It will consist of multiple choice, short answer, and longer answer questions.\n\nCourse project (35%):\nThe course project will be done in groups of 2-4 students and is meant to introduce students to the research process. The project will span the entire semester with several key checkpoints, for which intermediate grades will be assigned as follows:\nProposal report and presentation 5%\nMidterm report and presentation 10%\nFinal report and presentation 20%\nProject preference form\nThis form is designed to help students with the team-matching process, for the course research project.\nProposal and literature review\nThe proposal report should present the initial research ideas for the course project. Students are expected to explore a new data modality or task understudied in AI and new research ideas to process this new data modality or task. The proposal should summarize these new data modalities, new research ideas, and a robust evaluation plan.\nAn important part of this proposal report will be a detailed literature review, including recent papers and models related to the data modality, research tasks, and new research ideas.\nMidterm report\nThe goal of the midterm report is to summarize the current research progress. Students should have already started exploring new research ideas. The midterm report should summarize these initial results and discuss them. This report should also present the updated list of research ideas that the team plans to explore.\nFinal report\nThe final report should follow a similar structure to a research paper. It should motivate the problem and research ideas. It should present the novel approaches, describe the experiment, and discuss the results.\nFinal presentation\nThe final project assignment will also include either an in-person poster or oral presentation, to be confirmed. The poster presentations may be open to the general MIT population.\n\nNotes about absences and late submissions\nIn general, submitting assignments on time lets the instructional team provide feedback in a more timely and efficient manner. Timely submissions are particularly important for assignments with discussions and peer feedback.  Also, it is expected that students will attend the lectures in person (or via Zoom when the course is required to be performed remotely). Live attendance is an essential component of this course, given that it is centered around live discussions. Given the live nature of the discussions, course sessions will not be recorded.\n\nMedical-related absences If for a medical reason, you require some extra time for an assignment or may not be able to attend the lecture in person, please contact instructors as soon as possible and we will help define a new plan that aligns with your constraints. \nAbsence requests\nStudents should contact instructors as promptly as possible regarding course absences, with a preference before the course lecture itself.\nIf you plan to be absent for more than one class, please contact the instructors as promptly as possible.",
+      "readings": "",
+      "updatedAt": "2026-10-04T07:47:54.137Z"
+    },
+    {
+      "id": "course-stanford-cs329a-autumn-2025",
+      "name": "Self-Improving AI Agents",
+      "code": "CS 329A",
+      "provider": "Stanford University",
+      "instructor": "Aakanksha Chowdhery; Azalia Mirhoseini",
+      "term": "Autumn 2025",
+      "status": "Considering",
+      "url": "https://cs329a.stanford.edu/",
+      "branch": "llm",
+      "slot": "",
+      "tags": [
+        "LLM",
+        "Agents",
+        "Self-improvement",
+        "Reasoning",
+        "RL"
+      ],
+      "prerequisites": [],
+      "nodes": "L4, L5, L6, L7",
+      "overview": "## Course Overview\n\n**Autumn 2025**\n\nThis course covers the latest techniques and applications of AI agents that can continuously improve themselves through interaction with themselves and the environment. The course will start with self-improvement techniques for LLMs, such as constitutional AI, using verifiers, scaling test-time compute, combining search with LLMs, and train time scaling with RL. We will then discuss the latest research in augmenting LLMs with tool use, code, and memory, and orchestrating AI capabilities with multimodal interaction. We will next discuss multi-step reasoning and planning problems for agentic workflows, and the challenges in building robust evaluation frameworks.\n\nOur goal is that the students learn from the latest research papers, discuss the suggested readings in each class, work on an original research project in this area, and learn from invited academic and industry speakers about applications in building coding agents, research assistants in STEM, and autonomous systems in robotics.\n\n[Course website](https://cs329a.stanford.edu/#intro)\n\n## Prerequisites\n\n> Prerequisites: CS224N or CS229S; Fluency in Python programming and using large language model APIs.\n\n[Stanford University Bulletin — CS329A](https://bulletin.stanford.edu/courses/2263721)\n\n- [CS224N — Natural Language Processing with Deep Learning](https://web.stanford.edu/class/cs224n/)\n- [CS229S — Systems for Machine Learning](https://cs229s.stanford.edu/fall2024/)",
+      "syllabus": "## Schedule\n\n[Course website — Schedule](https://cs329a.stanford.edu/#schedule)\n\n- **Mon Sep 22** — Course Overview\n- **Fri Sep 26** — Test-time Compute Scaling\n- **Mon Sep 29** — Robust Verification\n- **Fri Oct 3** — Learning from feedback with tools/code\n- **Mon Oct 6** — Multi-step Reasoning/Planning\n- **Fri Oct 10** — Train Time Scaling/Scaling RL\n- **Mon Oct 13** — Open-Ended Evolution of Self-Improving Agents\n- **Fri Oct 17** — Self improvement with Search & Deep Research Agents\n- **Mon Oct 20** — Guest Lecture Melvin Johnson (Google DeepMind)\n- **Fri Oct 24** — Mid term presentations\n- **Mon Oct 27** — Mid term presentations\n- **Fri Oct 31** — Mid term presentations\n- **Mon Nov 3** — Agentic Frameworks for Software Engineering\n- **Fri Nov 7** — Augmenting Agents with Memory Guest Lecturer: Junchen Jiang (LMCache, UChicago)\n- **Mon Nov 10** — Guest Lecture Denny Zhou, Google DeepMind\n- **Fri Nov 14** — Guest Lecture Thang Luong, Google DeepMind\n- **Mon Nov 17** — Agentic Evaluations & Long-Horizon Tasks\n- **Fri Nov 21** — Guest Lecture Misha Laskin (Reflection AI)\n- **Mon Nov 24** — Holiday\n- **Fri Nov 28** — Holiday\n- **Mon Dec 1** — Guest Lecture Danny Driess (Physical Intelligence)\n- **Fri Dec 5** — Future Research Areas\n- **Wed Dec 10** — Final Project Due\n- **Fri Dec 12** — Final Project Poster Presentation",
+      "scheduleRows": [
+        {
+          "date": "Mon Sep 22",
+          "description": "Course Overview",
+          "materials": "",
+          "events": "",
+          "deadlines": "",
+          "videoLinks": "[Stanford CS329A Self-Improving AI Agents | Part 1 | Course Overview](https://www.youtube.com/watch?v=6YnLB0XbTnI&list=PLangBM27OtEA)"
+        },
+        {
+          "date": "Fri Sep 26",
+          "description": "Test-time Compute Scaling",
+          "materials": "- [Large Language Monkeys: Scaling Inference Compute with Repeated Sampling (Brown et al. 2024)](https://arxiv.org/abs/2407.21787)\n- [Archon: An Architecture Search Framework for Inference-Time Techniques (Saad-Falcon et al. 2024)](https://www.arxiv.org/abs/2409.15254)\n- [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters (Snell et al. 2024)](https://arxiv.org/abs/2408.03314)\n- [How Do Large Language Monkeys Get Their Power (Laws)?](https://arxiv.org/abs/2502.17578)",
+          "events": "",
+          "deadlines": "",
+          "videoLinks": "[Stanford CS329A Self-Improving AI Agents | Part 2 | Test-Time Compute Scaling](https://www.youtube.com/watch?v=-Ggc37xLj_Y&list=PLangBM27OtEA)"
+        },
+        {
+          "date": "Mon Sep 29",
+          "description": "Robust Verification",
+          "materials": "- [Shrinking the Generation-Verification Gap with Weak Verifiers](https://arxiv.org/abs/2506.18203)\n- [Training Verifiers to Solve Math Word Problems (Cobbe et al. 2021)](https://arxiv.org/abs/2110.14168)\n- [Let's Verify step by step (Lightman et al. 2023)](https://arxiv.org/abs/2305.20050)\n- [Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Human Annotations (Wang et al. 2023)](https://arxiv.org/abs/2312.08935)",
+          "events": "",
+          "deadlines": "",
+          "videoLinks": "[Stanford CS329A Self-Improving AI Agents | Part 3 | Robust Verification](https://www.youtube.com/watch?v=p7TdPUcPoik&list=PLangBM27OtEA)"
+        },
+        {
+          "date": "Fri Oct 3",
+          "description": "Learning from feedback with tools/code",
+          "materials": "- [ReAct: Synergizing Reasoning and Acting in Language Models (Yao et al. 2022)](https://arxiv.org/abs/2210.03629)\n- [RLEF: Grounding Code LLMs in Execution Feedback with Reinforcement Learning](https://arxiv.org/abs/2410.02089)\n- [Constitutional AI: Harmlessness from AI Feedback](https://arxiv.org/abs/2212.08073)",
+          "events": "",
+          "deadlines": "Homework 1 out (due Oct 13)",
+          "videoLinks": "[Stanford CS329A Self-Improving AI Agents | Part 4 | Learning from Feedback with Tools/Code](https://www.youtube.com/watch?v=Lxh9RF5S-K0&list=PLangBM27OtEA)"
+        },
+        {
+          "date": "Mon Oct 6",
+          "description": "Multi-step Reasoning/Planning",
+          "materials": "- [SWiRL: Synthetic Data Generation & Multi-Step RL for Reasoning & Tool Use](https://arxiv.org/abs/2504.04736)\n- [Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models (Zhou et al. 2023)](https://arxiv.org/abs/2310.04406)\n- [SPRINT: Enabling Interleaved Planning and Parallelized Execution in Reasoning Models](https://arxiv.org/abs/2506.05745)\n- [ADaPT: As-Needed Decomposition and Planning with Language Models (Prasad et al. 2024)](https://arxiv.org/abs/2311.05772)\n- [Wider or Deeper? Scaling LLM Inference-Time Compute with Adaptive Branching Tree Search](https://arxiv.org/abs/2503.04412)",
+          "events": "",
+          "deadlines": "",
+          "videoLinks": "[Stanford CS329A Self-Improving AI Agents | Part 5 | Planning and Multi-Step Reasoning](https://www.youtube.com/watch?v=Ml_fp9XkB8Y&list=PLangBM27OtEA)"
+        },
+        {
+          "date": "Fri Oct 10",
+          "description": "Train Time Scaling/Scaling RL",
+          "materials": "- [STaR: Bootstrapping Reasoning With Reasoning (Zelikman et al. 2022)](https://arxiv.org/pdf/2203.14465)\n- [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](https://arxiv.org/abs/2402.03300)\n- [DAPO: An Open-Source LLM Reinforcement Learning System at Scale](https://arxiv.org/abs/2503.14476)",
+          "events": "",
+          "deadlines": "Project Proposal due",
+          "videoLinks": "[Stanford CS329A Self-Improving AI Agents | Part 6 | Train Time Scaling/Scaling RL](https://www.youtube.com/watch?v=yVnmHSAy3ck&list=PLangBM27OtEA)"
+        },
+        {
+          "date": "Mon Oct 13",
+          "description": "Open-Ended Evolution of Self-Improving Agents",
+          "materials": "- [Automated design of agentic systems](https://arxiv.org/pdf/2505.22954)\n- [The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery (Lu et al. 2024)](https://arxiv.org/abs/2408.06292)\n- [AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/AlphaEvolve.pdf)",
+          "events": "",
+          "deadlines": "Homework 2 out on Oct 14 (due Oct 22)"
+        },
+        {
+          "date": "Fri Oct 17",
+          "description": "Self improvement with Search & Deep Research Agents",
+          "materials": "- [Competition-Level Code Generation with AlphaCode](https://arxiv.org/pdf/2203.07814)\n- [AlphaCode 2 Technical Report](https://storage.googleapis.com/deepmind-media/AlphaCode2/AlphaCode2_Tech_Report.pdf)\n- [Search-o1: Agentic Search-Enhanced Large Reasoning Models](https://arxiv.org/pdf/2501.05366)",
+          "events": "",
+          "deadlines": "",
+          "videoLinks": "[Stanford CS329A Self-Improving AI Agents | Part 7 | Self-Improvement and Deep Research Agents](https://www.youtube.com/watch?v=Uni9dqyuuDM&list=PLangBM27OtEA)"
+        },
+        {
+          "date": "Mon Oct 20",
+          "description": "Guest Lecture Melvin Johnson (Google DeepMind)",
+          "materials": "Evolution of Post-training from Chatbots to Agents",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Fri Oct 24",
+          "description": "Mid term presentations",
+          "materials": "",
+          "events": "",
+          "deadlines": "Homework 3 out (due Nov 7)"
+        },
+        {
+          "date": "Mon Oct 27",
+          "description": "Mid term presentations",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Fri Oct 31",
+          "description": "Mid term presentations",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon Nov 3",
+          "description": "Agentic Frameworks for Software Engineering",
+          "materials": "- [CodeMonkeys: Scaling Test-Time Compute for Software Engineering](https://arxiv.org/abs/2501.14723)\n- [KernelBench: Can LLMs Write Efficient GPU Kernels?](https://arxiv.org/pdf/2502.10517)\n- [Improving Parallel Program Performance with LLM Optimizers via Agent-System Interfaces](https://arxiv.org/abs/2410.15625)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Fri Nov 7",
+          "description": "Augmenting Agents with Memory Guest Lecturer: Junchen Jiang (LMCache, UChicago)",
+          "materials": "- [Cartridges: Lightweight and general-purpose long context representations via self-study](https://arxiv.org/abs/2506.06266)\n- [MemGPT: Towards LLMs as Operating Systems (Packer et al, 2023)](https://arxiv.org/abs/2310.08560)\n- [CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion](http://arxiv.org/abs/2405.16444)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon Nov 10",
+          "description": "Guest Lecture Denny Zhou, Google DeepMind",
+          "materials": "LLM Reasoning",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Fri Nov 14",
+          "description": "Guest Lecture Thang Luong, Google DeepMind",
+          "materials": "Towards AI Superhuman Reasoning: AlphaProof, AlphaGeometry & Gemini IMO Gold Medal",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon Nov 17",
+          "description": "Agentic Evaluations & Long-Horizon Tasks",
+          "materials": "- [Measuring AI Ability to Complete Long Tasks](https://arxiv.org/abs/2503.14499)\n- [GDPVal: Evaluating AI Model Performance on Real-World Economically Valuable Tasks](https://arxiv.org/abs/2510.04374)\n- [DeepScholar-Bench: A Live Benchmark and Automated Evaluation for Generative Research Synthesis](https://arxiv.org/abs/2508.20033)",
+          "events": "",
+          "deadlines": "",
+          "videoLinks": "[Stanford CS329A Self-Improving AI Agents | Part 8 | Agentic Evaluations and Long Horizon Tasks](https://www.youtube.com/watch?v=8JAqLnTaZu4&list=PLangBM27OtEA)"
+        },
+        {
+          "date": "Fri Nov 21",
+          "description": "Guest Lecture Misha Laskin (Reflection AI)",
+          "materials": "Building Agentic Systems for Autonomy: Lessons & Open questions",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon Nov 24",
+          "description": "Holiday",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Fri Nov 28",
+          "description": "Holiday",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon Dec 1",
+          "description": "Guest Lecture Danny Driess (Physical Intelligence)",
+          "materials": "Multimodal AI Agents in Robotics",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Fri Dec 5",
+          "description": "Future Research Areas",
+          "materials": "",
+          "events": "",
+          "deadlines": "",
+          "videoLinks": "[Stanford CS329A Self-Improving AI Agents | Part 9 | Future Research Areas](https://www.youtube.com/watch?v=AyO6wyu4DEg&list=PLangBM27OtEA)"
+        },
+        {
+          "date": "Wed Dec 10",
+          "description": "Final Project Due",
+          "materials": "",
+          "events": "",
+          "deadlines": "Final project due (EoD)"
+        },
+        {
+          "date": "Fri Dec 12",
+          "description": "Final Project Poster Presentation",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        }
+      ],
+      "assessment": "## Grading\n\n- **Homework 1 (15%)**\n  - Due Oct 13\n\n- **Homework 2 (15%)**\n  - Due Oct 23\n\n- **Homework 3 (20%)**\n  - Due Nov 7\n\n- **Project Proposal (2.5%)**\n  - Due Oct 10\n\n- **Midterm presentation + Report (10%)**\n  - 5-10 minute presentation on Oct 24, Oct 27, and Oct 31\n\n- **Final project (35%)**\n  - Due Dec 10\n\n- **Poster (2.5%)**\n  - Dec 12\n\n[Grading](https://cs329a.stanford.edu/#grading) · [Homework Assignments](https://cs329a.stanford.edu/#homework-assignments) · [Research Projects](https://cs329a.stanford.edu/#research-projects) · [Course Policies](https://cs329a.stanford.edu/#policies)",
+      "readings": "## Lecture Videos\n\n- [Course Overview — YouTube](https://www.youtube.com/watch?v=6YnLB0XbTnI&list=PLangBM27OtEA)\n\n## Paper Readings\n\n[Course website — Paper Readings](https://cs329a.stanford.edu/#schedule)\n\n### Fri Sep 26 — Test-time Compute Scaling\n\n- [Large Language Monkeys: Scaling Inference Compute with Repeated Sampling (Brown et al. 2024)](https://arxiv.org/abs/2407.21787)\n- [Archon: An Architecture Search Framework for Inference-Time Techniques (Saad-Falcon et al. 2024)](https://www.arxiv.org/abs/2409.15254)\n- [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters (Snell et al. 2024)](https://arxiv.org/abs/2408.03314)\n- [How Do Large Language Monkeys Get Their Power (Laws)?](https://arxiv.org/abs/2502.17578)\n\n### Mon Sep 29 — Robust Verification\n\n- [Shrinking the Generation-Verification Gap with Weak Verifiers](https://arxiv.org/abs/2506.18203)\n- [Training Verifiers to Solve Math Word Problems (Cobbe et al. 2021)](https://arxiv.org/abs/2110.14168)\n- [Let's Verify step by step (Lightman et al. 2023)](https://arxiv.org/abs/2305.20050)\n- [Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Human Annotations (Wang et al. 2023)](https://arxiv.org/abs/2312.08935)\n\n### Fri Oct 3 — Learning from feedback with tools/code\n\n- [ReAct: Synergizing Reasoning and Acting in Language Models (Yao et al. 2022)](https://arxiv.org/abs/2210.03629)\n- [RLEF: Grounding Code LLMs in Execution Feedback with Reinforcement Learning](https://arxiv.org/abs/2410.02089)\n- [Constitutional AI: Harmlessness from AI Feedback](https://arxiv.org/abs/2212.08073)\n\n### Mon Oct 6 — Multi-step Reasoning/Planning\n\n- [SWiRL: Synthetic Data Generation & Multi-Step RL for Reasoning & Tool Use](https://arxiv.org/abs/2504.04736)\n- [Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models (Zhou et al. 2023)](https://arxiv.org/abs/2310.04406)\n- [SPRINT: Enabling Interleaved Planning and Parallelized Execution in Reasoning Models](https://arxiv.org/abs/2506.05745)\n- [ADaPT: As-Needed Decomposition and Planning with Language Models (Prasad et al. 2024)](https://arxiv.org/abs/2311.05772)\n- [Wider or Deeper? Scaling LLM Inference-Time Compute with Adaptive Branching Tree Search](https://arxiv.org/abs/2503.04412)\n\n### Fri Oct 10 — Train Time Scaling/Scaling RL\n\n- [STaR: Bootstrapping Reasoning With Reasoning (Zelikman et al. 2022)](https://arxiv.org/pdf/2203.14465)\n- [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](https://arxiv.org/abs/2402.03300)\n- [DAPO: An Open-Source LLM Reinforcement Learning System at Scale](https://arxiv.org/abs/2503.14476)\n\n### Mon Oct 13 — Open-Ended Evolution of Self-Improving Agents\n\n- [Automated design of agentic systems](https://arxiv.org/pdf/2505.22954)\n- [The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery (Lu et al. 2024)](https://arxiv.org/abs/2408.06292)\n- [AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/AlphaEvolve.pdf)\n\n### Fri Oct 17 — Self improvement with Search & Deep Research Agents\n\n- [Competition-Level Code Generation with AlphaCode](https://arxiv.org/pdf/2203.07814)\n- [AlphaCode 2 Technical Report](https://storage.googleapis.com/deepmind-media/AlphaCode2/AlphaCode2_Tech_Report.pdf)\n- [Search-o1: Agentic Search-Enhanced Large Reasoning Models](https://arxiv.org/pdf/2501.05366)\n\n### Mon Oct 20 — Guest Lecture Melvin Johnson (Google DeepMind)\n\nEvolution of Post-training from Chatbots to Agents\n\n### Mon Nov 3 — Agentic Frameworks for Software Engineering\n\n- [CodeMonkeys: Scaling Test-Time Compute for Software Engineering](https://arxiv.org/abs/2501.14723)\n- [KernelBench: Can LLMs Write Efficient GPU Kernels?](https://arxiv.org/pdf/2502.10517)\n- [Improving Parallel Program Performance with LLM Optimizers via Agent-System Interfaces](https://arxiv.org/abs/2410.15625)\n\n### Fri Nov 7 — Augmenting Agents with Memory Guest Lecturer: Junchen Jiang (LMCache, UChicago)\n\n- [Cartridges: Lightweight and general-purpose long context representations via self-study](https://arxiv.org/abs/2506.06266)\n- [MemGPT: Towards LLMs as Operating Systems (Packer et al, 2023)](https://arxiv.org/abs/2310.08560)\n- [CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion](http://arxiv.org/abs/2405.16444)\n\n### Mon Nov 10 — Guest Lecture Denny Zhou, Google DeepMind\n\nLLM Reasoning\n\n### Fri Nov 14 — Guest Lecture Thang Luong, Google DeepMind\n\nTowards AI Superhuman Reasoning: AlphaProof, AlphaGeometry & Gemini IMO Gold Medal\n\n### Mon Nov 17 — Agentic Evaluations & Long-Horizon Tasks\n\n- [Measuring AI Ability to Complete Long Tasks](https://arxiv.org/abs/2503.14499)\n- [GDPVal: Evaluating AI Model Performance on Real-World Economically Valuable Tasks](https://arxiv.org/abs/2510.04374)\n- [DeepScholar-Bench: A Live Benchmark and Automated Evaluation for Generative Research Synthesis](https://arxiv.org/abs/2508.20033)\n\n### Fri Nov 21 — Guest Lecture Misha Laskin (Reflection AI)\n\nBuilding Agentic Systems for Autonomy: Lessons & Open questions\n\n### Mon Dec 1 — Guest Lecture Danny Driess (Physical Intelligence)\n\nMultimodal AI Agents in Robotics",
+      "updatedAt": "2026-10-04T07:43:37.743Z"
+    },
+    {
+      "id": "course-stanford-cs234-spring-2024",
+      "name": "Reinforcement Learning",
+      "code": "CS 234",
+      "provider": "Stanford University",
+      "instructor": "Emma Brunskill",
+      "term": "2024 Spring",
+      "status": "Considering",
+      "url": "https://web.stanford.edu/class/cs234/CS234Spr2024/index.html",
+      "branch": "rl",
+      "slot": "",
+      "tags": [
+        "Reinforcement Learning",
+        "Deep RL",
+        "Offline RL",
+        "RLHF"
+      ],
+      "prerequisites": [],
+      "nodes": "RL1, RL2, RL3, RL4, RL5, RL6",
+      "overview": "## Course Description & Logistics\n\n[Full official course description — Spring 2024](https://web.stanford.edu/class/cs234/CS234Spr2024/index.html)\n\n[Latest course website — Winter 2026](https://web.stanford.edu/class/cs234/index.html)\n\n## Prerequisites for This Class\n\n- Proficiency in Python\n- College Calculus, Linear Algebra (e.g. MATH 51, CME 100)\n- Basic Probability and Statistics (e.g. CS 109 or other stats course)\n- Foundations of Machine Learning: CS 221 or CS 229\n\n[Python Tutorial](http://cs231n.github.io/python-numpy-tutorial/)\n\n## Lecture Videos\n\n[Stanford CS234 — Spring 2024 — Emma Brunskill](https://www.youtube.com/playlist?list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)",
+      "syllabus": "## Lecture Materials\n\n[Official lecture materials](https://web.stanford.edu/class/cs234/CS234Spr2024/modules.html)\n\n- Introduction to Reinforcement Learning\n- Tabular MDP planning\n- Tabular RL policy evaluation\n- Q-learning\n- Policy Gradient\n- Imitation Learning and Learning from Human Input\n- Fast Learning / Data Efficient RL\n- MCTS\n- Rewards in Reinforcement Learning\n- Review and Looking Forward",
+      "scheduleRows": [
+        {
+          "date": "Apr 1",
+          "description": "Week 1 · Lecture 1\n\n**Introduction to Reinforcement Learning**",
+          "videoLinks": "[Stanford CS234 Reinforcement Learning I Introduction to Reinforcement Learning I 2024 I Lecture 1](https://www.youtube.com/watch?v=WsvFL-LjA6U&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)",
+          "materials": "[Lecture 1 Draft Slides](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture1pre.pdf)\n\n[Post class version](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture1post.pdf)\n\n**Additional Materials**\n\n- High level introduction: SB (Sutton and Barto) Chp 1\n- [Linear Algebra Review](http://cs229.stanford.edu/section/cs229-linalg.pdf)\n- [Probability Review](http://cs229.stanford.edu/section/cs229-prob.pdf)\n- [Python Tutorial](http://cs231n.github.io/python-numpy-tutorial/)",
+          "events": "1:30pm-2:50pm",
+          "deadlines": ""
+        },
+        {
+          "date": "Apr 3",
+          "description": "Week 1 · Lecture 2\n\n**Tabular MDP planning**",
+          "videoLinks": "[Stanford CS234 Reinforcement Learning I Tabular MDP Planning I 2024 I Lecture 2](https://www.youtube.com/watch?v=gHdsUUGcBC0&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)",
+          "materials": "[Lecture 2 Slides (pre-class)](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture2pre.pdf)\n\n[Post class, annotated](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture2post.pdf)\n\n**Additional Materials**\n\n- SB (Sutton and Barto) Chp 3, 4.1-4.4",
+          "events": "1:30pm-2:50pm\n[Assignment 1 Released]",
+          "deadlines": ""
+        },
+        {
+          "date": "Apr 8",
+          "description": "Week 2 · Lecture 3\n\n**Policy Evaluation**",
+          "videoLinks": "[Stanford CS234 Reinforcement Learning I Policy Evaluation I 2024 I Lecture 3](https://www.youtube.com/watch?v=jjq51TRNVvk&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)",
+          "materials": "[Lecture 3 Slides (pre-class)](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture3pre.pdf)\n\n[Post class, with annotations](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture3post.pdf)\n\n**Additional Materials**\n\n- SB (Sutton and Barto) Chp 5.1, 5.5, 6.1-6.3\n- David Silver's Lecture 4 [[link](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)]",
+          "events": "1:30pm-2:50pm",
+          "deadlines": ""
+        },
+        {
+          "date": "Apr 9",
+          "description": "Week 2\n\n**Problem Session 1**",
+          "videoLinks": "",
+          "materials": "[Problem Session 1](https://web.stanford.edu/class/cs234/CS234Spr2024/sessions/CS234_Spr2024_ProblemSession1.pdf)",
+          "events": "5:30pm-6:30pm",
+          "deadlines": ""
+        },
+        {
+          "date": "Apr 10",
+          "description": "Week 2 · Lecture 4\n\n**Q learning and Function Approximation**",
+          "videoLinks": "[Stanford CS234 Reinforcement Learning I Q learning and Function Approximation I 2024 I Lecture 4](https://www.youtube.com/watch?v=b_wvosA70f8&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)",
+          "materials": "[Lecture 4 Slides (preclass)](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture4pre.pdf)\n\n[(post class with annotations)](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture4post.pdf)\n\n**Additional Materials**\n\n- SB (Sutton and Barto) Chp 5.2, 5.4, 6.4-6.5, 6.7",
+          "events": "1:30pm-2:50pm",
+          "deadlines": ""
+        },
+        {
+          "date": "Apr 12",
+          "description": "Week 2",
+          "videoLinks": "",
+          "materials": "",
+          "events": "[Assignment 2 Released]",
+          "deadlines": ""
+        },
+        {
+          "date": "Apr 15",
+          "description": "Week 3 · Lecture 5\n\n**Policy Search 1**",
+          "videoLinks": "[Stanford CS234 Reinforcement Learning I Policy Search 1 I 2024 I Lecture 5](https://www.youtube.com/watch?v=L6OVEmV3NcE&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)",
+          "materials": "[Lecture 5 Slides](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture5pre.pdf)\n\n[Post lecture with annotations](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture5post.pdf)\n\n**Additional Materials**\n\n- SB (Sutton and Barto) Chp 13",
+          "events": "1:30pm-2:50pm",
+          "deadlines": ""
+        },
+        {
+          "date": "Apr 16",
+          "description": "Week 3\n\n**Problem Session 2**",
+          "videoLinks": "",
+          "materials": "[Problem Session 2](https://web.stanford.edu/class/cs234/CS234Spr2024/sessions/CS234_Spr2024_ProblemSession2.pdf)",
+          "events": "5:30pm-6:30pm",
+          "deadlines": ""
+        },
+        {
+          "date": "Apr 17",
+          "description": "Week 3 · Lecture 6\n\n**Policy Search 2**",
+          "videoLinks": "[Stanford CS234 Reinforcement Learning I Policy Search 2 I 2024 I Lecture 6](https://www.youtube.com/watch?v=8PwvNQ5WS-o&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)",
+          "materials": "[Lecture 6 Slides](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture6pre.pdf)\n\n[Post class annotations](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture6post.pdf)\n\n**Additional Materials**\n\n- SB (Sutton and Barto) Chp 13",
+          "events": "1:30pm-2:50pm",
+          "deadlines": ""
+        },
+        {
+          "date": "Apr 22",
+          "description": "Week 4 · Lecture 7\n\n**Policy Search 3**",
+          "videoLinks": "[Stanford CS234 Reinforcement Learning I Policy Search 3 I 2024 I Lecture 7](https://www.youtube.com/watch?v=4ngb0IZTg8I&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)",
+          "materials": "[Lecture 7 Slides](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture7pre.pdf)\n\n[Post class annotations](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture7post.pdf)\n\n**Additional Materials**\n\n- SB (Sutton and Barto) Chp 13",
+          "events": "1:30pm-2:50pm",
+          "deadlines": ""
+        },
+        {
+          "date": "Apr 23",
+          "description": "Week 4\n\n**Problem Session 3**",
+          "videoLinks": "",
+          "materials": "[Problem Session 3](https://web.stanford.edu/class/cs234/CS234Spr2024/sessions/CS234_Spr2024_ProblemSession3.pdf)",
+          "events": "5:30pm-6:30pm",
+          "deadlines": ""
+        },
+        {
+          "date": "Apr 24",
+          "description": "Week 4 · Lecture 8\n\n**Offline RL 1**",
+          "videoLinks": "[Stanford CS234 Reinforcement Learning I Offline RL 1 I 2024 I Lecture 8](https://www.youtube.com/watch?v=IEbuJtjqtMU&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)",
+          "materials": "[Lecture 8 Slides (preclass)](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture8pre.pdf)\n\n[Post class with annotations](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture8post.pdf)",
+          "events": "1:30pm-2:50pm",
+          "deadlines": ""
+        },
+        {
+          "date": "Apr 29",
+          "description": "Week 5 · Lecture 9\n\n**Offline RL 2**",
+          "videoLinks": "[Stanford CS234 I Guest Lecture on DPO: Rafael Rafailov, Archit Sharma, Eric Mitchell I Lecture 9](https://www.youtube.com/watch?v=Q7rl8ovBWwQ&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)",
+          "materials": "[Lecture 9 Slides](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture9pre.pdf)\n\n[Post class](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture9post.pdf)\n\n[Lecture 9 DPO Slides](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/dpo_slides.pdf)",
+          "events": "1:30pm-2:50pm",
+          "deadlines": ""
+        },
+        {
+          "date": "May 1",
+          "description": "Week 5\n\n**Midterm**",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "May 3",
+          "description": "Week 5",
+          "videoLinks": "",
+          "materials": "",
+          "events": "[Assignment 3 Released]",
+          "deadlines": ""
+        },
+        {
+          "date": "May 6",
+          "description": "Week 6 · Lecture 10\n\n**Offline RL 3**",
+          "videoLinks": "[Stanford CS234 Reinforcement Learning I Offline RL 3 I 2024 I Lecture 10](https://www.youtube.com/watch?v=F6APGIAm5fw&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)",
+          "materials": "[Lecture 10 Slides](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture10pre.pdf)\n\n[Post class](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture10post.pdf)",
+          "events": "1:30pm-2:50pm",
+          "deadlines": ""
+        },
+        {
+          "date": "May 7",
+          "description": "Week 6\n\n**Problem Session 5**",
+          "videoLinks": "",
+          "materials": "[Problem Session 5](https://web.stanford.edu/class/cs234/CS234Spr2024/sessions/CS234_Spr2024_ProblemSession5.pdf)",
+          "events": "5:30pm-6:30pm",
+          "deadlines": ""
+        },
+        {
+          "date": "May 8",
+          "description": "Week 6 · Lecture 11\n\n**Exploration 1**",
+          "videoLinks": "[Stanford CS234 Reinforcement Learning I Exploration 1 I 2024 I Lecture 11](https://www.youtube.com/watch?v=sqYii3nd78w&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)",
+          "materials": "[Lecture 11 Slides](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture11pre.pdf)\n\n[Post class, with annotations](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture11post.pdf)\n\n**Additional Materials**\n\n- [Bandit Algorithms Book](https://tor-lattimore.com/downloads/book/book.pdf) Chapter 7.1, Chapter 35",
+          "events": "1:30pm-2:50pm",
+          "deadlines": ""
+        },
+        {
+          "date": "May 13",
+          "description": "Week 7 · Lecture 12\n\n**Exploration 2**",
+          "videoLinks": "[Stanford CS234 Reinforcement Learning I Exploration 2 I 2024 I Lecture 12](https://www.youtube.com/watch?v=gFJNsfg_35E&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)",
+          "materials": "[Lecture 12 Slides](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture12pre.pdf)\n\n[Post class, with annotations](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture12post.pdf)\n\n**Additional Materials**\n\n- [Bandit Algorithms Book](https://tor-lattimore.com/downloads/book/book.pdf) Chapter 7.1, Chapter 35",
+          "events": "1:30pm-2:50pm",
+          "deadlines": ""
+        },
+        {
+          "date": "May 14",
+          "description": "Week 7\n\n**Problem Session 6**",
+          "videoLinks": "",
+          "materials": "[Problem Session 6](https://web.stanford.edu/class/cs234/CS234Spr2024/sessions/CS234_Spr2024_ProblemSession6.pdf)",
+          "events": "5:30pm-6:30pm",
+          "deadlines": ""
+        },
+        {
+          "date": "May 15",
+          "description": "Week 7 · Lecture 13\n\n**Exploration 3**",
+          "videoLinks": "[Stanford CS234 Reinforcement Learning I Exploration 3 I 2024 I Lecture 13](https://www.youtube.com/watch?v=pc7oayCSZmQ&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)",
+          "materials": "[Lecture 13 Slides](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture13pre.pdf)\n\n[Post class, with annotations](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture13post.pdf)\n\n**Additional Materials**\n\n- [Bandit Algorithms Book](https://tor-lattimore.com/downloads/book/book.pdf) Chapter 7.1, Chapter 35",
+          "events": "1:30pm-2:50pm",
+          "deadlines": ""
+        },
+        {
+          "date": "May 20",
+          "description": "Week 8 · Lecture 14\n\n**Multi-Agent Game Playing**",
+          "videoLinks": "[Stanford CS234 Reinforcement Learning I Multi-Agent Game Playing I 2024 I Lecture 14](https://www.youtube.com/watch?v=UgANzoWc0nc&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)",
+          "materials": "[Lecture 14 Slides](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture14pre.pdf)\n\n[Post class, with annotations](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture14post.pdf)",
+          "events": "1:30pm-2:50pm",
+          "deadlines": ""
+        },
+        {
+          "date": "May 21",
+          "description": "Week 8\n\n**Problem Session 7**",
+          "videoLinks": "",
+          "materials": "[Problem Session 7](https://web.stanford.edu/class/cs234/CS234Spr2024/sessions/CS234_Spr2024_ProblemSession7.pdf)",
+          "events": "5:30pm-6:30pm",
+          "deadlines": ""
+        },
+        {
+          "date": "May 22",
+          "description": "Week 8 · Lecture 15\n\n**Guest Lecture**",
+          "videoLinks": "[Stanford CS234 Reinforcement Learning I Emma Brunskill & Dan Webber I 2024 I Lecture 15](https://www.youtube.com/watch?v=FOlPpjNbHjE&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)",
+          "materials": "[Lecture 15 Slides (preclass)](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture15pre.pdf)\n\n[Post class with annotations](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture15post.pdf)\n\n[Lecture 15 (Value Alignment)](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/234Spring2024_EthiCS_Webber_sharing.pptx)",
+          "events": "1:30pm-2:50pm",
+          "deadlines": ""
+        },
+        {
+          "date": "May 27",
+          "description": "Week 9\n\n**Memorial Day:\nNo Class**",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "May 29",
+          "description": "Week 9\n\n**In-class Quiz**",
+          "videoLinks": "",
+          "materials": "",
+          "events": "1:30pm-2:50pm",
+          "deadlines": ""
+        },
+        {
+          "date": "Jun 3",
+          "description": "Week 10 · Lecture 16\n\n**Value Alignment**",
+          "videoLinks": "[Stanford CS234 Reinforcement Learning I Value Alignment I 2024 I Lecture 16](https://www.youtube.com/watch?v=eenJzay5aLo&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)",
+          "materials": "[Lecture 16 Slides](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture_last_pre.pdf)\n\n[post class](https://web.stanford.edu/class/cs234/CS234Spr2024/slides/lecture_last_post.pdf)",
+          "events": "1:30pm-2:50pm",
+          "deadlines": ""
+        },
+        {
+          "date": "Jun 5",
+          "description": "Week 10\n\n**Poster Session**",
+          "videoLinks": "",
+          "materials": "",
+          "events": "1pm-4pm",
+          "deadlines": ""
+        }
+      ],
+      "assessment": "## Grade Breakdown — Spring 2024\n\n- Assignment 1: 10%\n- Assignment 2: 18%\n- Assignment 3: 18%\n- Midterm: 25%\n- Quiz: 5%\n- Course Project: 24%\n  - Proposal: 1%\n  - Milestone: 2%\n  - Poster Presentation: 5%\n  - Paper: 16%\n\n[Official grading information](https://web.stanford.edu/class/cs234/CS234Spr2024/index.html#grading)",
+      "readings": "## Textbooks\n\n- [Reinforcement Learning: An Introduction — Sutton and Barto, 2nd Edition](http://incompleteideas.net/book/the-book-2nd.html) · [PDF](http://incompleteideas.net/book/RLbook2018.pdf)\n\n## Additional References\n\n- [Reinforcement Learning: State-of-the-Art — Marco Wiering and Martijn van Otterlo, Eds.](https://link.springer.com/book/10.1007%2F978-3-642-27645-3)\n- [Artificial Intelligence: A Modern Approach — Stuart J. Russell and Peter Norvig](http://aima.cs.berkeley.edu/)\n- [Deep Learning — Ian Goodfellow, Yoshua Bengio, and Aaron Courville](http://www.deeplearningbook.org/)\n- [David Silver's course on Reinforcement Learning](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html)\n- [Bandit Algorithms Book](https://tor-lattimore.com/downloads/book/book.pdf)\n\n## Course Resources\n\n- [Spring 2024 course schedule](https://web.stanford.edu/class/cs234/CS234Spr2024/index.html#course_schedule)\n- [Lecture slides and supporting readings](https://web.stanford.edu/class/cs234/CS234Spr2024/modules.html)\n- [YouTube playlist — Spring 2024](https://www.youtube.com/playlist?list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)",
+      "updatedAt": "2026-10-04T09:30:09.051Z"
     }
   ]
 }
