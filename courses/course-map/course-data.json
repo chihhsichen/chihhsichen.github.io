@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-02T10:12:26.646Z",
+  "updatedAt": "2026-10-04T02:16:07.526Z",
   "courses": [
     {
       "id": "course-1789265866232-3e45b794ed2958",
@@ -17,10 +17,12 @@
         "Multimodality",
         "LLM"
       ],
-      "prerequisites": [],
+      "prerequisites": [
+        "course-1789485608471-16a4187228d438"
+      ],
       "nodes": "MM2, MM3",
       "overview": "本課程將深入探討多模態人工智慧的前瞻技術，以多模態大型語言模型為主軸，了解最新的研究進展。透過文獻分析、實作練習與專題設計，學生將認識關鍵技術的發展脈絡與實務，建立研究與應用的能力。",
-      "syllabus": "本課程的目標在於讓修課同學：\n● 掌握多模態人工智慧的前瞻技術\n● 培養多模態人工智慧的實作基礎\n● 建立分析學術文獻的思維\n● 運用所學發展創新研究",
+      "syllabus": "本課程的目標在於讓修課同學：\n* 掌握多模態人工智慧的前瞻技術\n* 培養多模態人工智慧的實作基礎\n* 建立分析學術文獻的思維\n* 運用所學發展創新研究",
       "scheduleRows": [
         {
           "date": "9/10",
@@ -137,7 +139,7 @@
       ],
       "assessment": "N/A",
       "readings": "P.-Y. Chen and S. Liu, “Introduction to Foundation Models,” Springer, 2025.",
-      "updatedAt": "2026-09-17T08:44:47.993Z"
+      "updatedAt": "2026-10-04T02:15:45.814Z"
     },
     {
       "id": "course-1789269402649-42b87c5159417",
