@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-04T07:47:54.137Z",
+  "updatedAt": "2026-10-04T08:57:16.050Z",
   "courses": [
     {
       "id": "course-1789265866232-3e45b794ed2958",
@@ -462,10 +462,211 @@
       "nodes": "L4",
       "overview": "While deep learning has achieved remarkable success in many problems such as image classification, natural language processing, and speech recognition, these models are, to a large degree, specialized for the single task they are trained for. This course will cover the setting where there are multiple tasks to be solved, and study how the structure arising from multiple tasks can be leveraged to learn more efficiently or effectively. This includes:\n\nself-supervised pre-training for downstream few-shot learning and transfer learning\nmeta-learning methods that aim to learn efficient learning algorithms that can learn new tasks quickly\ncurriculum and lifelong learning, where the problem requires learning a sequence of tasks, leveraging their shared structure to enable knowledge transfer\nThis is a graduate-level course. By the end of the course, students will be able to understand and implement the state-of-the-art multi-task learning and meta-learning algorithms and be ready to conduct research on these topics.",
       "syllabus": "YouTube Videos: https://www.youtube.com/playlist?list=PLoROMvodv4rNjRoawgt72BBNwL2V7doGI",
-      "scheduleRows": [],
+      "scheduleRows": [
+        {
+          "date": "Wed, Sep 27",
+          "description": "Week 1\n\n*Lecture* **Course introduction & start of multi-task learning**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_intro_2023.pdf)\n\n**Homework 0**\n\n[PDF](https://cs330.stanford.edu/materials/CS330_Homework0.pdf) · [code](https://cs330.stanford.edu/materials/hw0_starter_code.zip) · [template](https://cs330.stanford.edu/materials/hw0_template.tex)",
+          "events": "Homework 0 out",
+          "deadlines": ""
+        },
+        {
+          "date": "Thur, Sep 28",
+          "description": "Week 1\n\n*TA session* PyTorch tutorial",
+          "videoLinks": "",
+          "materials": "**Notes and Optional Reading**\n\n- Tutorial is 3:00 – 4:20pm at Gates B3. See Canvas for Zoom link. [[Colab notebook](https://colab.research.google.com/drive/1SKOZEOk48eH72ZPftl6AnknR6kJFVTeh?usp=sharing)]",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon, Oct 2",
+          "description": "Week 2\n\n*Lecture* **Multi-task learning**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_multitask_transfer_2023.pdf)\n\n**Notes and Optional Reading**\n\n- [P1: Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics.](https://arxiv.org/abs/1705.07115) Kendall et al. (2018)\n- [P2: Universal Language Model Fine-tuning for Text Classification.](https://arxiv.org/abs/1801.06146) Howard et al. (2018)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Wed, Oct 4",
+          "description": "Week 2\n\n*Lecture* **Transfer learning & fine-tuning**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_finetune_transfer_meta_learning_problem_setup_2023.pdf)\n\n**Homework 1**\n\n[PDF](https://cs330.stanford.edu/materials/CS330_Homework_1.pdf) · [code](https://cs330.stanford.edu/materials/hw1_starter_code.zip) · [template](https://cs330.stanford.edu/materials/hw1_template.zip)\n\n**Notes and Optional Reading**\n\n- [Fine-Tuning can Distort Pretrained Features and Underperform Out-of-Distribution](https://arxiv.org/abs/2202.10054) (Kumar et al., 2022)",
+          "events": "Homework 1 out",
+          "deadlines": "Due **Homework 0**"
+        },
+        {
+          "date": "Mon, Oct 9",
+          "description": "Week 3\n\n*Lecture* **Black-box meta-learning & in-context learning**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_metalearning_bbox_2023.pdf)\n\n**Notes and Optional Reading**\n\n- [One-shot Learning with Memory-Augmented Neural Networks](https://arxiv.org/abs/1605.06065) (Santoro et al., 2016)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Wed, Oct 11",
+          "description": "Week 3\n\n*Lecture* **Optimization-based meta-learning**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_optbased_metalearning_2023.pdf)\n\n**Homework 2**\n\n[PDF](https://cs330.stanford.edu/materials/CS330_Homework_2.pdf) · [code](https://cs330.stanford.edu/materials/hw2_starter_code.zip) · [template](https://cs330.stanford.edu/materials/hw2_template.zip)\n\n**Notes and Optional Reading**\n\n- [Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks](https://arxiv.org/abs/1703.03400) (Finn et al., 2017)",
+          "events": "Homework 2 out",
+          "deadlines": "Due **Project survey**"
+        },
+        {
+          "date": "Thur, Oct 12",
+          "description": "Week 3\n\n*TA session* **MAML**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_maml_review.pdf)\n\n**Notes and Optional Reading**\n\n- Tutorial is 4:30 – 5:20pm at Gates B1. See Canvas for Zoom link.",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon, Oct 16",
+          "description": "Week 4\n\n*Lecture* **Few-shot learning via metric learning**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_nonparametric_2023.pdf)\n\n**Notes and Optional Reading**\n\n- [Matching Networks for One Shot Learning](https://arxiv.org/abs/1606.04080) (Vinyals et al., 2017)\n- [Prototypical Networks for Few-shot Learning](https://arxiv.org/abs/1703.05175) (Snell et al., 2017)",
+          "events": "",
+          "deadlines": "Due **Homework 1**"
+        },
+        {
+          "date": "Wed, Oct 18",
+          "description": "Week 4\n\n*Lecture* **Unsupervised pre-training for few-shot learning (contrastive)**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_contrastive_2023.pdf)\n\n**Notes and Optional Reading**\n\n- [Representation Learning with Contrastive Predictive Coding](https://arxiv.org/abs/1807.03748) (van den Oord et al., 2019)\n- [A Simple Framework for Contrastive Learning of Visual Representations](https://arxiv.org/abs/2002.05709) (Chen et al., 2020)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon, Oct 23",
+          "description": "Week 5\n\n*Lecture* **Unsupervised pre-training for few-shot learning (generative)**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_pretraining_reconstruction_2023.pdf)\n\n**Notes and Optional Reading**\n\n- [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) (Devlin et al., 2019)",
+          "events": "",
+          "deadlines": "Due **Project proposal**"
+        },
+        {
+          "date": "Wed, Oct 25",
+          "description": "Week 5\n\n*Lecture* **Advanced meta-learning topics (task construction)**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_advanced_meta_memorization_2023.pdf)\n\n**Homework 3**\n\n[PDF](https://cs330.stanford.edu/materials/CS330_Homework_3.pdf) · [code](https://cs330.stanford.edu/materials/hw3_starter_code.zip) · [template](https://cs330.stanford.edu/materials/hw3_template.zip)\n\n**Notes and Optional Reading**\n\n- [Meta-Learning without Memorization](https://arxiv.org/abs/1912.03820) (Yin et al., 2020)",
+          "events": "Homework 3 out",
+          "deadlines": "Due **Homework 2**"
+        },
+        {
+          "date": "Mon, Oct 30",
+          "description": "Week 6\n\n*Lecture* **Variational inference**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_variational_inference_2023.pdf)\n\n**Notes and Optional Reading**\n\n- [Tutorial on Variational Autoencoders](https://arxiv.org/abs/1606.05908) (Doersch, 2021)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Wed, Nov 1",
+          "description": "Week 6\n\n*Lecture* **Bayesian meta-learning**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_bayesian_meta_learning_2023.pdf)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Thur, Nov 2",
+          "description": "Week 6\n\n*TA session* **Bayesian Meta Learning**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/CS330%20Bayesian%20Meta-Learning.pdf)\n\n**Notes and Optional Reading**\n\n- Tutorial is 4:30 – 5:20pm at Gates B1. See Canvas for Zoom link.",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon, Nov 6",
+          "description": "Week 7\n\n*Lecture* **Advanced meta-learning topics (large-scale meta-optimization)**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/CS330-large-scale-meta-optimization.pdf)\n\n**Homework 4**\n\n[PDF](https://cs330.stanford.edu/materials/hw4.pdf) · [template/code](https://cs330.stanford.edu/materials/hw4.zip)\n\n**Notes and Optional Reading**\n\n- [Unbiased Gradient Estimation in Unrolled Computation Graphs with Persistent Evolution Strategies](https://arxiv.org/abs/1912.03820) (Vicol et al., 2021)",
+          "events": "Homework 4 out (optional)",
+          "deadlines": "Due **Homework 3**"
+        },
+        {
+          "date": "Wed, Nov 8",
+          "description": "Week 7\n\n*Guest Lecture* [James Harrison](https://scholar.google.com/citations?hl=en&user=-tEiRFcAAAAJ&view_op=list_works&sortby=pubdate)",
+          "videoLinks": "",
+          "materials": "",
+          "events": "Learned Optimizers",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon, Nov 13",
+          "description": "Week 8\n\n*Lecture* **Lifelong learning**",
+          "videoLinks": "[Lifelong learning](https://www.youtube.com/watch?v=tQjDijHgblg&list=PLoROMvodv4rNjRoawgt72BBNwL2V7doGI&index=15)",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Wed, Nov 15",
+          "description": "Week 8\n\n*Lecture* No Lecture",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": "Due **Project milestone**\nDue **Homework 4 (optional)**"
+        },
+        {
+          "date": "Mon, Nov 20",
+          "description": "Week 9\n\nThanksgiving break",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Wed, Nov 22",
+          "description": "Week 9\n\nThanksgiving break",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon, Nov 27",
+          "description": "Week 10\n\n*Guest lecture* [Jason Wei](https://www.jasonwei.net/)",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Wed, Nov 29",
+          "description": "Week 10\n\n*Lecture* **Domain Adaptation and Domain Generalization**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_domain_adaptation_generalization_2023.pdf)\n\n**Notes and Optional Reading**\n\n- [Domain-Adversarial Training of Neural Networks](https://arxiv.org/abs/1505.07818) (Ganin et al., 2016)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon, Dec 4",
+          "description": "Week 11\n\n*Lecture* **Frontiers & Open Challenges**",
+          "videoLinks": "",
+          "materials": "[Slides](https://cs330.stanford.edu/materials/cs330_openchallenges_2023.pdf)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Wed, Dec 6",
+          "description": "Week 11\n\n*Presentations* Project poster session",
+          "videoLinks": "",
+          "materials": "**Notes and Optional Reading**\n\n- The poster session will be held at Packard Atrium, from 3:00 – 6:00 pm.",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "Mon, Dec 11",
+          "description": "Week 12\n\nNo class",
+          "videoLinks": "",
+          "materials": "",
+          "events": "",
+          "deadlines": "Due **Final project report**"
+        }
+      ],
       "assessment": "N/A",
       "readings": "See slides.",
-      "updatedAt": "2026-09-15T15:20:08.472Z"
+      "updatedAt": "2026-10-04T08:57:16.050Z"
     },
     {
       "id": "course-1790932594626-160631c248871",
