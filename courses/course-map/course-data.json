@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-04T02:16:07.526Z",
+  "updatedAt": "2026-10-04T07:22:03.982Z",
   "courses": [
     {
       "id": "course-1789265866232-3e45b794ed2958",
@@ -726,6 +726,202 @@
       "assessment": "Grades\nThe grading breakdown is as follows:\n35% for 5 homework assignments, roughly 2 weeks for each.\n15% for 5 reading assignments covering state-of-the-art research in multimodal AI.\n15% for an in-class midterm exam.\n35% for the course project, split between proposal, midterm, and final report/presentations.\n\nHomework assignments (35% for 5 assignments):\nThere are a total of 5 homework assignments planned this semester. Each homework assignment will take around 2 weeks and consists of conceptual, implementation, and experimental exercises.\n\nReading assignments (15% for 5 assignments):\nThere are a total of 5 reading assignments planned this semester. Each reading assignment will be released together with the homework, are due in 2 weeks, and consists of 2 main parts:\nAssigned reading paper: Reading the assigned papers and summarizing the main take-away points of each paper.\nResearch question probes: Answer several question probes related to the reading papers and your datasets or research.\n\nMidterm exam (15%):\nThe midterm exam will be in the week before spring break. It will consist of multiple choice, short answer, and longer answer questions.\n\nCourse project (35%):\nThe course project will be done in groups of 2-4 students and is meant to introduce students to the research process. The project will span the entire semester with several key checkpoints, for which intermediate grades will be assigned as follows:\nProposal report and presentation 5%\nMidterm report and presentation 10%\nFinal report and presentation 20%\nProject preference form\nThis form is designed to help students with the team-matching process, for the course research project.\nProposal and literature review\nThe proposal report should present the initial research ideas for the course project. Students are expected to explore a new data modality or task understudied in AI and new research ideas to process this new data modality or task. The proposal should summarize these new data modalities, new research ideas, and a robust evaluation plan.\nAn important part of this proposal report will be a detailed literature review, including recent papers and models related to the data modality, research tasks, and new research ideas.\nMidterm report\nThe goal of the midterm report is to summarize the current research progress. Students should have already started exploring new research ideas. The midterm report should summarize these initial results and discuss them. This report should also present the updated list of research ideas that the team plans to explore.\nFinal report\nThe final report should follow a similar structure to a research paper. It should motivate the problem and research ideas. It should present the novel approaches, describe the experiment, and discuss the results.\nFinal presentation\nThe final project assignment will also include either an in-person poster or oral presentation, to be confirmed. The poster presentations may be open to the general MIT population.\n\nNotes about absences and late submissions\nIn general, submitting assignments on time lets the instructional team provide feedback in a more timely and efficient manner. Timely submissions are particularly important for assignments with discussions and peer feedback.  Also, it is expected that students will attend the lectures in person (or via Zoom when the course is required to be performed remotely). Live attendance is an essential component of this course, given that it is centered around live discussions. Given the live nature of the discussions, course sessions will not be recorded.\n\nMedical-related absences If for a medical reason, you require some extra time for an assignment or may not be able to attend the lecture in person, please contact instructors as soon as possible and we will help define a new plan that aligns with your constraints. \nAbsence requests\nStudents should contact instructors as promptly as possible regarding course absences, with a preference before the course lecture itself.\nIf you plan to be absent for more than one class, please contact the instructors as promptly as possible.",
       "readings": "",
       "updatedAt": "2026-10-02T10:12:06.299Z"
+    },
+    {
+      "id": "course-stanford-cs329a-autumn-2025",
+      "name": "Self-Improving AI Agents",
+      "code": "CS 329A",
+      "provider": "Stanford University",
+      "instructor": "Aakanksha Chowdhery; Azalia Mirhoseini",
+      "term": "2025 Autumn",
+      "status": "Considering",
+      "url": "https://cs329a.stanford.edu/",
+      "branch": "llm",
+      "slot": "",
+      "tags": [
+        "LLM",
+        "Agents",
+        "Self-improvement",
+        "Reasoning",
+        "RL"
+      ],
+      "prerequisites": [],
+      "nodes": "L4, L5, L6, L7",
+      "overview": "## 课程定位\n\n围绕 LLM 智能体，研究如何把反馈、搜索和可验证结果用于持续改进。课程把模型能力与工具、记忆、规划及评测结合起来，采用论文研讨与原创研究项目的形式。\n\n**归档版本：Autumn 2025。** 主分支为 **LLM**，交叉主题为 Agents、Reasoning 和 RL。按主题判断，它更适合放在语言模型与智能体路径中。\n\n## 官方先修要求\n\n根据 [Stanford Bulletin · CS329A](https://bulletin.stanford.edu/courses/2263721)：\n\n- **CS224N 或 CS229S，二选一**，并非两门都必须修。\n- 熟练使用 **Python**。\n- 熟悉 **大语言模型 API** 的调用。\n\n| 可选先修 | 建立的基础 | 官方材料 |\n| --- | --- | --- |\n| CS224N — Natural Language Processing with Deep Learning | NLP、神经网络、Transformer 与语言模型实践 | [课程网站](https://web.stanford.edu/class/cs224n/) |\n| CS229S — Systems for Machine Learning | 模型训练、微调与推理效率；Transformer、KV cache 等系统概念 | [2024 课程网站](https://cs229s.stanford.edu/fall2024/) |\n\n## 自学前的准备建议\n\n以下是准备建议，不是额外的官方入课条件：\n\n- Python / NumPy / PyTorch：能实现小模型、调试张量，并组织实验代码。\n- 数学与 ML：矩阵运算、多变量求导、概率统计、损失函数与梯度下降。\n- LLM 工程：能完成 API 请求、处理模型输出，并记录运行成本与结果。\n- 阅读 RL 部分前，复习奖励、策略优化及训练与评测的区别。\n\n数学和编程背景可参考 [CS224N 的先修说明](https://web.stanford.edu/class/cs224n/) 与 [CS229S 的先修说明](https://cs229s.stanford.edu/fall2024/)。准备清单不代表课程等价认定。\n\n## 来源\n\n- [课程官网与 2025 秋季日程](https://cs329a.stanford.edu/)\n- [Stanford 官方课程目录与先修要求](https://bulletin.stanford.edu/courses/2263721)\n\n整理日期：2026-10-04。课程安排属于 2025 秋季，不表示当前正在开课。",
+      "syllabus": "## 学习模块\n\n以下按主题归纳，具体讲次见 Schedule。\n\n1. **推理计算与验证**：比较采样、搜索、推理预算和验证器的作用。\n2. **反馈驱动的改进**：从代码执行与工具反馈，到模型后训练及 RL 扩展。\n3. **规划与智能体设计**：多步任务、工作流分解，以及开放式系统改进。\n4. **工具、记忆与应用**：研究型智能体、软件工程、长上下文与机器人案例。\n5. **评测与研究**：长期任务的可靠评估，结合论文讨论开展原创项目。\n\n## 个人学习产出（建议）\n\n- 在同一预算下比较采样、搜索和验证策略。\n- 为一个工具型智能体保存任务轨迹、错误类型和可复现实验结果。\n- 用明确基线、消融实验和任务成功率组织一个小型研究项目。\n\n以上产出为自学建议；正式作业与项目权重见 Assessment。\n\n来源：[课程说明](https://bulletin.stanford.edu/courses/2263721) · [逐讲日程](https://cs329a.stanford.edu/)。",
+      "scheduleRows": [
+        {
+          "date": "2025-09-22",
+          "description": "**01 · 课程导入**",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2025-09-26",
+          "description": "**02 · 推理阶段的计算扩展**",
+          "materials": "- [Large Language Monkeys: Scaling Inference Compute with Repeated Sampling (Brown et al. 2024)](https://arxiv.org/abs/2407.21787)\n- [Archon: An Architecture Search Framework for Inference-Time Techniques (Saad-Falcon et al. 2024)](https://www.arxiv.org/abs/2409.15254)\n- [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters (Snell et al. 2024)](https://arxiv.org/abs/2408.03314)\n- [How Do Large Language Monkeys Get Their Power (Laws)?](https://arxiv.org/abs/2502.17578)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2025-09-29",
+          "description": "**03 · 验证器与可靠验证**",
+          "materials": "- [Shrinking the Generation-Verification Gap with Weak Verifiers](https://arxiv.org/abs/2506.18203)\n- [Training Verifiers to Solve Math Word Problems (Cobbe et al. 2021)](https://arxiv.org/abs/2110.14168)\n- [Let's Verify step by step (Lightman et al. 2023)](https://arxiv.org/abs/2305.20050)\n- [Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Human Annotations (Wang et al. 2023)](https://arxiv.org/abs/2312.08935)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2025-10-03",
+          "description": "**04 · 工具、代码与反馈学习**",
+          "materials": "- [ReAct: Synergizing Reasoning and Acting in Language Models (Yao et al. 2022)](https://arxiv.org/abs/2210.03629)\n- [RLEF: Grounding Code LLMs in Execution Feedback with Reinforcement Learning](https://arxiv.org/abs/2410.02089)\n- [Constitutional AI: Harmlessness from AI Feedback](https://arxiv.org/abs/2212.08073)",
+          "events": "",
+          "deadlines": "HW1 发布；截止 2025-10-13。"
+        },
+        {
+          "date": "2025-10-06",
+          "description": "**05 · 多步推理与规划**",
+          "materials": "- [SWiRL: Synthetic Data Generation & Multi-Step RL for Reasoning & Tool Use](https://arxiv.org/abs/2504.04736)\n- [Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models (Zhou et al. 2023)](https://arxiv.org/abs/2310.04406)\n- [SPRINT: Enabling Interleaved Planning and Parallelized Execution in Reasoning Models](https://arxiv.org/abs/2506.05745)\n- [ADaPT: As-Needed Decomposition and Planning with Language Models (Prasad et al. 2024)](https://arxiv.org/abs/2311.05772)\n- [Wider or Deeper? Scaling LLM Inference-Time Compute with Adaptive Branching Tree Search](https://arxiv.org/abs/2503.04412)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2025-10-10",
+          "description": "**06 · 强化学习训练的规模扩展**",
+          "materials": "- [STaR: Bootstrapping Reasoning With Reasoning (Zelikman et al. 2022)](https://arxiv.org/pdf/2203.14465)\n- [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](https://arxiv.org/abs/2402.03300)\n- [DAPO: An Open-Source LLM Reinforcement Learning System at Scale](https://arxiv.org/abs/2503.14476)",
+          "events": "",
+          "deadlines": "项目提案截止。"
+        },
+        {
+          "date": "2025-10-13",
+          "description": "**07 · 智能体的开放式进化**",
+          "materials": "- [Darwin Gödel Machine（官网链接对应论文）](https://arxiv.org/abs/2505.22954)\n- [The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery (Lu et al. 2024)](https://arxiv.org/abs/2408.06292)\n- [AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/AlphaEvolve.pdf)\n- [Automated Design of Agentic Systems（官网标题对应论文，补充链接）](https://arxiv.org/abs/2408.08435)",
+          "events": "",
+          "deadlines": "HW1 截止。HW2 发布时间：Schedule 为 10/14，Homework Assignments 为 10/13；截止：Schedule 为 10/22，Grading 为 10/23。"
+        },
+        {
+          "date": "2025-10-17",
+          "description": "**08 · 搜索与深度研究智能体**",
+          "materials": "- [Competition-Level Code Generation with AlphaCode](https://arxiv.org/pdf/2203.07814)\n- [AlphaCode 2 Technical Report](https://storage.googleapis.com/deepmind-media/AlphaCode2/AlphaCode2_Tech_Report.pdf)\n- [Search-o1: Agentic Search-Enhanced Large Reasoning Models](https://arxiv.org/pdf/2501.05366)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2025-10-20",
+          "description": "**09 · 客座讲座：从聊天模型到智能体的后训练**",
+          "materials": "",
+          "events": "Melvin Johnson · Google DeepMind",
+          "deadlines": ""
+        },
+        {
+          "date": "2025-10-24",
+          "description": "**10 · 期中展示 I**",
+          "materials": "",
+          "events": "",
+          "deadlines": "HW3 发布时间：Schedule 为 10/24，Homework Assignments 为 10/23；截止 2025-11-07。"
+        },
+        {
+          "date": "2025-10-27",
+          "description": "**11 · 期中展示 II**",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2025-10-31",
+          "description": "**12 · 期中展示 III**",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2025-11-03",
+          "description": "**13 · 软件工程智能体**",
+          "materials": "- [CodeMonkeys: Scaling Test-Time Compute for Software Engineering](https://arxiv.org/abs/2501.14723)\n- [KernelBench: Can LLMs Write Efficient GPU Kernels?](https://arxiv.org/pdf/2502.10517)\n- [Improving Parallel Program Performance with LLM Optimizers via Agent-System Interfaces](https://arxiv.org/abs/2410.15625)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2025-11-07",
+          "description": "**14 · 智能体的记忆机制**",
+          "materials": "- [Cartridges: Lightweight and general-purpose long context representations via self-study](https://arxiv.org/abs/2506.06266)\n- [MemGPT: Towards LLMs as Operating Systems (Packer et al, 2023)](https://arxiv.org/abs/2310.08560)\n- [CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion](http://arxiv.org/abs/2405.16444)",
+          "events": "Junchen Jiang · LMCache / UChicago",
+          "deadlines": "HW3 截止。"
+        },
+        {
+          "date": "2025-11-10",
+          "description": "**15 · 客座讲座：语言模型推理**",
+          "materials": "",
+          "events": "Denny Zhou · Google DeepMind",
+          "deadlines": ""
+        },
+        {
+          "date": "2025-11-14",
+          "description": "**16 · 客座讲座：超人类推理**",
+          "materials": "",
+          "events": "Thang Luong · Google DeepMind；AlphaProof / AlphaGeometry / Gemini IMO",
+          "deadlines": ""
+        },
+        {
+          "date": "2025-11-17",
+          "description": "**17 · 长任务与智能体评测**",
+          "materials": "- [Measuring AI Ability to Complete Long Tasks](https://arxiv.org/abs/2503.14499)\n- [GDPVal: Evaluating AI Model Performance on Real-World Economically Valuable Tasks](https://arxiv.org/abs/2510.04374)\n- [DeepScholar-Bench: A Live Benchmark and Automated Evaluation for Generative Research Synthesis](https://arxiv.org/abs/2508.20033)",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2025-11-21",
+          "description": "**18 · 客座讲座：自主智能体的经验与问题**",
+          "materials": "",
+          "events": "Misha Laskin · Reflection AI",
+          "deadlines": ""
+        },
+        {
+          "date": "2025-11-24",
+          "description": "假期停课",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2025-11-28",
+          "description": "假期停课",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2025-12-01",
+          "description": "**19 · 客座讲座：机器人多模态智能体**",
+          "materials": "",
+          "events": "Danny Driess · Physical Intelligence",
+          "deadlines": ""
+        },
+        {
+          "date": "2025-12-05",
+          "description": "**20 · 研究展望**",
+          "materials": "",
+          "events": "",
+          "deadlines": ""
+        },
+        {
+          "date": "2025-12-10",
+          "description": "最终项目提交",
+          "materials": "",
+          "events": "",
+          "deadlines": "最终项目截止（EoD）。"
+        },
+        {
+          "date": "2025-12-12",
+          "description": "项目海报展示",
+          "materials": "",
+          "events": "",
+          "deadlines": "海报展示。"
+        }
+      ],
+      "assessment": "## 2025 秋季评分构成\n\n| 项目 | 权重 | 官网日期 |\n| --- | --- | --- |\n| Homework 1 | 15% | 10/13 |\n| Homework 2 | 15% | 10/22 或 10/23，见下方说明 |\n| Homework 3 | 20% | 11/07 |\n| 项目提案 | 2.5% | 10/10 |\n| 期中展示与报告 | 10% | 10/24、10/27、10/31；展示 5–10 分钟 |\n| 最终项目 | 35% | 12/10 |\n| 海报展示 | 2.5% | 12/12 |\n\n项目团队为 **2–4 人**，开展原创研究。\n\n## 原站日期差异\n\n- HW2 截止：Schedule 写 **10/22**，Grading 写 **10/23**。\n- HW2 发布：Schedule 写 **10/14**，Homework Assignments 写 **10/13**。\n- HW3 发布：Schedule 写 **10/24**，Homework Assignments 写 **10/23**。\n\n这里保留差异，未将其中一个日期当作已确认答案。\n\n来源：[课程官网的 Schedule、Grading 与 Homework Assignments](https://cs329a.stanford.edu/)。所有日期均为 **2025 年**。",
+      "readings": "## 按讲次整理的阅读清单\n\n下列论文链接来自 [课程官网](https://cs329a.stanford.edu/)，也已放入对应的 Schedule 行。\n\n**10/13 条目说明：** 官网写的是 Automated Design of Agentic Systems，实际链接却指向 [Darwin Gödel Machine](https://arxiv.org/abs/2505.22954)。这里保留该链接并使用真实论文标题，同时补充 [ADAS 原论文](https://arxiv.org/abs/2408.08435)，以免混淆。\n\n### 2025-09-26 · 推理阶段的计算扩展\n\n- [Large Language Monkeys: Scaling Inference Compute with Repeated Sampling (Brown et al. 2024)](https://arxiv.org/abs/2407.21787)\n- [Archon: An Architecture Search Framework for Inference-Time Techniques (Saad-Falcon et al. 2024)](https://www.arxiv.org/abs/2409.15254)\n- [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters (Snell et al. 2024)](https://arxiv.org/abs/2408.03314)\n- [How Do Large Language Monkeys Get Their Power (Laws)?](https://arxiv.org/abs/2502.17578)\n\n### 2025-09-29 · 验证器与可靠验证\n\n- [Shrinking the Generation-Verification Gap with Weak Verifiers](https://arxiv.org/abs/2506.18203)\n- [Training Verifiers to Solve Math Word Problems (Cobbe et al. 2021)](https://arxiv.org/abs/2110.14168)\n- [Let's Verify step by step (Lightman et al. 2023)](https://arxiv.org/abs/2305.20050)\n- [Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Human Annotations (Wang et al. 2023)](https://arxiv.org/abs/2312.08935)\n\n### 2025-10-03 · 工具、代码与反馈学习\n\n- [ReAct: Synergizing Reasoning and Acting in Language Models (Yao et al. 2022)](https://arxiv.org/abs/2210.03629)\n- [RLEF: Grounding Code LLMs in Execution Feedback with Reinforcement Learning](https://arxiv.org/abs/2410.02089)\n- [Constitutional AI: Harmlessness from AI Feedback](https://arxiv.org/abs/2212.08073)\n\n### 2025-10-06 · 多步推理与规划\n\n- [SWiRL: Synthetic Data Generation & Multi-Step RL for Reasoning & Tool Use](https://arxiv.org/abs/2504.04736)\n- [Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models (Zhou et al. 2023)](https://arxiv.org/abs/2310.04406)\n- [SPRINT: Enabling Interleaved Planning and Parallelized Execution in Reasoning Models](https://arxiv.org/abs/2506.05745)\n- [ADaPT: As-Needed Decomposition and Planning with Language Models (Prasad et al. 2024)](https://arxiv.org/abs/2311.05772)\n- [Wider or Deeper? Scaling LLM Inference-Time Compute with Adaptive Branching Tree Search](https://arxiv.org/abs/2503.04412)\n\n### 2025-10-10 · 强化学习训练的规模扩展\n\n- [STaR: Bootstrapping Reasoning With Reasoning (Zelikman et al. 2022)](https://arxiv.org/pdf/2203.14465)\n- [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](https://arxiv.org/abs/2402.03300)\n- [DAPO: An Open-Source LLM Reinforcement Learning System at Scale](https://arxiv.org/abs/2503.14476)\n\n### 2025-10-13 · 智能体的开放式进化\n\n- [Darwin Gödel Machine（官网链接对应论文）](https://arxiv.org/abs/2505.22954)\n- [The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery (Lu et al. 2024)](https://arxiv.org/abs/2408.06292)\n- [AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/AlphaEvolve.pdf)\n- [Automated Design of Agentic Systems（官网标题对应论文，补充链接）](https://arxiv.org/abs/2408.08435)\n\n### 2025-10-17 · 搜索与深度研究智能体\n\n- [Competition-Level Code Generation with AlphaCode](https://arxiv.org/pdf/2203.07814)\n- [AlphaCode 2 Technical Report](https://storage.googleapis.com/deepmind-media/AlphaCode2/AlphaCode2_Tech_Report.pdf)\n- [Search-o1: Agentic Search-Enhanced Large Reasoning Models](https://arxiv.org/pdf/2501.05366)\n\n### 2025-11-03 · 软件工程智能体\n\n- [CodeMonkeys: Scaling Test-Time Compute for Software Engineering](https://arxiv.org/abs/2501.14723)\n- [KernelBench: Can LLMs Write Efficient GPU Kernels?](https://arxiv.org/pdf/2502.10517)\n- [Improving Parallel Program Performance with LLM Optimizers via Agent-System Interfaces](https://arxiv.org/abs/2410.15625)\n\n### 2025-11-07 · 智能体的记忆机制\n\n- [Cartridges: Lightweight and general-purpose long context representations via self-study](https://arxiv.org/abs/2506.06266)\n- [MemGPT: Towards LLMs as Operating Systems (Packer et al, 2023)](https://arxiv.org/abs/2310.08560)\n- [CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion](http://arxiv.org/abs/2405.16444)\n\n### 2025-11-17 · 长任务与智能体评测\n\n- [Measuring AI Ability to Complete Long Tasks](https://arxiv.org/abs/2503.14499)\n- [GDPVal: Evaluating AI Model Performance on Real-World Economically Valuable Tasks](https://arxiv.org/abs/2510.04374)\n- [DeepScholar-Bench: A Live Benchmark and Automated Evaluation for Generative Research Synthesis](https://arxiv.org/abs/2508.20033)",
+      "updatedAt": "2026-10-04T07:22:03.982Z"
     }
   ]
 }
